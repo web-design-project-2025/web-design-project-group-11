@@ -1,0 +1,27 @@
+main {
+  background-color: antiquewhite;
+}
+
+.first-text {
+  color: green;
+  margin-left: 70rem;
+  border-top: 1px solid #888;
+  width: 13rem;
+}
+
+.discover-container {
+  margin-left: 10rem;
+}
+
+h1 {
+  color: green;
+  font-size: 1.2rem;
+  border-top: 1px solid #888;
+  width: 7rem;
+}
+
+.discover-text {
+  color: green;
+  font-size: 1rem;
+  width: 11rem;
+}
