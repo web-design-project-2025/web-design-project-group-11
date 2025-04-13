@@ -17,6 +17,10 @@ main {
   margin-bottom: 5rem;
 }
 
+.test {
+  display: grid;
+}
+
 .img-layout {
   width: 100%;
   display: grid;
@@ -32,36 +36,14 @@ main {
 }
 
 .eifel-img {
-  width: 25rem;
+  width: 35rem;
   object-fit: scale-down;
   position: absolute;
   z-index: 10000;
   grid-column: 2;
   grid-row: 1/2;
-  margin-left: 10rem;
-}
-
-.discover-container {
-  margin-left: 10rem;
-  width: 7rem;
-}
-
-.line-2 {
-  border: 0.05rem solid green;
-  width: 7rem;
-}
-
-h1 {
-  color: green;
-  font-size: 1.2rem;
-  width: 7rem;
-  margin-top: 0;
-}
-
-.discover-text {
-  color: green;
-  font-size: 1rem;
-  width: 11rem;
+  margin-top: 20rem;
+  margin-left: 45rem;
 }
 
 .explore-button {
