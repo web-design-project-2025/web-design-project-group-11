@@ -1,4 +1,25 @@
+/*HEADER*/
+
+#all-header {
+  display: flex;
+  justify-content: center;
+  column-gap: 4rem;
+}
+
+.logo {
+  justify-self: left;
+}
+
+a {
+  text-decoration: none;
+  column-gap: 4rem;
+}
+
+section {
+  column-gap: 4rem;
+}
 /*FOOTER*/
+
 footer {
   background-color: rgb(0, 70, 71);
   margin-top: 5rem;
