@@ -1,6 +1,8 @@
-main {
+body {
   background-color: antiquewhite;
 }
+
+/*WELCOME TEXT*/
 
 .line-1 {
   border: 0.05rem solid green;
@@ -17,9 +19,7 @@ main {
   margin-bottom: 5rem;
 }
 
-.test {
-  display: grid;
-}
+/*IMAGES*/
 
 .img-layout {
   width: 100%;
@@ -44,15 +44,25 @@ main {
   grid-row: 1/2;
   margin-top: 20rem;
   margin-left: 45rem;
+  filter: drop-shadow(0.1rem 0.1rem 0.2rem black);
 }
+
+/*BUTTON*/
 
 .explore-button {
   border: none;
   background-color: antiquewhite;
   color: green;
+  font-size: 1rem;
+  margin-top: 26.2rem;
+  margin-left: 33rem;
 }
+
+/*ROLLING IMAGES*/
 
 h3 {
   color: green;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 5rem;
 }
