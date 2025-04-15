@@ -1,23 +1,32 @@
 /*HEADER*/
 
-#all-header {
+header {
   display: flex;
-  justify-content: center;
-  column-gap: 4rem;
+  align-items: center;
 }
 
-.logo {
-  justify-self: left;
+nav {
+  margin-left: 25rem;
+}
+
+#logo {
+  padding-left: 6rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin-left: 6rem;
 }
 
 a {
   text-decoration: none;
-  column-gap: 4rem;
+  color: black;
 }
 
-section {
-  column-gap: 4rem;
-}
 /*FOOTER*/
 
 footer {
