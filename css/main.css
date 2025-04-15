@@ -1,3 +1,11 @@
+/*GLOBAL COLORS*/
+:root {
+  --offwhite: rgb(248, 246, 243);
+  --green: rgb(0, 70, 71);
+  --blue: rgb(211, 232, 227);
+  --brown: rgb(61, 36, 10);
+}
+
 /*HEADER*/
 
 #all-header {
