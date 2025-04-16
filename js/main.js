@@ -11,7 +11,7 @@ async function loadData() {
 }
 
 function createCountryElement(country) {
-  const countryElement = document.createElement("article");
+  const countryElement = document.createElement("section");
   countryElement.classList.add("country");
 
   const imageElement = document.createElement("img");
