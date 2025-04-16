@@ -1,0 +1,76 @@
+{
+  "europe": [
+    {
+      "id": "austria",
+      "image": "img/austria.jpg",
+      "title": "AUSTRIA",
+      "liked_by_user": false
+    },
+    {
+      "id": "belgium",
+      "image": "img/belgium.jpg",
+      "title": "BELGIUM",
+      "liked_by_user": false
+    },
+    {
+      "id": "france",
+      "image": "img/france.jpg",
+      "title": "FRANCE",
+      "liked_by_user": false
+    },
+    {
+      "id": "germany",
+      "image": "img/germany.jpg",
+      "title": "GERMANY",
+      "liked_by_user": false
+    },
+    {
+      "id": "greece",
+      "image": "img/greece.jpg",
+      "title": "GREECE",
+      "liked_by_user": false
+    },
+    {
+      "id": "italy",
+      "image": "img/italy.jpg",
+      "title": "ITALY",
+      "liked_by_user": false
+    },
+    {
+      "id": "norway",
+      "image": "img/norway.jpg",
+      "title": "NORWAY",
+      "liked_by_user": false
+    },
+    {
+      "id": "portugal",
+      "image": "img/portugal.jpg",
+      "title": "PORTUGAL",
+      "liked_by_user": false
+    },
+    {
+      "id": "spain",
+      "image": "img/spain.jpg",
+      "title": "SPAIN",
+      "liked_by_user": false
+    },
+    {
+      "id": "sweden",
+      "image": "img/sweden.jpg",
+      "title": "SWEDEN",
+      "liked_by_user": false
+    },
+    {
+      "id": "switzerland",
+      "image": "img/switzerland.jpg",
+      "title": "SWITZERLAND",
+      "liked_by_user": false
+    },
+    {
+      "id": "england",
+      "image": "img/england.jpg",
+      "title": "ENGLAND",
+      "liked_by_user": false
+    }
+  ]
+}
