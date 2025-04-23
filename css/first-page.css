@@ -47,7 +47,11 @@ nav {
 
 .heart-icon {
   width: 2.5rem;
-  margin-left: 16rem;
+  margin-left: 13.5rem;
+}
+
+#heart-link {
+  margin-left: auto;
 }
 
 ul {
