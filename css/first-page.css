@@ -11,6 +11,73 @@ body {
   margin-top: 5rem;
 }
 
+/*GLOBAL COLORS*/
+:root {
+  --offwhite: rgb(248, 246, 243);
+  --green: rgb(0, 70, 71);
+  --blue: rgb(211, 232, 227);
+  --brown: rgb(61, 36, 10);
+}
+
+/*HEADER*/
+
+.all-header {
+  align-items: center;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+}
+
+header {
+  align-items: center;
+}
+
+#heart-link {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+#logo {
+  height: 1.5rem;
+  margin-left: 2rem;
+}
+
+#logo,
+#heart-link,
+nav {
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  margin-left: 25rem;
+}
+
+.heart-icon {
+  width: 2.5rem;
+  margin-left: 13.5rem;
+}
+
+#heart-link {
+  margin-left: auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin-left: 6rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--offwhite);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 500;
+  font-size: 0.625 rem;
 .first-text {
   color: var(--green);
   font-size: 1.5rem;
@@ -28,9 +95,10 @@ body {
 
 #header-first-page-img {
   width: 100%;
-  height: 54rem;
+  height: 48rem;
   object-fit: cover;
-  object-position: bottom;
+  object-position: top;
+  z-index: 0;
 }
 
 #header-text {
