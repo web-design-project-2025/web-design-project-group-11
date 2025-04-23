@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(254, 251, 246);
+}
+
+.find-your-text {
+  color: rgb(0, 70, 71);
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.line-1 {
+  width: 50rem;
+  border: 0.05rem solid rgb(0, 70, 71);
+}
+
+.recharge-text {
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.recharge {
+  font-size: 2.5rem;
+  color: rgb(0, 70, 71);
+  font-weight: bold;
+  padding-left: 5rem;
+  padding-right: 6rem;
+  margin-right: 2rem;
+}
+
+.destination-text {
+  align-self: center;
+  padding-right: 5rem;
+  padding-left: 8rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  color: rgb(0, 70, 71);
+}
+
+.line-2 {
+  width: 30rem;
+  border: 0.05rem solid rgb(0, 70, 71);
+}
+
+.tips-tricks {
+  font-size: 2.5rem;
+  color: rgb(0, 70, 71);
+  font-weight: bold;
+  text-align: center;
+}
+
+.tips-text {
+  color: rgb(0, 70, 71);
+  font-size: 1.2rem;
+  text-align: justify;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
