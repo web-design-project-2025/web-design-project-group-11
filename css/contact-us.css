@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(248, 246, 243);
+}
+
+hr {
+  width: 11rem;
+  border: 0.05rem solid rgb(0, 70, 71);
+}
+
+h1 {
+  color: rgb(0, 70, 71);
+  text-align: center;
+  margin-bottom: 7rem;
+  font-size: 3rem;
+}
+
+/*MAIN CONTENT*/
+.content-container {
+  display: grid;
+  grid-template-columns: 2;
+}
+
+/*INPUT FIELDS*/
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  background-color: rgb(0, 70, 71);
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+input {
+  height: 2.5rem;
+  border: none;
+}
+
+/*FIRST NAME & LAST NAME INPUT FIELDS*/
+.first-last-name {
+  display: flex;
+  gap: 1.3rem;
+}
+
+#first-name,
+#last-name {
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  width: 20rem;
+}
+
+/*MAIL & SUBJECT INPUT FIELDS*/
+
+#email,
+#subject {
+  width: 41.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/*MESSAGE INPUT FIELD*/
+#message {
+  width: 41.5rem;
+  height: 20rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+input::placeholder {
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+/*SEND BUTTON*/
+.send {
+  width: 8rem;
+  height: 3rem;
+  margin-right: 31.5rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  background-color: rgb(255, 241, 230);
+  border-color: rgb(255, 241, 230);
+  font-size: 1rem;
+}
+/*CONTACT INFO SECTION*/
+.contact-info {
+  grid-column: 2;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
