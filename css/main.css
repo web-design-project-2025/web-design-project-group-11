@@ -8,22 +8,30 @@
 
 /*HEADER*/
 
-header {
-  display: flex;
+.all-header {
   align-items: center;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header {
   position: relative;
+  align-items: center;
 }
 
 #background-header {
   width: 100%;
   position: absolute;
 }
+
 #logo {
-  width: 10%;
+  height: 1.5rem;
   margin-left: 2rem;
 }
 
 #logo,
+#heart-link,
 nav {
   position: relative;
   z-index: 1;
@@ -31,6 +39,15 @@ nav {
 
 nav {
   margin-left: 25rem;
+}
+
+.heart-icon {
+  width: 2.5rem;
+}
+
+#heart-link {
+  margin-left: auto;
+  margin-right: 16rem;
 }
 
 ul {
@@ -47,7 +64,7 @@ a {
   color: var(--offwhite);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 500;
-  font-size: 2rem;
+  font-size: 0.625 rem;
 }
 
 /*FOOTER*/
