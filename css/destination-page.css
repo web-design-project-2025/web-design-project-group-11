@@ -12,6 +12,7 @@ body {
 .line-1 {
   width: 50rem;
   border: 0.05rem solid rgb(0, 70, 71);
+  margin-top: 5rem;
 }
 
 .recharge-text {
