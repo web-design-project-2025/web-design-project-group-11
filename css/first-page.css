@@ -1,17 +1,18 @@
 body {
-  background-color: antiquewhite;
+  color: var(--offwhite);
 }
 
 /*WELCOME TEXT*/
 
 .line-1 {
-  border: 0.05rem solid green;
+  border: 0.05rem solid var(--green);
   width: 16rem;
   margin-left: 60rem;
+  margin-top: 5rem;
 }
 
 .first-text {
-  color: green;
+  color: var(--green);
   font-size: 1.5rem;
   margin-left: 60rem;
   width: 16rem;
@@ -38,7 +39,7 @@ body {
   font-style: normal;
   font-size: 5rem;
   color: rgb(248, 246, 243);
-  filter: drop-shadow(0.1rem 0.1rem 0.2rem rgb(66, 53, 33));
+  filter: drop-shadow(0.1rem 0.1rem 0.2rem var(--brown));
   position: absolute;
   bottom: 10rem;
   left: 8rem;
@@ -55,7 +56,7 @@ body {
 
 h2 {
   position: absolute;
-  color: rgb(248, 246, 243);
+  color: var(--offwhite);
   z-index: 2;
   bottom: 17rem;
   left: 8rem;
@@ -67,7 +68,7 @@ h2 {
 
 #img-text-leaf {
   position: absolute;
-  color: rgb(248, 246, 243);
+  color: var(--offwhite);
   z-index: 2;
   bottom: 6rem;
   left: 8rem;
@@ -96,25 +97,34 @@ h2 {
   grid-row: 1/2;
   margin-top: 9rem;
   margin-left: 45rem;
-  filter: drop-shadow(0.1rem 0.1rem 0.2rem black);
+  filter: drop-shadow(0.1rem 0.1rem 0.2rem var(--brown));
 }
 
 /*BUTTON*/
 
+.arrow-text {
+  display: flex;
+  margin-top: 12.2rem;
+  margin-left: 29rem;
+}
+
+.thick-arrow-img {
+  width: 7%;
+}
+
 .explore-button {
   border: none;
-  background-color: antiquewhite;
-  color: green;
+  background-color: transparent;
+  color: var(--green);
   font-size: 1rem;
-  margin-top: 26.2rem;
-  margin-left: 33rem;
+  letter-spacing: 0.1rem;
 }
 
 /*ROLLING IMAGES*/
 
 h3 {
-  color: green;
+  color: var(--green);
   font-size: 1.5rem;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
