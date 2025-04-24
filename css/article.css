@@ -80,18 +80,57 @@ p {
 .content-second-part {
   width: 100%;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
-.content-second-part {
+.content-third-part {
   display: flex;
   width: 100%;
+  align-items: center;
+}
+
+.iran-image {
+  width: 20rem;
+  height: 18rem;
+  object-fit: fill;
 }
 
 .text-three {
   width: 100%;
-  padding-left: 3rem;
+  padding-left: 2rem;
+  padding-right: 0;
+  margin-top: 0;
 }
 
-.iran-image {
-  width: 30%;
+.author {
+  display: flex;
+  width: 100%;
+  background-color: rgb(253, 250, 250);
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.hannah {
+  margin-left: 1rem;
+}
+
+.selfie {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.article-info {
+  background-color: rgb(253, 250, 250);
+  border-top: 0.06rem solid black;
+  font-size: 0.8rem;
+  margin-top: 0;
+  width: calc(100% - 1rem);
+  padding-right: 0;
+  padding-left: 1rem;
 }
