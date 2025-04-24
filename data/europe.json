@@ -10,7 +10,21 @@
         "latitude": 48.210033,
         "longitude": 16.363449
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/austria1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/vienna.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/vienna1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     },
     {
       "id": "be",
@@ -22,7 +36,21 @@
         "latitude": 50.85045,
         "longitude": 50.85045
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/belgium1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/brussels.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/brussels1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     },
     {
       "id": "fr",
@@ -34,7 +62,21 @@
         "latitude": 48.864716,
         "longitude": 2.349014
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/france1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/paris.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/paris1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     },
     {
       "id": "de",
@@ -46,7 +88,21 @@
         "latitude": 52.520008,
         "longitude": 13.404954
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/germany1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/berlin.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/berlin1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     },
     {
       "id": "el",
@@ -58,7 +114,21 @@
         "latitude": 37.98381,
         "longitude": 23.727539
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/greece1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/athens.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/athens1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     },
     {
       "id": "it",
@@ -70,7 +140,21 @@
         "latitude": 41.902782,
         "longitude": 12.496366
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/italy1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/rome.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/rome1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     },
     {
       "id": "no",
@@ -82,7 +166,21 @@
         "latitude": 59.91273,
         "longitude": 10.74609
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/norway1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/oslo.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/oslo1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     },
     {
       "id": "pt",
@@ -94,7 +192,21 @@
         "latitude": 38.736946,
         "longitude": -9.142685
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/portugal1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/lisbon.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/lisbon1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     },
     {
       "id": "es",
@@ -106,7 +218,21 @@
         "latitude": 40.416775,
         "longitude": -3.70379
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/spain1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/madrid.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/madrid1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     },
     {
       "id": "se",
@@ -118,7 +244,21 @@
         "latitude": 59.334591,
         "longitude": 18.06324
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/sweden1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/stockholm.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/stockholm1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     },
     {
       "id": "ch",
@@ -130,7 +270,21 @@
         "latitude": 46.947456,
         "longitude": 7.451123
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/switzerland1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/bern.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/bern1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     },
     {
       "id": "uk",
@@ -142,7 +296,21 @@
         "latitude": 51.509865,
         "longitude": -0.118092
       },
-      "liked_by_user": false
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/england1.jpg",
+          "alt": "A scenic fjord in Austria"
+        },
+        {
+          "url": "img/london.jpg",
+          "alt": "Hohenwerfen Castle in Salzburg"
+        },
+        {
+          "url": "img/london1.jpg",
+          "alt": "Vienna State Opera House"
+        }
+      ]
     }
   ]
 }
