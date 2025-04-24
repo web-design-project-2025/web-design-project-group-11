@@ -1,0 +1,97 @@
+main {
+  margin-top: 7rem;
+  margin-right: 6rem;
+  margin-left: 6rem;
+  margin-bottom: 3rem;
+}
+
+.main-title {
+  font-family: "richmond-display", sans-serif;
+  font-size: 8rem;
+  font-weight: 350;
+  letter-spacing: 0.5rem;
+  word-spacing: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.article-title {
+  font-family: "peridot-pe-variable", sans-serif;
+  font-size: 4rem;
+}
+
+.content-first-part {
+  display: grid;
+  grid-template-columns: repeat (2, 1fr);
+  width: auto;
+}
+
+p {
+  grid-column: 1;
+  font-family: "peridot-pe-variable", sans-serif;
+  text-align: justify;
+  width: 40rem;
+  padding-right: 3rem;
+  font-size: 1rem;
+  line-height: 2.1rem;
+}
+
+.text-one {
+  margin-top: 0;
+}
+
+.quote-one {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.leaf-image {
+  grid-column: 1;
+  width: 100%;
+}
+
+.china-image {
+  width: 50%;
+}
+
+.france-image {
+  width: 50%;
+}
+
+.first-img-container {
+  display: flex;
+  grid-column: 2;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.quote-two {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  font-weight: 450;
+}
+
+.content-second-part {
+  width: 100%;
+  margin-top: 0;
+}
+
+.content-second-part {
+  display: flex;
+  width: 100%;
+}
+
+.text-three {
+  width: 100%;
+  padding-left: 3rem;
+}
+
+.iran-image {
+  width: 30%;
+}
