@@ -1,0 +1,16 @@
+#content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  padding: 1rem;
+}
+
+.content img {
+  width: 95%;
+}
+
+.content h2 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
