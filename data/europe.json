@@ -6,21 +6,11 @@
       "title": "Austria",
       "continent": "Europe",
       "description": "Nestled in the heart of Europe, Austria is a country of stunning alpine landscapes, rich cultural heritage, and charming cities. From the imperial elegance of Vienna and the musical legacy of Salzburg to the breathtaking peaks of the Austrian Alps, Austria offers a perfect blend of history, nature, and adventure. Whether you're exploring centuries-old castles, skiing world-class slopes, or enjoying a slice of Sachertorte in a cozy café, Austria promises an unforgettable experience year-round.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 48.210033,
+        "longitude": 16.363449
+      },
+      "liked_by_user": false
     },
     {
       "id": "be",
@@ -28,21 +18,11 @@
       "title": "Belgium",
       "continent": "Europe",
       "description": "A captivating mix of medieval charm and modern flair, Belgium is a small country with a big personality. Discover the cobbled streets and grand squares of Brussels and Bruges, sample world-famous chocolate and waffles, and enjoy over a thousand varieties of Belgian beer. From the historic battlefields of Flanders to the vibrant arts scene in Antwerp, Belgium offers rich culture, stunning architecture, and culinary delights at every turn. It’s a perfect destination for travelers seeking both relaxation and discovery in the heart of Europe.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 50.85045,
+        "longitude": 50.85045
+      },
+      "liked_by_user": false
     },
     {
       "id": "fr",
@@ -50,21 +30,11 @@
       "title": "France",
       "continent": "Europe",
       "description": "Timeless and enchanting, France is a dream destination that blends romance, culture, and natural beauty. From the iconic Eiffel Tower and Parisian cafés to the sun-soaked vineyards of Bordeaux and the lavender fields of Provence, every corner of France tells a story. Indulge in world-class cuisine, explore medieval villages, and bask on the glamorous beaches of the French Riviera. Whether you're an art lover, a foodie, or a nature enthusiast, France offers unforgettable experiences for every traveler.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 48.864716,
+        "longitude": 2.349014
+      },
+      "liked_by_user": false
     },
     {
       "id": "de",
@@ -72,21 +42,11 @@
       "title": "Germany",
       "continent": "Europe",
       "description": "A country where old-world charm meets cutting-edge innovation, Germany offers something for every traveler. Wander through fairy-tale castles in Bavaria, explore the vibrant arts and nightlife scene in Berlin, or cruise along the scenic Rhine River. With its rich history, diverse landscapes, and world-famous beer and festivals, Germany invites you to experience a perfect blend of culture, nature, and tradition. From medieval towns to modern metropolises, every stop is a story waiting to be discovered.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 52.520008,
+        "longitude": 13.404954
+      },
+      "liked_by_user": false
     },
     {
       "id": "el",
@@ -94,21 +54,11 @@
       "title": "Greece",
       "continent": "Europe",
       "description": "A land of myth, sun, and sea, Greece is where ancient history and breathtaking beauty come together. Explore the iconic ruins of Athens, unwind on the crystal-clear beaches of the Greek islands, and wander through whitewashed villages perched on cliffs. With its warm hospitality, vibrant cuisine, and deep cultural roots, Greece offers a timeless escape for every traveler. Whether you're chasing sunsets in Santorini or discovering hidden gems in the Peloponnese, Greece promises magic at every turn.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 37.98381,
+        "longitude": 23.727539
+      },
+      "liked_by_user": false
     },
     {
       "id": "it",
@@ -116,21 +66,11 @@
       "title": "Italy",
       "continent": "Europe",
       "description": "A feast for the senses, Italy is a country where every region offers its own unique charm and flavor. From the Renaissance art and romantic canals of Venice to the rolling hills of Tuscany and the sun-drenched Amalfi Coast, Italy is a celebration of beauty, culture, and cuisine. Savor world-renowned pasta and wine, marvel at ancient ruins in Rome, and soak in the vibrant street life of cities like Florence, Milan, and Naples. Whether you're seeking history, adventure, or pure indulgence, Italy is a destination that captures the heart.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 41.902782,
+        "longitude": 12.496366
+      },
+      "liked_by_user": false
     },
     {
       "id": "no",
@@ -138,21 +78,11 @@
       "title": "Norway",
       "continent": "Europe",
       "description": "A land of dramatic landscapes and serene beauty, Norway is where nature takes center stage. Marvel at the majestic fjords, chase the Northern Lights above the Arctic Circle, or hike beneath the midnight sun in summer. From the modern flair of Oslo to the charming coastal towns and Viking heritage, Norway offers adventure, culture, and tranquility all in one. Whether you're exploring by train, ship, or trail, Norway invites you to experience the wild and the wonderful like nowhere else.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 59.91273,
+        "longitude": 10.74609
+      },
+      "liked_by_user": false
     },
     {
       "id": "pt",
@@ -160,21 +90,11 @@
       "title": "Portugal",
       "continent": "Europe",
       "description": "Warm, welcoming, and full of character, Portugal is a coastal gem known for its rich history, stunning scenery, and soulful charm. Stroll through the colorful streets of Lisbon, sip port wine in the Douro Valley, or catch waves along the Algarve’s golden beaches. From medieval castles to vibrant festivals and fresh seafood to fado music, Portugal offers an unforgettable blend of tradition and laid-back vibes. Whether you're exploring ancient towns or basking in Atlantic sunsets, Portugal is a place that stays with you.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 38.736946,
+        "longitude": -9.142685
+      },
+      "liked_by_user": false
     },
     {
       "id": "es",
@@ -182,21 +102,11 @@
       "title": "Spain",
       "continent": "Europe",
       "description": "Lively, passionate, and endlessly diverse, Spain is a country that pulses with energy and tradition. From the flamenco rhythms of Andalusia to the modernist marvels of Barcelona and the tapas culture of Madrid, every region tells its own story. Bask on sun-soaked Mediterranean beaches, explore Moorish palaces, or join a local fiesta in a mountain village. With its rich history, world-class cuisine, and warm hospitality, Spain invites you to live life to the fullest—one unforgettable moment at a time.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 40.416775,
+        "longitude": -3.70379
+      },
+      "liked_by_user": false
     },
     {
       "id": "se",
@@ -204,21 +114,11 @@
       "title": "Sweden",
       "continent": "Europe",
       "description": "Clean, cool, and effortlessly stylish, Sweden is a land where modern design meets untouched wilderness. Discover the urban charm of Stockholm’s island neighborhoods, wander through picturesque villages, or explore the vast forests and lakes of the countryside. In winter, chase the Northern Lights in Swedish Lapland; in summer, soak in the midnight sun. With its rich history, innovative culture, and deep connection to nature, Sweden offers a peaceful yet dynamic escape for every kind of traveler.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 59.334591,
+        "longitude": 18.06324
+      },
+      "liked_by_user": false
     },
     {
       "id": "ch",
@@ -226,21 +126,11 @@
       "title": "Switzerland",
       "continent": "Europe",
       "description": "A paradise for nature lovers and adventure seekers, Switzerland is renowned for its breathtaking landscapes and impeccable precision. From the towering peaks of the Swiss Alps to serene lakes and charming villages, this country offers an idyllic setting year-round. Explore the cosmopolitan charm of Zurich and Geneva, or unwind in the picturesque town of Lucerne. Whether you’re skiing world-class slopes, hiking lush valleys, or indulging in Swiss chocolate and cheese, Switzerland is the perfect blend of outdoor adventure and refined relaxation.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 46.947456,
+        "longitude": 7.451123
+      },
+      "liked_by_user": false
     },
     {
       "id": "uk",
@@ -248,21 +138,11 @@
       "title": "England",
       "continent": "Europe",
       "description": "Rich in history, culture, and natural beauty, England offers a captivating experience for every type of traveler. Wander through the historic streets of London, explore the medieval charm of Oxford and Cambridge, or immerse yourself in the rolling countryside of the Cotswolds. Discover ancient castles, lush gardens, and iconic landmarks like Stonehenge and Buckingham Palace. With its cozy pubs, vibrant arts scene, and scenic coastlines, England blends tradition with modern flair for an unforgettable adventure.",
-      "liked_by_user": false,
-      "additional-images": [
-        {
-          "url": "img/austria-fjord.jpg",
-          "alt": "A scenic fjord in Austria"
-        },
-        {
-          "url": "img/salzburg-castle.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
-        },
-        {
-          "url": "img/vienna-opera.jpg",
-          "alt": "Vienna State Opera House"
-        }
-      ]
+      "location": {
+        "latitude": 51.509865,
+        "longitude": -0.118092
+      },
+      "liked_by_user": false
     }
   ]
 }
