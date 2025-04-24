@@ -1,22 +1,13 @@
-body {
-  color: var(--offwhite);
-}
-
-/*WELCOME TEXT*/
-
-.line-1 {
-  border: 0.05rem solid var(--green);
-  width: 14rem;
-  margin-left: 60rem;
-  margin-top: 5rem;
-}
-
 /*GLOBAL COLORS*/
 :root {
   --offwhite: rgb(248, 246, 243);
   --green: rgb(0, 70, 71);
   --blue: rgb(211, 232, 227);
   --brown: rgb(61, 36, 10);
+}
+
+body {
+  color: var(--offwhite);
 }
 
 /*HEADER*/
@@ -77,17 +68,7 @@ a {
   color: var(--offwhite);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 500;
-  font-size: 0.625 rem;
-}
-
-.first-text {
-  font-family: "peridot-pe-variable", sans-serif;
-  color: var(--green);
-  font-size: 1.5rem;
-  margin-left: 60rem;
-  width: 16rem;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
+  font-size: 0.9rem;
 }
 
 /*HEADER IMAGE*/
@@ -116,6 +97,25 @@ a {
   left: 8rem;
 }
 
+/*FIRST TEXT BOX*/
+
+.line-1 {
+  border: 0.05rem solid var(--green);
+  width: 15rem;
+  margin-left: 60rem;
+  margin-top: 9rem;
+}
+
+.first-text {
+  font-family: "peridot-pe-variable", sans-serif;
+  color: var(--green);
+  font-size: 1.2rem;
+  margin-left: 60rem;
+  width: 16rem;
+  margin-top: 1rem;
+  margin-bottom: 9rem;
+}
+
 /*IMAGES*/
 
 .img-layout {
@@ -127,7 +127,7 @@ a {
 
 .line-2 {
   border: 0.05rem solid var(--offwhite);
-  width: 19rem;
+  width: 18rem;
   margin-top: 7rem;
   margin-left: 7.8rem;
   position: absolute;
@@ -143,7 +143,7 @@ h2 {
   font-family: "richmond-display", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 3.4rem;
+  font-size: 3rem;
 }
 
 #img-text-leaf {
@@ -152,7 +152,7 @@ h2 {
   z-index: 1000;
   bottom: 6rem;
   left: 8rem;
-  width: 22rem;
+  width: 23rem;
   height: 10rem;
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
@@ -191,6 +191,7 @@ h2 {
 
 .thick-arrow-img {
   width: 7%;
+  margin-top: 0.3rem;
 }
 
 .explore-button {
@@ -200,7 +201,7 @@ h2 {
   color: var(--green);
   font-weight: 700;
   font-size: 1rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.08rem;
   cursor: pointer;
 }
 
@@ -218,6 +219,7 @@ h3 {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 10rem;
+  margin-bottom: 16rem;
 }
 
 /*FOOTER*/
