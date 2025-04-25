@@ -3,11 +3,28 @@ window.addEventListener("DOMContentLoaded", () => {
 
   let countries = [];
 
+  // ChatGPT https://chatgpt.com/c/680b5321-980c-8001-ba93-747dc051dc71
+  function getContinentFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("continent"); // t.ex. "Asia", "Europe", eller null
+  }
+
   async function loadData() {
     const response = await fetch("data/countries.json");
     const json = await response.json();
     countries = json.countries;
     renderContent(countries);
+
+    // ChatGPT https://chatgpt.com/c/680b5321-980c-8001-ba93-747dc051dc71
+    const selectedContinent = getContinentFromURL();
+    if (selectedContinent && selectedContinent !== "all") {
+      const filtered = countries.filter(
+        (item) => item.continent === selectedContinent
+      );
+      renderContent(filtered);
+    } else {
+      renderContent(countries);
+    }
   }
 
   function renderContent(countryList) {
