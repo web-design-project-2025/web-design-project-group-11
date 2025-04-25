@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
   const contentElement = document.getElementById("content");
+
   let countries = [];
 
   async function loadData() {
@@ -37,9 +38,17 @@ window.addEventListener("DOMContentLoaded", () => {
     renderContent(filtered);
   }
 
+  const imgAllButton = document.getElementById("button-all-img");
+  const imgAsiaButton = document.getElementById("button-asia-img");
+
   const europeButton = document.getElementById("button-europe");
   const asiaButton = document.getElementById("button-asia");
   const allButton = document.getElementById("button-all");
+
+  // imgAsiaButton.addEventListener("click", () => {
+  //   filterByContinent("Asia");
+  // });
+
   europeButton.addEventListener("click", () => {
     filterByContinent("Europe");
   });
