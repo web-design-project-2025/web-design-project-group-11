@@ -1,37 +1,56 @@
-let europes = [];
+window.addEventListener("DOMContentLoaded", () => {
+  const contentElement = document.getElementById("content");
+  let countries = [];
 
-const contentElement = document.getElementById("content");
-
-async function loadData() {
-  const europeResponse = await fetch("data/europe.json");
-  const europeJSON = await europeResponse.json();
-  europes = europeJSON.europe;
-
-  renderContent();
-}
-
-function createCountryElement(country) {
-  const countryElement = document.createElement("section");
-  countryElement.classList.add("country");
-
-  const imageElement = document.createElement("img");
-  imageElement.src = country.image;
-  countryElement.appendChild(imageElement);
-
-  const titleElement = document.createElement("h2");
-  titleElement.textContent = country.title;
-  countryElement.appendChild(titleElement);
-
-  return countryElement;
-}
-
-function renderContent() {
-  contentElement.innerHTML = "";
-
-  for (let country of europes) {
-    const countryElement = createCountryElement(country);
-    contentElement.appendChild(countryElement);
+  async function loadData() {
+    const response = await fetch("data/countries.json");
+    const json = await response.json();
+    countries = json.countries;
+    renderContent(countries);
   }
-}
 
-loadData();
+  function renderContent(countryList) {
+    contentElement.innerHTML = "";
+    for (let country of countryList) {
+      const countryElement = createCountryElement(country);
+      contentElement.appendChild(countryElement);
+    }
+  }
+
+  function createCountryElement(country) {
+    const countryElement = document.createElement("section");
+    countryElement.classList.add("country");
+
+    const img = document.createElement("img");
+    img.src = country.image;
+    countryElement.appendChild(img);
+
+    const title = document.createElement("h2");
+    title.textContent = country.title;
+    countryElement.appendChild(title);
+
+    return countryElement;
+  }
+
+  function filterByContinent(continent) {
+    const filtered = countries.filter((item) => item.continent === continent);
+    renderContent(filtered);
+  }
+
+  const europeButton = document.getElementById("button-europe");
+  const asiaButton = document.getElementById("button-asia");
+  const allButton = document.getElementById("button-all");
+  europeButton.addEventListener("click", () => {
+    filterByContinent("Europe");
+  });
+
+  asiaButton.addEventListener("click", () => {
+    filterByContinent("Asia");
+  });
+
+  allButton.addEventListener("click", () => {
+    renderContent(countries);
+  });
+
+  loadData();
+});
