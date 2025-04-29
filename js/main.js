@@ -1,30 +1,21 @@
 window.addEventListener("DOMContentLoaded", () => {
   const contentElement = document.getElementById("content");
-
   let countries = [];
-
-  // ChatGPT https://chatgpt.com/c/680b5321-980c-8001-ba93-747dc051dc71
-  function getContinentFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    return params.get("continent"); // t.ex. "Asia", "Europe", eller null
-  }
 
   async function loadData() {
     const response = await fetch("data/countries.json");
     const json = await response.json();
     countries = json.countries;
-    renderContent(countries);
 
-    // ChatGPT https://chatgpt.com/c/680b5321-980c-8001-ba93-747dc051dc71
-    const selectedContinent = getContinentFromURL();
-    if (selectedContinent && selectedContinent !== "all") {
-      const filtered = countries.filter(
-        (item) => item.continent === selectedContinent
-      );
-      renderContent(filtered);
-    } else {
-      renderContent(countries);
-    }
+    // const selectedContinent = getContinentFromURL();
+    // if (selectedContinent && selectedContinent !== "all") {
+    //   const filtered = countries.filter((item) => item.continent === selectedContinent);
+    //   renderContent(filtered);
+    // } else {
+    //   renderContent(countries);
+    // }
+
+    renderContent(countries); // eller filtrera som ovan
   }
 
   function renderContent(countryList) {
@@ -39,9 +30,16 @@ window.addEventListener("DOMContentLoaded", () => {
     const countryElement = document.createElement("section");
     countryElement.classList.add("country");
 
+    const link = document.createElement("a");
+    link.href = `detail-page.html?title=${encodeURIComponent(country.title)}`;
+
     const img = document.createElement("img");
     img.src = country.image;
+    img.alt = country.title;
     countryElement.appendChild(img);
+    link.appendChild(img);
+
+    countryElement.appendChild(link);
 
     const title = document.createElement("h2");
     title.textContent = country.title;
@@ -55,16 +53,9 @@ window.addEventListener("DOMContentLoaded", () => {
     renderContent(filtered);
   }
 
-  const imgAllButton = document.getElementById("button-all-img");
-  const imgAsiaButton = document.getElementById("button-asia-img");
-
   const europeButton = document.getElementById("button-europe");
   const asiaButton = document.getElementById("button-asia");
   const allButton = document.getElementById("button-all");
-
-  // imgAsiaButton.addEventListener("click", () => {
-  //   filterByContinent("Asia");
-  // });
 
   europeButton.addEventListener("click", () => {
     filterByContinent("Europe");
