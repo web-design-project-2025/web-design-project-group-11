@@ -12,6 +12,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const json = await response.json();
     countries = json.countries;
 
+    loadWeather(countries);
+
     const title = getTitleFromURL();
     if (title) {
       displayCountryDetail(title);

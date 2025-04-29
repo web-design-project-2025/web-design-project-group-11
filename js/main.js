@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const contentElement = document.getElementById("content");
   let countries = [];
+  const contentElement = document.getElementById("content");
 
   async function loadData() {
     const response = await fetch("data/countries.json");
