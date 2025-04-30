@@ -53,10 +53,36 @@ window.addEventListener("DOMContentLoaded", () => {
       temperatureElement.textContent = "Laddar temperatur...";
       detailcontentElement.appendChild(temperatureElement);
 
+      //FIRST IMAGE
+      const firstImage = document.createElement("img");
+      firstImage.src = country.additional_images[0].url;
+      firstImage.alt = country.additional_images[0].alt;
+      firstImage.classList.add("first-image");
+      detailcontentElement.appendChild(firstImage);
+
+      // // Mer text
+      // const moreText = document.createElement("p");
+      // moreText.textContent = country.description.slice(200); // resten av beskrivningen
+      // detailcontentElement.appendChild(moreText);
+
       const descriptionElement = document.createElement("p");
       descriptionElement.textContent = country.description;
       detailcontentElement.appendChild(descriptionElement);
       descriptionElement.classList.add("description");
+
+      //SECOND IMAGE
+      const secondImage = document.createElement("img");
+      secondImage.src = country.additional_images[1].url;
+      secondImage.alt = country.additional_images[1].alt;
+      secondImage.classList.add("second-image");
+      detailcontentElement.appendChild(secondImage);
+
+      //THIRD IMAGE
+      const thirdImage = document.createElement("img");
+      thirdImage.src = country.additional_images[2].url;
+      thirdImage.alt = country.additional_images[2].alt;
+      thirdImage.classList.add("third-image");
+      detailcontentElement.appendChild(thirdImage);
 
       //GET WEATHER FROM RIGHT COUNTRY//
       const lat = country.location.latitude;
@@ -81,32 +107,6 @@ window.addEventListener("DOMContentLoaded", () => {
           temperatureElement.textContent = "Kunde inte hämta väderdata.";
           console.error("Fel vid väderhämtning:", error);
         });
-
-      country.additional_images.forEach((image, index) => {
-        const imgElement = document.createElement("img");
-        imgElement.src = image.url;
-        imgElement.alt = image.alt;
-
-        // Lägg till olika klasser beroende på vilken bild det är
-        if (index === 0) {
-          imgElement.classList.add("image-first");
-        } else if (index === 1) {
-          imgElement.classList.add("image-second");
-        } else if (index === 2) {
-          imgElement.classList.add("image-third");
-        }
-
-        detailcontentElement.appendChild(imgElement);
-      });
-
-      // const additionalImagesContainer = document.createElement("div");
-      // country.additional_images.forEach((image) => {
-      //   const imgElement = document.createElement("img");
-      //   imgElement.src = image.url;
-      //   imgElement.alt = image.alt;
-      //   additionalImagesContainer.appendChild(imgElement);
-      // });
-      // detailcontentElement.appendChild(additionalImagesContainer);
     } else {
       detailcontentElement.innerHTML =
         "Ingen information hittades för detta land.";
