@@ -5,6 +5,7 @@
       "image": "img/austria.jpg",
       "title": "Austria",
       "continent": "Europe",
+      "capital": "Vienna",
       "description": "Nestled in the heart of Europe, Austria is a country of stunning alpine landscapes, rich cultural heritage, and charming cities. From the imperial elegance of Vienna and the musical legacy of Salzburg to the breathtaking peaks of the Austrian Alps, Austria offers a perfect blend of history, nature, and adventure. Whether you're exploring centuries-old castles, skiing world-class slopes, or enjoying a slice of Sachertorte in a cozy café, Austria promises an unforgettable experience year-round.",
       "location": {
         "latitude": 48.210033,
@@ -31,6 +32,7 @@
       "image": "img/belgium.jpg",
       "title": "Belgium",
       "continent": "Europe",
+      "capital": "Brussels",
       "description": "A captivating mix of medieval charm and modern flair, Belgium is a small country with a big personality. Discover the cobbled streets and grand squares of Brussels and Bruges, sample world-famous chocolate and waffles, and enjoy over a thousand varieties of Belgian beer. From the historic battlefields of Flanders to the vibrant arts scene in Antwerp, Belgium offers rich culture, stunning architecture, and culinary delights at every turn. It’s a perfect destination for travelers seeking both relaxation and discovery in the heart of Europe.",
       "location": {
         "latitude": 50.85045,
@@ -57,6 +59,7 @@
       "image": "img/france.jpg",
       "title": "France",
       "continent": "Europe",
+      "capital": "Paris",
       "description": "Timeless and enchanting, France is a dream destination that blends romance, culture, and natural beauty. From the iconic Eiffel Tower and Parisian cafés to the sun-soaked vineyards of Bordeaux and the lavender fields of Provence, every corner of France tells a story. Indulge in world-class cuisine, explore medieval villages, and bask on the glamorous beaches of the French Riviera. Whether you're an art lover, a foodie, or a nature enthusiast, France offers unforgettable experiences for every traveler.",
       "location": {
         "latitude": 48.864716,
@@ -83,6 +86,7 @@
       "image": "img/germany.jpg",
       "title": "Germany",
       "continent": "Europe",
+      "capital": "Berlin",
       "description": "A country where old-world charm meets cutting-edge innovation, Germany offers something for every traveler. Wander through fairy-tale castles in Bavaria, explore the vibrant arts and nightlife scene in Berlin, or cruise along the scenic Rhine River. With its rich history, diverse landscapes, and world-famous beer and festivals, Germany invites you to experience a perfect blend of culture, nature, and tradition. From medieval towns to modern metropolises, every stop is a story waiting to be discovered.",
       "location": {
         "latitude": 52.520008,
@@ -109,6 +113,7 @@
       "image": "img/greece.jpg",
       "title": "Greece",
       "continent": "Europe",
+      "capital": "Athens",
       "description": "A land of myth, sun, and sea, Greece is where ancient history and breathtaking beauty come together. Explore the iconic ruins of Athens, unwind on the crystal-clear beaches of the Greek islands, and wander through whitewashed villages perched on cliffs. With its warm hospitality, vibrant cuisine, and deep cultural roots, Greece offers a timeless escape for every traveler. Whether you're chasing sunsets in Santorini or discovering hidden gems in the Peloponnese, Greece promises magic at every turn.",
       "location": {
         "latitude": 37.98381,
@@ -135,6 +140,7 @@
       "image": "img/italy.jpg",
       "title": "Italy",
       "continent": "Europe",
+      "capital": "Rome",
       "description": "A feast for the senses, Italy is a country where every region offers its own unique charm and flavor. From the Renaissance art and romantic canals of Venice to the rolling hills of Tuscany and the sun-drenched Amalfi Coast, Italy is a celebration of beauty, culture, and cuisine. Savor world-renowned pasta and wine, marvel at ancient ruins in Rome, and soak in the vibrant street life of cities like Florence, Milan, and Naples. Whether you're seeking history, adventure, or pure indulgence, Italy is a destination that captures the heart.",
       "location": {
         "latitude": 41.902782,
@@ -161,6 +167,7 @@
       "image": "img/norway.jpg",
       "title": "Norway",
       "continent": "Europe",
+      "capital": "Oslo",
       "description": "A land of dramatic landscapes and serene beauty, Norway is where nature takes center stage. Marvel at the majestic fjords, chase the Northern Lights above the Arctic Circle, or hike beneath the midnight sun in summer. From the modern flair of Oslo to the charming coastal towns and Viking heritage, Norway offers adventure, culture, and tranquility all in one. Whether you're exploring by train, ship, or trail, Norway invites you to experience the wild and the wonderful like nowhere else.",
       "location": {
         "latitude": 59.91273,
@@ -187,6 +194,7 @@
       "image": "img/portugal.jpg",
       "title": "Portugal",
       "continent": "Europe",
+      "capital": "Lisbon",
       "description": "Warm, welcoming, and full of character, Portugal is a coastal gem known for its rich history, stunning scenery, and soulful charm. Stroll through the colorful streets of Lisbon, sip port wine in the Douro Valley, or catch waves along the Algarve’s golden beaches. From medieval castles to vibrant festivals and fresh seafood to fado music, Portugal offers an unforgettable blend of tradition and laid-back vibes. Whether you're exploring ancient towns or basking in Atlantic sunsets, Portugal is a place that stays with you.",
       "location": {
         "latitude": 38.736946,
@@ -213,6 +221,7 @@
       "image": "img/spain.jpg",
       "title": "Spain",
       "continent": "Europe",
+      "capital": "Madrid",
       "description": "Lively, passionate, and endlessly diverse, Spain is a country that pulses with energy and tradition. From the flamenco rhythms of Andalusia to the modernist marvels of Barcelona and the tapas culture of Madrid, every region tells its own story. Bask on sun-soaked Mediterranean beaches, explore Moorish palaces, or join a local fiesta in a mountain village. With its rich history, world-class cuisine, and warm hospitality, Spain invites you to live life to the fullest—one unforgettable moment at a time.",
       "location": {
         "latitude": 40.416775,
@@ -239,6 +248,7 @@
       "image": "img/sweden.jpg",
       "title": "Sweden",
       "continent": "Europe",
+      "capital": "Stockholm",
       "description": "Clean, cool, and effortlessly stylish, Sweden is a land where modern design meets untouched wilderness. Discover the urban charm of Stockholm’s island neighborhoods, wander through picturesque villages, or explore the vast forests and lakes of the countryside. In winter, chase the Northern Lights in Swedish Lapland; in summer, soak in the midnight sun. With its rich history, innovative culture, and deep connection to nature, Sweden offers a peaceful yet dynamic escape for every kind of traveler.",
       "location": {
         "latitude": 59.334591,
@@ -265,6 +275,7 @@
       "image": "img/switzerland.jpg",
       "title": "Switzerland",
       "continent": "Europe",
+      "capital": "Bern",
       "description": "A paradise for nature lovers and adventure seekers, Switzerland is renowned for its breathtaking landscapes and impeccable precision. From the towering peaks of the Swiss Alps to serene lakes and charming villages, this country offers an idyllic setting year-round. Explore the cosmopolitan charm of Zurich and Geneva, or unwind in the picturesque town of Lucerne. Whether you’re skiing world-class slopes, hiking lush valleys, or indulging in Swiss chocolate and cheese, Switzerland is the perfect blend of outdoor adventure and refined relaxation.",
       "location": {
         "latitude": 46.947456,
@@ -291,6 +302,7 @@
       "image": "img/england.jpg",
       "title": "England",
       "continent": "Europe",
+      "capital": "London",
       "description": "Rich in history, culture, and natural beauty, England offers a captivating experience for every type of traveler. Wander through the historic streets of London, explore the medieval charm of Oxford and Cambridge, or immerse yourself in the rolling countryside of the Cotswolds. Discover ancient castles, lush gardens, and iconic landmarks like Stonehenge and Buckingham Palace. With its cozy pubs, vibrant arts scene, and scenic coastlines, England blends tradition with modern flair for an unforgettable adventure.",
       "location": {
         "latitude": 51.509865,
@@ -317,6 +329,7 @@
       "image": "img/china.jpg",
       "title": "China",
       "continent": "Asia",
+      "capital": "Bejing",
       "description": "Step into a land where ancient traditions meet cutting-edge innovation. China offers a travel experience like no other — from the timeless beauty of the Great Wall snaking across mountain ridges, to the futuristic skyline of Shanghai glittering by night. Wander through the serene gardens of Suzhou, marvel at the terracotta warriors in Xi’an, or find peace among the karst mountains of Guilin. Whether you're looking for bustling city life, remote villages, historical marvels, or stunning natural scenery, China inspires every kind of traveler.",
       "location": {
         "latitude": 39.916668,
@@ -343,6 +356,7 @@
       "image": "img/india.jpg",
       "title": "India",
       "continent": "Asia",
+      "capital": "New Delhi",
       "description": "India is not just a place you visit — it’s a world you step into, full of color, contrast, and emotion. It’s in the aroma of spices wafting from a street food stall, the sound of temple bells at sunrise, and the warm smiles of people inviting you into their world. From the golden sands of Rajasthan to the lush greenery of Kerala, India’s landscapes are as diverse as its culture. Visit the iconic Taj Mahal, drift on a houseboat through the backwaters, or hike through the Himalayan foothills. Each experience is deeply layered — historical, spiritual, and deeply human.",
       "location": {
         "latitude": 28.6448,
@@ -369,6 +383,7 @@
       "image": "img/indonesia.jpg",
       "title": "Indonesia",
       "continent": "Asia",
+      "capital": "Jakarta",
       "description": "Stretching across more than 17,000 islands, Indonesia is a nation of endless exploration. From the emerald rice fields of Bali to the ancient temples of Java, from the wild jungles of Sumatra to the volcanic peaks of Flores — every island has its own soul, rhythm, and story. Dive into crystal-clear waters teeming with life in Raja Ampat, or hike up Mount Bromo to watch the sunrise paint the sky. Visit peaceful villages where traditions are passed down through generations, or find your own balance in a beachfront yoga retreat. Indonesia offers both stillness and adventure — often in the same day.",
       "location": {
         "latitude": -6.2,
@@ -395,6 +410,7 @@
       "image": "img/iran.jpg",
       "title": "Iran",
       "continent": "Asia",
+      "capital": "Teheran",
       "description": "Iran is one of the world’s most surprising travel destinations — a land where ancient history, stunning landscapes, and warm hospitality come together in the most unforgettable way. Walk through the ruins of Persepolis, once the heart of the Persian Empire, or gaze up at the intricate domes and mosaic tiles in Isfahan’s mosques.",
       "location": {
         "latitude": 35.715298,
@@ -421,6 +437,7 @@
       "image": "img/japan.jpg",
       "title": "Japan",
       "continent": "Asia",
+      "capital": "Tokyo",
       "description": "Japan is a country where ancient tradition and cutting-edge innovation exist side by side in perfect balance. Wander through Kyoto’s quiet temples and moss-covered gardens, then ride a bullet train to the neon glow of Tokyo — a city that pulses with fashion, technology, and creativity. Each region of Japan offers a new world to discover. Experience the peaceful rituals of a tea ceremony, bathe in an onsen beneath snow-covered mountains, or witness cherry blossoms in full bloom as spring paints the landscape in soft pink. From the tropical beaches of Okinawa to the wild forests of Hokkaido, Japan’s natural beauty is as poetic as its culture.",
       "location": {
         "latitude": 35.652832,
@@ -447,6 +464,7 @@
       "image": "img/Malaysia.jpg",
       "title": "Malaysia",
       "continent": "Asia",
+      "capital": "Kuala Lumpur",
       "description": "Malaysia is where worlds meet — a vibrant blend of cultures, landscapes, and flavors that create an unforgettable travel experience. In one day, you can explore glittering skyscrapers in Kuala Lumpur, wander through ancient rainforests, and end your evening with street food that blends Malay, Chinese, and Indian influences in every bite. The diversity here isn’t just cultural — it’s geographical too. Trek through the misty tea plantations of the Cameron Highlands, dive into turquoise waters off the Perhentian Islands, or lose yourself in the wildlife-rich jungles of Borneo, home to orangutans and rare proboscis monkeys.",
       "location": {
         "latitude": 3.140853,
@@ -473,6 +491,7 @@
       "image": "img/Philippines.jpg",
       "title": "Philippines",
       "continent": "Asia",
+      "capital": "Manila",
       "description": "With over 7,000 islands, the Philippines is a true paradise for beach lovers, adventurers, and culture seekers alike. From the powdery white sands of Boracay to the hidden lagoons of Palawan, every corner of this archipelago offers stunning natural beauty and unforgettable experiences. Dive into crystal-clear waters teeming with vibrant marine life, hike through lush jungles to discover cascading waterfalls, or explore the famous chocolate hills of Bohol. Each island tells a unique story, with its own landscapes, traditions, and way of life.",
       "location": {
         "latitude": 14.599512,
@@ -499,6 +518,7 @@
       "image": "img/saudi-arabia.jpg",
       "title": "Saudi Arabia",
       "continent": "Asia",
+      "capital": "Riyadh",
       "description": "Saudi Arabia is a country of contrasts, where ancient history meets modern innovation. From the mystical desert landscapes of the Rub' al Khali (Empty Quarter) to the towering skyscrapers of Riyadh, Saudi Arabia offers a journey through time and discovery. Walk in the footsteps of pilgrims in Mecca, home to the sacred Kaaba, or explore the stunning archaeological sites of Al-Ula, with its ancient tombs and rock formations that tell the stories of millennia. In the coastal city of Jeddah, wander through vibrant souks and admire the fusion of old-world charm and modern luxury.",
       "location": {
         "latitude": 24.774265,
@@ -525,6 +545,7 @@
       "image": "img/south-korea.jpg",
       "title": "South Korea",
       "continent": "Asia",
+      "capital": "Seoul",
       "description": "South Korea is a land where the ancient and the modern exist in perfect harmony. From the serene beauty of ancient palaces and Buddhist temples to the cutting-edge technology and vibrant city life, South Korea offers a rich, multifaceted travel experience. In Seoul, the country’s bustling capital, you’ll find a blend of skyscrapers and traditional hanok houses, ancient markets and luxury shopping districts. Explore the majestic Gyeongbokgung Palace, stroll through the tranquil gardens of Changdeokgung, or hike along the city’s scenic trails with views of the Han River.",
       "location": {
         "latitude": 37.5326,
@@ -551,6 +572,7 @@
       "image": "img/Thailand.jpg",
       "title": "Thailand",
       "continent": "Asia",
+      "capital": "Bangkok",
       "description": "Thailand is a country of vibrant energy, natural beauty, and rich culture. From the glittering temples of Bangkok to the idyllic beaches of Phuket, Thailand offers a world of contrasts and adventures waiting to be explored. In Bangkok, experience the rush of street markets, the glow of golden temples like Wat Pho and the Grand Palace, and indulge in world-renowned street food. Take a boat ride through the city’s canals, or immerse yourself in the urban buzz of one of Asia’s most exciting capitals.",
       "location": {
         "latitude": 13.736717,
@@ -577,6 +599,7 @@
       "image": "img/Vietnam.jpg",
       "title": "Vietnam",
       "continent": "Asia",
+      "capital": "Hanoi",
       "description": "Vietnam is a country where history, culture, and natural beauty converge in the most captivating way. From the bustling streets of Hanoi to the tranquil waters of Ha Long Bay, every corner of Vietnam offers a new discovery waiting to be made. In Hanoi, wander through the charming Old Quarter, where French colonial architecture meets vibrant street markets and fragrant food stalls. In Ho Chi Minh City, experience the energy of modern Vietnam, with its mix of skyscrapers and traditional pagodas, while savoring delicious pho or banh mi.",
       "location": {
         "latitude": 21.028511,
@@ -603,6 +626,7 @@
       "image": "img/cambodia.jpg",
       "title": "Cambodia",
       "continent": "Asia",
+      "capital": "Phnom Penh",
       "description": "Cambodia is a land where ancient wonders and warm hospitality come together to create a deeply moving travel experience. At the heart of the country stands Angkor Wat — the world’s largest religious monument — where sunrise reveals the silhouette of a temple that has watched over jungles for centuries. It’s more than a site — it’s a spiritual moment that stays with you long after you leave. But Cambodia is much more than Angkor. Explore the laid-back charm of Battambang, cruise along the Tonlé Sap lake, or uncover Phnom Penh’s rich (and at times painful) history — from the Royal Palace’s golden rooftops to the sobering stories of the Killing Fields. Every place tells part of the story of a country shaped by resilience, faith, and community.",
       "location": {
         "latitude": 11.562108,

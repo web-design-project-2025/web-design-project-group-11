@@ -1,0 +1,30 @@
+.detail-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.title {
+  color: aqua;
+  margin-top: 5rem;
+}
+
+.description {
+  margin-top: 10rem;
+}
+
+#temperature {
+  color: brown;
+  margin-top: 0;
+}
+
+.image-first {
+  width: 20%;
+}
+
+.image-first {
+  width: 20%;
+}
+
+.image-first {
+  width: 20%;
+}
