@@ -6,17 +6,16 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/detail-page.css" />
     <link rel="stylesheet" href="https://use.typekit.net/izz5dre.css" />
-    <title>Document</title>
+    <title>Country Details</title>
   </head>
   <body>
     <!-- HEADER -->
-
     <header>
       <section class="all-header">
         <img id="background-header" src="img/small-header.jpg" alt="" />
         <a href="index.html">
-          <img id="logo" src="img/journee-logo.svg" alt="Logo Journee"
-        /></a>
+          <img id="logo" src="img/journee-logo.svg" alt="Logo Journee" />
+        </a>
         <nav>
           <ul>
             <a href="destination-page.html"><li>DESTINATIONS</li></a>
@@ -24,19 +23,19 @@
           </ul>
         </nav>
         <a id="heart-link" href="favorite-page.html">
-          <img class="heart-icon" src="img/heart-line.svg" alt=""
-        /></a>
+          <img class="heart-icon" src="img/heart-line.svg" alt="" />
+        </a>
       </section>
     </header>
 
     <main>
       <section class="detail-container">
-        <div class="detail-content" id="detail-content"></div>
-      </section>
+        <div class="detail-content" id="detail-content">
+        </div>
+        <p id="temperature"></p>
     </main>
-    <footer>
-      <!--FOOTER-->
 
+    <footer>
       <section id="footer-container1" class="footer-text">
         <p>CONTACT US</p>
         <p>SOCIAL MEDIA</p>
@@ -44,8 +43,6 @@
         <p>DESTINATIONS</p>
         <p>OUR SERVICE</p>
       </section>
-
-      <!--SUBSCRIBE BUTTON IN INPUT FIELD-->
 
       <section id="footer-container2">
         <p class="subscribe-text">SUBSCRIBE TO OUR NEWSLETTER!</p>
@@ -58,13 +55,13 @@
         <button class="subscribe-button">SUBSCRIBE</button>
       </section>
 
-      <!--COPY RIGHT TEXT-->
-
       <p class="copy-right">
         <span class="copy-logo">&#169;</span>Copyright JOURNEE 2025
       </p>
     </footer>
+
     <script src="js/main.js" defer></script>
     <script src="js/detail.js" defer></script>
+    <script src="js/api.js" defer></script>
   </body>
 </html>
