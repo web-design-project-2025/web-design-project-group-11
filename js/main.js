@@ -2,6 +2,8 @@ window.addEventListener("DOMContentLoaded", () => {
   let countries = [];
   const contentElement = document.getElementById("content");
 
+  let likedCountries = JSON.parse(localStorage.getItem("likedCountries")) || [];
+
   async function loadData() {
     const response = await fetch("data/countries.json");
     const json = await response.json();
@@ -15,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
     //   renderContent(countries);
     // }
 
-    renderContent(countries); // eller filtrera som ovan
+    renderContent(countries);
   }
 
   function renderContent(countryList) {
@@ -33,14 +35,29 @@ window.addEventListener("DOMContentLoaded", () => {
     const link = document.createElement("a");
     link.href = `detail-page.html?title=${encodeURIComponent(country.title)}`;
 
+    const isLiked = likedCountries.includes(country.id);
+    country.liked_by_user = isLiked;
+
     const likeButtonElement = document.createElement("button");
-    likeButtonElement.innerHTML = country.liked_by_user
+    likeButtonElement.innerHTML = isLiked
       ? '<img src="img/heart-filled.svg" alt="liked">'
       : '<img src="img/heart-line.svg" alt="not liked">';
     likeButtonElement.classList.add("like-button");
 
     likeButtonElement.addEventListener("click", () => {
       country.liked_by_user = !country.liked_by_user;
+
+      if (country.liked_by_user) {
+        if (!likedCountries.includes(country.id)) {
+          likedCountries.push(country.id);
+        }
+      } else {
+        const index = likedCountries.indexOf(country.id);
+        if (index > -1) likedCountries.splice(index, 1);
+      }
+
+      localStorage.setItem("likedCountries", JSON.stringify(likedCountries));
+
       likeButtonElement.innerHTML = country.liked_by_user
         ? '<img src="img/heart-filled.svg" alt="liked">'
         : '<img src="img/heart-line.svg" alt="not liked">';
@@ -51,9 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const img = document.createElement("img");
     img.src = country.image;
     img.alt = country.title;
-    countryElement.appendChild(img);
     link.appendChild(img);
-
     countryElement.appendChild(link);
 
     const title = document.createElement("h2");

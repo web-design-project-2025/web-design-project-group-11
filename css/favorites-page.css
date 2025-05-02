@@ -1,0 +1,25 @@
+body {
+  background-color: var(--offwhite);
+}
+
+#favorite-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 9rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: center;
+}
+
+#favorite-content img {
+  width: 65%;
+}
+
+.like-button {
+  background: var(--offwhite);
+  border: none;
+  width: 5%;
+  z-index: 1000;
+  position: absolute;
+  margin-left: 6rem;
+}
