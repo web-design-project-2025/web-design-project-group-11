@@ -1,3 +1,6 @@
+body {
+  background-color: var(--offwhite);
+}
 #content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -7,10 +10,20 @@
 
 .content img {
   width: 95%;
+  z-index: 1;
 }
 
 .content h2 {
   margin-top: 0.5rem;
   font-size: 1.2rem;
   margin-bottom: 3rem;
+}
+
+.like-button {
+  background: var(--offwhite);
+  border: none;
+  width: 5%;
+  z-index: 1000;
+  position: absolute;
+  margin-left: 23rem;
 }

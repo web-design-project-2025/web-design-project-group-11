@@ -33,6 +33,21 @@ window.addEventListener("DOMContentLoaded", () => {
     const link = document.createElement("a");
     link.href = `detail-page.html?title=${encodeURIComponent(country.title)}`;
 
+    const likeButtonElement = document.createElement("button");
+    likeButtonElement.innerHTML = country.liked_by_user
+      ? '<img src="img/heart-filled.svg" alt="liked">'
+      : '<img src="img/heart-line.svg" alt="not liked">';
+    likeButtonElement.classList.add("like-button");
+
+    likeButtonElement.addEventListener("click", () => {
+      country.liked_by_user = !country.liked_by_user;
+      likeButtonElement.innerHTML = country.liked_by_user
+        ? '<img src="img/heart-filled.svg" alt="liked">'
+        : '<img src="img/heart-line.svg" alt="not liked">';
+    });
+
+    countryElement.appendChild(likeButtonElement);
+
     const img = document.createElement("img");
     img.src = country.image;
     img.alt = country.title;
