@@ -9,6 +9,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
   let likedCountries = JSON.parse(localStorage.getItem("likedCountries")) || [];
 
+  // ChatGPT https://chatgpt.com/c/680b5321-980c-8001-ba93-747dc051dc71
+  function getContinentFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("continent"); // t.ex. "Asia", "Europe", eller null
+  }
+
   async function loadData() {
     const response = await fetch("data/countries.json");
     const json = await response.json();
@@ -18,15 +24,19 @@ window.addEventListener("DOMContentLoaded", () => {
     const continentJson = await continentResponse.json();
     continents = continentJson.continents;
 
-    // const selectedContinent = getContinentFromURL();
-    // if (selectedContinent && selectedContinent !== "all") {
-    //   const filtered = countries.filter((item) => item.continent === selectedContinent);
-    //   renderContent(filtered);
-    // } else {
-    //   renderContent(countries);
-    // }
-    renderContinents(continents);
-    renderContent(countries);
+    const selectedContinent = getContinentFromURL();
+    if (selectedContinent && selectedContinent !== "all") {
+      const filtered = countries.filter(
+        (item) => item.continent === selectedContinent
+      );
+      renderContent(filtered);
+    } else {
+      renderContent(countries);
+    }
+
+    renderSingleContinent(
+      selectedContinent === "all" ? "All Destinations" : selectedContinent
+    );
   }
 
   function renderContent(countryList) {
