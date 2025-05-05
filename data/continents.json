@@ -1,0 +1,19 @@
+{
+  "continents": [
+    {
+      "id": "eu",
+      "title": "Europe",
+      "description": "lorem*3"
+    },
+    {
+      "id": "as",
+      "title": "Asia",
+      "description": "lorem*3"
+    },
+    {
+      "id": "all",
+      "title": "All Destinations",
+      "description": "lorem*3"
+    }
+  ]
+}
