@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /*GLOBAL COLORS*/
 :root {
   --offwhite: rgb(248, 246, 243);
@@ -12,26 +18,19 @@ body {
 
 /*HEADER*/
 
-.all-header {
+header {
+  width: 100%;
   align-items: center;
   display: flex;
   padding-top: 1rem;
-  padding-bottom: 1rem;
   position: absolute;
-}
-
-header {
-  align-items: center;
-}
-
-#heart-link {
-  margin-left: auto;
-  margin-right: 2rem;
+  justify-content: space-between;
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 
 #logo {
-  height: 1.5rem;
-  margin-left: 2rem;
+  height: 2rem;
 }
 
 #logo,
@@ -41,34 +40,30 @@ nav {
   z-index: 1;
 }
 
-nav {
-  margin-left: 25rem;
-}
-
 .heart-icon {
-  width: 2.5rem;
-  margin-left: 13.5rem;
+  width: 3rem;
 }
 
-#heart-link {
-  margin-left: auto;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-}
-
-li {
-  margin-left: 6rem;
-}
-
-a {
+nav a {
   text-decoration: none;
-  color: var(--offwhite);
+  color: var(--green);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 500;
-  font-size: 0.9rem;
+  font-size: 1.13rem;
+  letter-spacing: 0.03rem;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 4rem;
+}
+
+nav a:hover {
+  color: var(--green);
+  transition: ease 0.2s;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
 /*HEADER IMAGE*/
@@ -90,7 +85,7 @@ a {
   font-weight: 600;
   font-style: normal;
   font-size: 5rem;
-  color: rgb(248, 246, 243);
+  color: var(--offwhite);
   filter: drop-shadow(0.1rem 0.1rem 0.2rem var(--brown));
   position: absolute;
   bottom: 10rem;
@@ -109,7 +104,7 @@ a {
 .first-text {
   font-family: "peridot-pe-variable", sans-serif;
   color: var(--green);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-left: 60rem;
   width: 16rem;
   margin-top: 1rem;
@@ -138,7 +133,7 @@ h2 {
   position: absolute;
   color: var(--offwhite);
   z-index: 1000;
-  bottom: 17rem;
+  bottom: 20rem;
   left: 8rem;
   font-family: "richmond-display", sans-serif;
   font-weight: 600;
@@ -150,13 +145,13 @@ h2 {
   position: absolute;
   color: var(--offwhite);
   z-index: 1000;
-  bottom: 6rem;
+  bottom: 9rem;
   left: 8rem;
   width: 23rem;
   height: 10rem;
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .leaf-img {
@@ -176,9 +171,8 @@ h2 {
   z-index: 100;
   grid-column: 2;
   grid-row: 1/2;
-  margin-top: 9rem;
+  margin-top: 6.8rem;
   margin-left: 45rem;
-  filter: drop-shadow(0.4rem 0.4rem 0.2rem rgb(202, 197, 197));
 }
 
 /*BUTTON*/
@@ -218,7 +212,7 @@ h3 {
   font-weight: 1.5rem;
   font-size: 1.5rem;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 22rem;
   margin-bottom: 16rem;
 }
 
