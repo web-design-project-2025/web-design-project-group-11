@@ -101,14 +101,28 @@ nav a:hover {
   margin-top: 9rem;
 }
 
+#mountain-container {
+  position: relative;
+}
+
+#mountain {
+  display: block;
+  width: 50%;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .first-text {
   font-family: "peridot-pe-variable", sans-serif;
   color: var(--green);
   font-size: 1.3rem;
-  margin-left: 60rem;
   width: 16rem;
-  margin-top: 1rem;
-  margin-bottom: 9rem;
+  position: absolute;
+  top: 2rem;
+  right: 20rem;
+  z-index: 2;
 }
 
 /*IMAGES*/
@@ -179,7 +193,7 @@ h2 {
 
 .arrow-text {
   display: flex;
-  margin-top: 12.2rem;
+  margin-top: 1.2rem;
   margin-left: 29rem;
 }
 
