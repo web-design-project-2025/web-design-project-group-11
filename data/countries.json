@@ -4,9 +4,10 @@
       "id": "at",
       "image": "img/austria.jpg",
       "title": "Austria",
+      "introduction": "Nestled in the heart of Europe, Austria is a country of stunning alpine landscapes, rich cultural heritage, and charming cities. From the imperial elegance of Vienna and the musical legacy of Salzburg to the breathtaking peaks of the Austrian Alps, Austria offers a perfect blend of history, nature, and adventure. Whether you're exploring centuries-old castles, skiing world-class slopes, or enjoying a slice of Sachertorte in a cozy café, Austria promises an unforgettable experience year-round.",
       "continent": "Europe",
       "capital": "Vienna",
-      "description": "Nestled in the heart of Europe, Austria is a country of stunning alpine landscapes, rich cultural heritage, and charming cities. From the imperial elegance of Vienna and the musical legacy of Salzburg to the breathtaking peaks of the Austrian Alps, Austria offers a perfect blend of history, nature, and adventure. Whether you're exploring centuries-old castles, skiing world-class slopes, or enjoying a slice of Sachertorte in a cozy café, Austria promises an unforgettable experience year-round.",
+      "description": "",
       "location": {
         "latitude": 48.210033,
         "longitude": 16.363449

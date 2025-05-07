@@ -3,17 +3,17 @@
     {
       "id": "eu",
       "title": "Europe",
-      "description": "lorem*3"
+      "description": "Europe offers a stunning array of cultures, history, and natural beauty. From the majestic Alps to the sun-kissed Mediterranean beaches, Europe has it all – historic cities like Rome and Paris, charming villages in Tuscany, and vibrant metropolises like Berlin and Barcelona. Whether you’re looking for culture, relaxation, or adventure, Europe will inspire you to create unforgettable travel memories."
     },
     {
       "id": "as",
       "title": "Asia",
-      "description": "lorem*3"
+      "description": "Asia is a continent where the East meets the West, blending ancient traditions with modern innovation. From the spiritual temples of Thailand and Japan to the bustling markets of India and the futuristic skylines of China, Asia offers a journey for every traveler. Immerse yourself in rich cultures, exotic cuisines, and breathtaking landscapes that promise to leave you awe-struck and inspired."
     },
     {
       "id": "all",
       "title": "All Destinations",
-      "description": "lorem*3"
+      "description": "Discover a world of endless possibilities! Whether you're drawn to the sandy beaches of the Caribbean, the cultural wonders of Africa, or the stunning natural landscapes of Oceania, this is your gateway to every corner of the globe. Explore the most popular destinations or uncover hidden gems waiting to be discovered. The world is at your fingertips – let your adventure begin here!"
     }
   ]
 }
