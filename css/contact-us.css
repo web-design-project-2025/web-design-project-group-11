@@ -16,13 +16,15 @@ h1 {
 }
 
 /*MAIN CONTENT*/
+
 .content-container {
   display: grid;
-  grid-template-columns: 2;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /*INPUT FIELDS*/
-.input-fields {
+
+#form {
   display: flex;
   flex-direction: column;
   grid-column: 1;
@@ -84,8 +86,12 @@ input::placeholder {
   border-color: rgb(255, 241, 230);
   font-size: 1rem;
 }
+
 /*CONTACT INFO SECTION*/
+
 .contact-info {
+  color: var(--brown);
+  display: grid;
   grid-column: 2;
   padding-left: 4rem;
   padding-right: 4rem;
