@@ -288,6 +288,7 @@ h2 {
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
   font-size: 1rem;
+  align-self: center;
   width: 10rem;
 }
 
