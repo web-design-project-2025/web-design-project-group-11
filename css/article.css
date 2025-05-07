@@ -1,35 +1,55 @@
 main {
   margin-top: 7rem;
-  margin-right: 6rem;
-  margin-left: 6rem;
+  margin-right: 8rem;
+  margin-left: 8rem;
   margin-bottom: 3rem;
 }
 
+/*TEXT CONTAINER*/
+
+.overline-title {
+  color: var(--green);
+  margin-bottom: 1.8rem;
+}
+
 .main-title {
+  color: var(--green);
   font-family: "richmond-display", sans-serif;
-  font-size: 8rem;
-  font-weight: 350;
+  font-size: 5rem;
+  font-weight: 500;
   letter-spacing: 0.5rem;
-  word-spacing: 1rem;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
+  /* text-decoration: underline;
+  text-underline-offset: 1rem; */
   text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
+  word-spacing: 0.5rem;
+}
+
+.underline-title {
+  color: var(--green);
+}
+
+.mini-title {
+  color: rgb(251, 209, 130);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.3rem;
 }
 
 .article-title {
+  color: var(--green);
   font-family: "peridot-pe-variable", sans-serif;
-  font-size: 4rem;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 600;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.content-first-part {
-  display: grid;
-  grid-template-columns: repeat (2, 1fr);
-  width: auto;
-}
+/*FIRST SECTION*/
 
 p {
+  color: var(--brown);
   grid-column: 1;
   font-family: "peridot-pe-variable", sans-serif;
   text-align: justify;
@@ -39,26 +59,21 @@ p {
   line-height: 2.1rem;
 }
 
+.content-first-part {
+  display: grid;
+  grid-template-columns: repeat (2, 1fr);
+  width: auto;
+}
+
 .text-one {
   margin-top: 0;
 }
 
 .quote-one {
-  font-style: italic;
-  font-size: 1.1rem;
-}
-
-.leaf-image {
-  grid-column: 1;
-  width: 100%;
-}
-
-.china-image {
-  width: 50%;
-}
-
-.france-image {
-  width: 50%;
+  color: var(--green);
+  /* font-style: italic; */
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .first-img-container {
@@ -68,49 +83,86 @@ p {
   justify-content: center;
 }
 
+.china-image {
+  width: 46%;
+}
+
+.france-image {
+  width: 46%;
+}
+
+/*BIG QUOTE*/
+
+.line-over-quote {
+  margin-top: 2rem;
+}
+
 .quote-two {
+  color: var(--green);
   width: 100%;
   font-size: 2rem;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
   font-weight: 450;
 }
 
+.line-under-quote {
+  margin-bottom: 2rem;
+}
+
+/*SECOND SECTION*/
+
 .content-second-part {
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat (2, 1fr);
+  width: auto;
 }
 
-.content-third-part {
+.second-img-container {
   display: flex;
-  width: 100%;
-  align-items: center;
+  grid-column: 1;
+  gap: 2rem;
+  justify-content: center;
+  padding-left: 3rem;
 }
 
-.iran-image {
-  width: 20rem;
-  height: 18rem;
-  object-fit: fill;
+.berlin-image {
+  width: 55%;
 }
+
+.thailand-image {
+  width: 55%;
+}
+
+.second-text {
+  grid-column: 2;
+  padding-left: 6rem;
+  padding-right: 0rem;
+}
+
+/*THIRD SECTION*/
 
 .text-three {
-  width: 100%;
-  padding-left: 2rem;
+  color: var(--brown);
+  width: auto;
   padding-right: 0;
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
+/*ARTICLE SIGNATURE*/
+
 .author {
+  color: var(--brown);
   display: flex;
-  width: 100%;
-  background-color: rgb(253, 250, 250);
+  width: auto;
+  background-color: var(--blue);
   margin-top: 2rem;
   align-items: center;
 }
 
-.hannah {
+.name-hannah {
+  color: var(--brown);
   margin-left: 1rem;
 }
 
@@ -126,11 +178,12 @@ p {
 }
 
 .article-info {
-  background-color: rgb(253, 250, 250);
+  color: var(--brown);
+  background-color: var(--blue);
   border-top: 0.06rem solid black;
   font-size: 0.8rem;
-  margin-top: 0;
-  width: calc(100% - 1rem);
-  padding-right: 0;
+  font-style: italic;
+  margin-right: 0;
+  width: auto;
   padding-left: 1rem;
 }
