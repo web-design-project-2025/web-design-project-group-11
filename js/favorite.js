@@ -53,6 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const title = document.createElement("h2");
     title.textContent = country.title;
     countryElement.appendChild(title);
+    title.classList.add("title");
 
     return countryElement;
   }

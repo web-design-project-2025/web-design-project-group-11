@@ -94,12 +94,16 @@ nav a:hover {
 
 /*FIRST TEXT BOX*/
 
-.line-1 {
+/* .line-1 {
   border: 0.05rem solid var(--green);
-  width: 15rem;
-  margin-left: 60rem;
-  margin-top: 9rem;
-}
+  width: 20rem;
+  margin-top: 3rem;
+  z-index: 4;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
 
 #mountain-container {
   position: relative;
@@ -110,19 +114,65 @@ nav a:hover {
   width: 50%;
   z-index: 1;
   position: relative;
-  margin: 0 auto;
-  text-align: center;
+  margin: auto;
+  opacity: 40%;
+  margin-top: 2rem;
 }
 
+#mountain-text-container {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 0;
+  padding-top: 0;
+}
+#headline-over-mountain {
+  font-size: 2rem;
+  color: var(--green);
+  font-family: "richmond-display", sans-serif;
+  margin-bottom: 1rem;
+}
 .first-text {
   font-family: "peridot-pe-variable", sans-serif;
+  font-weight: 200;
   color: var(--green);
   font-size: 1.3rem;
-  width: 16rem;
-  position: absolute;
-  top: 2rem;
-  right: 20rem;
-  z-index: 2;
+  width: 40rem;
+  margin: auto;
+}
+
+/*BUTTON*/
+
+.arrow-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; /* lite mellanrum mellan pilen och knappen */
+  margin-top: 1.5rem;
+}
+
+.thick-arrow-img {
+  width: 7%;
+  margin-top: 0.3rem;
+}
+
+.explore-button {
+  font-family: "peridot-pe-variable", sans-serif;
+  border: none;
+  background-color: transparent;
+  color: var(--green);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.08rem;
+  cursor: pointer;
+}
+
+.explore-button:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.7rem;
 }
 
 /*IMAGES*/
@@ -164,7 +214,7 @@ h2 {
   width: 23rem;
   height: 10rem;
   font-family: "peridot-pe-variable", sans-serif;
-  font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
   font-size: 1.3rem;
 }
 
@@ -189,33 +239,62 @@ h2 {
   margin-left: 45rem;
 }
 
-/*BUTTON*/
+/*SECTION IMAGE ARTICLE*/
 
-.arrow-text {
+#tokyo-container {
   display: flex;
-  margin-top: 1.2rem;
-  margin-left: 29rem;
+  margin-top: 25rem;
+  background-color: rgba(211, 232, 227, 0.4);
+  padding: 1rem 10rem;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+#tokyo-img {
+  width: 30%;
 }
 
-.thick-arrow-img {
-  width: 7%;
-  margin-top: 0.3rem;
+#text-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
 }
 
-.explore-button {
-  font-family: "peridot-pe-variable", sans-serif;
-  border: none;
-  background-color: transparent;
+#tokyo-heading {
+  font-size: 2rem;
+  font-family: "richmond-display", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 1.5rem;
   color: var(--green);
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.08rem;
-  cursor: pointer;
+}
+#tokyo-text {
+  font-size: 1.3rem;
+  color: black;
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
 }
 
-.explore-button:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.7rem;
+#article-button {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--brown);
+  color: var(--offwhite);
+  border: none;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+  font-size: 1rem;
+  align-self: center;
+  width: 10rem;
+}
+
+#article-button:hover {
+  background-color: var(--green);
+  transition: ease 0.2s;
 }
 
 /*ROLLING IMAGES*/

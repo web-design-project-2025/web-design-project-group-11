@@ -15,12 +15,22 @@
 }
 
 #temperature {
-  color: var(--brown);
+  color: var(--offwhite);
+  background-color: var(--green);
   grid-column: 3;
   place-self: end;
-  margin-top: 0;
-  margin-bottom: 2rem;
-  padding-top: 3rem;
+  width: 12rem;
+  height: 10rem;
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centrerar texten i rutan */
+  text-align: center;
 }
 
 .first-image {
@@ -35,6 +45,7 @@
 .description {
   margin-top: 10rem;
   grid-column: 1/2;
+  color: var(--brown);
 }
 
 .second-image {

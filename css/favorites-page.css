@@ -2,10 +2,104 @@ body {
   background-color: var(--offwhite);
 }
 
+.line {
+  border: 0.05rem solid var(--green);
+  width: 20rem;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--brown);
+  font-family: "richmond-display", sans-serif;
+  font-weight: 500;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.instructions {
+  color: var(--brown);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
+  font-size: 1.3rem;
+  width: 20rem;
+  margin-top: 3rem;
+  margin-left: 60rem;
+  margin-bottom: 2.5rem;
+}
+
+/*FILTER CONTAINER*/
+
+.filter-container {
+  background-color: rgb(0, 70, 71, 0.1);
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  height: 4rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+#filter-icon {
+  width: 5%;
+}
+
+.continent-buttons {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1.2rem;
+}
+
+/*STYLING BUTTONS*/
+
+#button-all {
+  width: 16rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 2rem;
+}
+
+#button-all,
+#button-europe,
+#button-asia {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  background-color: var(--offwhite);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 500;
+  font-size: 1.13rem;
+  letter-spacing: 0.08rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/*BUTTON EFFECTS*/
+
+#button-all:hover {
+  background-color: rgb(0, 70, 71, 0.5);
+  color: var(--offwhite);
+}
+
+#button-asia:hover {
+  background-color: rgb(0, 70, 71, 0.5);
+  color: var(--offwhite);
+}
+
+#button-europe:hover {
+  background-color: rgb(0, 70, 71, 0.5);
+  color: var(--offwhite);
+}
+
+/*FAVORITE CONTAINER*/
+
 #favorite-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 9rem;
+  margin-top: 3rem;
   margin-left: 3rem;
   margin-right: 3rem;
   text-align: center;
@@ -18,8 +112,16 @@ body {
 .like-button {
   background: var(--offwhite);
   border: none;
-  width: 5%;
+  width: 4%;
   z-index: 1000;
   position: absolute;
-  margin-left: 6rem;
+  margin-left: 9.5rem;
+}
+
+.title {
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 600;
+  font-size: 1.13rem;
+  color: var(--brown);
+  margin-bottom: 3rem;
 }

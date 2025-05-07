@@ -4,7 +4,7 @@ const form = document.getElementById("form");
 
 const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
-const email = document.getElementById("email");
+const email = document.getElementById("email-form");
 const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 
@@ -28,23 +28,23 @@ form.addEventListener("submit", (e) => {
   errorMessage.textContent = "";
 
   if (firstName.value.trim() === "") {
-    errorFirstName.textContent = "Please enter first name";
+    errorFirstName.textContent = "*Please enter first name";
     hasError = true;
   }
   if (lastName.value.trim() === "") {
-    errorLastName.textContent = "Please enter last name";
+    errorLastName.textContent = "*Please enter last name";
     hasError = true;
   }
   if (email.value.trim() === "" || !email.value.includes("@")) {
-    errorEmail.textContent = "Incorrect email";
+    errorEmail.textContent = "*Incorrect email";
     hasError = true;
   }
   if (subject.value.trim() === "") {
-    errorSubject.textContent = "Please enter a subject";
+    errorSubject.textContent = "*Please enter a subject";
     hasError = true;
   }
   if (message.value.trim() === "") {
-    errorMessage.textContent = "Please enter a message";
+    errorMessage.textContent = "*Please enter a message";
     hasError = true;
   }
 

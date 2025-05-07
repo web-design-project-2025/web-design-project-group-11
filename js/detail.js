@@ -101,7 +101,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
           const weatherCode = data.current.weathercode;
           const icon = getWeatherIcon(weatherCode);
-          temperatureElement.textContent = `Temperature in ${country.capital}: ${temperature}°C ${icon}`;
+          temperatureElement.innerHTML = `Temperature in <br>${country.capital}:<br>${temperature}°C ${icon}`;
         })
         .catch((error) => {
           temperatureElement.textContent = "Kunde inte hämta väderdata.";

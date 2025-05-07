@@ -32,65 +32,77 @@
       <hr />
       <h1>Contact us today!</h1>
 
+      <div id="custom-alert" class="custom-alert hidden">
+        Thank you for your message!
+      </div>
+
       <!--CONTACT FORM-->
       <section class="content-container">
         <form id="form">
           <section class="first-last-name">
             <div>
+              <span class="error-message" id="error-first-name"></span><br />
               <input type="text" id="first-name" placeholder="First Name" />
-              <br />
-              <span class="error-message" id="error-first-name"></span>
             </div>
             <div>
+              <span class="error-message" id="error-last-name"></span> <br />
               <input type="text" id="last-name" placeholder="Last Name" />
-              <br />
-              <span class="error-message" id="error-last-name"></span>
             </div>
           </section>
 
           <div>
-            <input type="text" id="email" placeholder="Email" />
-            <br />
-            <span class="error-message" id="error-email"></span>
+            <span class="error-message" id="error-email"></span><br />
+            <input type="text" id="email-form" placeholder="Email" />
           </div>
 
           <div>
+            <span class="error-message" id="error-subject"></span> <br />
             <input type="text" id="subject" placeholder="Subject" />
             <br />
             <span class="error-message" id="error-subject"></span>
           </div>
 
           <div>
-            <input type="text" id="message" placeholder="Write message here" />
-            <br />
-            <span class="error-message" id="error-message"></span>
+            <span class="error-message" id="error-message"></span><br />
+            <textarea
+              id="message"
+              placeholder="Write message here"
+              rows="10"
+            ></textarea>
           </div>
-
-          <button class="send">SEND</button>
+            <button class="send">SEND</button>
+          </div>
         </form>
 
         <section class="contact-info">
-          <p>Do you want to add a new destination to our website?</p>
-          <p>
+          <p class="contact-text">
+            Do you want to add a new destination to our website?
+          </p>
+          <p class="contact-text">
             Do you want to share an incredible picture with us from your latest
             vacation?
           </p>
-          <p>Or do you want to ask us something?</p>
+          <p class="contact-text">
+            Or do you want to ask us something? Do not hesitate to reach out to
+            us by filling out this form!
+          </p>
+          <p class="contact-text-rubric">FIND US HERE:</p>
           <section class="where">
+            <img src="img/location.png" alt="location icon" class="icon" />
             <p id="where">JÖNKÖPING, SWEDEN</p>
           </section>
+
           <section class="number">
+            <img src="img/phone.png" alt="phone icon" class="icon" />
             <p id="number">+4670-1234567</p>
           </section>
+
           <section class="our-mail">
+            <img src="img/email.png" alt="email icon" class="icon" />
             <p id="our-email">info@journee.com</p>
           </section>
         </section>
       </section>
-
-      <div id="custom-alert" class="custom-alert hidden">
-        Tack för ditt meddelande!
-      </div>
     </main>
     <footer>
       <!--FOOTER-->
