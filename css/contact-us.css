@@ -33,8 +33,7 @@ h1 {
   flex-direction: column;
   grid-column: 1;
   background-color: var(--green);
-  border-radius: 1rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 1.5rem;
   align-items: center;
   margin-left: 5rem;
@@ -43,7 +42,7 @@ h1 {
 input {
   height: 2.5rem;
   border: none;
-  padding: 1rem;
+  padding-left: 1rem;
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
   font-size: 1.3rem;
@@ -58,39 +57,73 @@ input {
 
 #first-name,
 #last-name {
-  border-radius: 1rem;
   margin-bottom: 1.5rem;
   width: 20rem;
+  padding-left: 1rem;
+  border-radius: 0;
 }
 
 /*MAIL & SUBJECT INPUT FIELDS*/
 
-#email,
+#email-form,
 #subject {
   width: 41.5rem;
-  border-radius: 1rem;
   margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-radius: 0;
 }
 
 /*MESSAGE INPUT FIELD*/
 #message {
   width: 41.5rem;
   height: 20rem;
-  border-radius: 1rem;
   margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
+  font-size: 1.3rem;
+  color: var(--green);
+  background-color: var(--offwhite);
+  border: none;
 }
 
 input::placeholder {
-  padding: 0;
   font-size: 1.3rem;
+  padding-left: 0rem;
+}
+
+#message::placeholder {
+  padding-left: 0rem;
+  font-size: 1.3rem;
+}
+
+span {
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+  font-size: 1rem;
+  color: var(--offwhite);
+}
+
+.button-text {
+  display: flex;
+  align-items: center;
+}
+
+.thank-you {
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
+  font-size: 1rem;
+  color: var(--offwhite);
+  padding-right: 2rem;
+  display: none;
 }
 
 /*SEND BUTTON*/
 .send {
   width: 8rem;
   height: 3rem;
-  margin-right: 31.5rem;
-  border-radius: 0.5rem;
+  margin-left: 3.5rem;
+  align-self: start;
   border-style: solid;
   background-color: var(--offwhite);
   border-color: var(--offwhite);
@@ -101,24 +134,64 @@ input::placeholder {
   cursor: pointer;
 }
 
+.send:hover {
+  background: var(--green);
+  color: var(--offwhite);
+  transition: ease 0.2s;
+}
+
 /*CONTACT INFO SECTION*/
 
 .contact-info {
   color: var(--brown);
   grid-column: 2;
+  align-content: start;
   padding-left: 4rem;
   padding-right: 4rem;
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
+  font-size: 1.3rem;
+  letter-spacing: 0.02rem;
+}
+
+.contact-text {
+  margin-bottom: 1rem;
+}
+
+.contact-text-rubric {
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.02rem;
+  margin-top: 4rem;
+}
+
+.where,
+.number,
+.our-mail {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Optional: keeps space between icon and text */
+}
+
+.icon {
+  width: 5%;
 }
 
 .custom-alert {
-  background-color: #d4edda;
-  color: #155724;
-  padding: 12px 20px;
-  border: 1px solid #c3e6cb;
-  border-radius: 5px;
-  margin-top: 20px;
-  font-size: 1rem;
-  display: none; /* Dölj först */
+  background-color: var(--offwhite);
+  color: var(--green);
+  border: 0.5rem solid var(--green);
+  padding: 4rem;
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 500;
+  font-size: 1.5rem;
+  display: none;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .custom-alert.show {
