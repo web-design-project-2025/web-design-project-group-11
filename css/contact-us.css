@@ -1,32 +1,39 @@
 body {
-  background-color: rgb(248, 246, 243);
+  background-color: var(--offwhite);
 }
 
 hr {
-  width: 11rem;
-  border: 0.05rem solid rgb(0, 70, 71);
+  width: 22rem;
+  border: 0.05rem solid var(--green);
   margin-top: 5rem;
+  margin: auto;
 }
 
 h1 {
-  color: rgb(0, 70, 71);
+  color: var(--green);
   text-align: center;
   margin-bottom: 7rem;
+  margin-top: 2rem;
   font-size: 3rem;
+  font-family: "richmond-display", sans-serif;
+  font-weight: 600;
 }
 
 /*MAIN CONTENT*/
+
 .content-container {
   display: grid;
-  grid-template-columns: 2;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /*INPUT FIELDS*/
-.input-fields {
+
+#form {
   display: flex;
   flex-direction: column;
   grid-column: 1;
-  background-color: rgb(0, 70, 71);
+  background-color: var(--green);
+  border-radius: 1rem;
   padding-top: 5rem;
   padding-bottom: 1.5rem;
   align-items: center;
@@ -36,6 +43,11 @@ h1 {
 input {
   height: 2.5rem;
   border: none;
+  padding: 1rem;
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
+  font-size: 1.3rem;
+  color: var(--green);
 }
 
 /*FIRST NAME & LAST NAME INPUT FIELDS*/
@@ -69,8 +81,8 @@ input {
 }
 
 input::placeholder {
-  padding-left: 1rem;
-  font-size: 1rem;
+  padding: 0;
+  font-size: 1.3rem;
 }
 
 /*SEND BUTTON*/
@@ -80,12 +92,19 @@ input::placeholder {
   margin-right: 31.5rem;
   border-radius: 0.5rem;
   border-style: solid;
-  background-color: rgb(255, 241, 230);
-  border-color: rgb(255, 241, 230);
+  background-color: var(--offwhite);
+  border-color: var(--offwhite);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+  color: var(--green);
   font-size: 1rem;
+  cursor: pointer;
 }
+
 /*CONTACT INFO SECTION*/
+
 .contact-info {
+  color: var(--brown);
   grid-column: 2;
   padding-left: 4rem;
   padding-right: 4rem;

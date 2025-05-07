@@ -13,16 +13,14 @@
     <!-- HEADER -->
 
     <header>
-      <section class="all-header">
-        <img id="background-header" src="img/small-header.jpg" alt="" />
+      <img id="background-header" src="img/small-header.jpg" alt="" />
+      <section id="all-header">
         <a href="index.html">
           <img id="logo" src="img/journee-logo.svg" alt="Logo Journee"
         /></a>
         <nav>
-          <ul>
-            <a href="destination-page.html"><li>DESTINATIONS</li></a>
-            <a href="contact-page.html"><li>CONTACT US</li></a>
-          </ul>
+          <a href="destination-page.html">DESTINATIONS</a>
+          <a href="contact-page.html">CONTACT US</a>
         </nav>
         <a id="heart-link" href="favorite-page.html">
           <img class="heart-icon" src="img/heart-line.svg" alt=""
@@ -49,35 +47,27 @@
               <span class="error-message" id="error-last-name"></span>
             </div>
           </section>
-        
+
           <div>
             <input type="text" id="email" placeholder="Email" />
             <br />
             <span class="error-message" id="error-email"></span>
           </div>
-        
+
           <div>
             <input type="text" id="subject" placeholder="Subject" />
             <br />
             <span class="error-message" id="error-subject"></span>
           </div>
-        
+
           <div>
             <input type="text" id="message" placeholder="Write message here" />
             <br />
             <span class="error-message" id="error-message"></span>
           </div>
-        
-          <button class="send">SEND</button>
 
-     
+          <button class="send">SEND</button>
         </form>
-              
-        
-        </section>
-        <div id="custom-alert" class="custom-alert hidden">
-          Tack för ditt meddelande!
-        </div>
 
         <section class="contact-info">
           <p>Do you want to add a new destination to our website?</p>
@@ -97,6 +87,10 @@
           </section>
         </section>
       </section>
+
+      <div id="custom-alert" class="custom-alert hidden">
+        Tack för ditt meddelande!
+      </div>
     </main>
     <footer>
       <!--FOOTER-->
