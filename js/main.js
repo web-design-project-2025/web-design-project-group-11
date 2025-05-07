@@ -51,10 +51,12 @@ window.addEventListener("DOMContentLoaded", () => {
     const title = document.createElement("h2");
     title.textContent = continent.title;
     section.appendChild(title);
+    title.classList.add("title");
 
     const description = document.createElement("p");
     description.textContent = continent.description;
     section.appendChild(description);
+    description.classList.add("description");
 
     return section;
   }
