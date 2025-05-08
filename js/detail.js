@@ -48,10 +48,54 @@ window.addEventListener("DOMContentLoaded", () => {
       detailcontentElement.appendChild(titleElement);
       titleElement.classList.add("title");
 
+      //HEART ICON
+
+      const likeButtonElement = document.createElement("button");
+      likeButtonElement.classList.add("like-button");
+
+      // Kolla om landet är like:at
+      let likedCountries =
+        JSON.parse(localStorage.getItem("likedCountries")) || [];
+      let isLiked = likedCountries.includes(country.id);
+
+      likeButtonElement.innerHTML = isLiked
+        ? '<img src="img/heart-filled.svg" alt="liked">'
+        : '<img src="img/heart-line.svg" alt="not liked">';
+
+      // Klick-event
+      likeButtonElement.addEventListener("click", () => {
+        isLiked = !isLiked;
+
+        if (isLiked) {
+          if (!likedCountries.includes(country.id)) {
+            likedCountries.push(country.id);
+          }
+        } else {
+          const index = likedCountries.indexOf(country.id);
+          if (index > -1) likedCountries.splice(index, 1);
+        }
+
+        localStorage.setItem("likedCountries", JSON.stringify(likedCountries));
+
+        likeButtonElement.innerHTML = isLiked
+          ? '<img src="img/heart-filled.svg" alt="liked">'
+          : '<img src="img/heart-line.svg" alt="not liked">';
+      });
+
+      // Lägg till knappen någonstans i DOM:en
+      detailcontentElement.appendChild(likeButtonElement);
+
+      //TEMPERATURE
+
       const temperatureElement = document.createElement("p");
       temperatureElement.id = "temperature";
       temperatureElement.textContent = "Laddar temperatur...";
       detailcontentElement.appendChild(temperatureElement);
+
+      const introElement = document.createElement("intro");
+      introElement.textContent = country.intro;
+      detailcontentElement.appendChild(introElement);
+      introElement.classList.add("intro");
 
       //FIRST IMAGE
       const firstImage = document.createElement("img");
