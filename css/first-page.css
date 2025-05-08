@@ -163,6 +163,7 @@ nav a:hover {
   font-family: "peridot-pe-variable", sans-serif;
   border: none;
   background-color: transparent;
+  text-decoration: none;
   color: var(--green);
   font-weight: 700;
   font-size: 1rem;
@@ -245,13 +246,18 @@ h2 {
   display: flex;
   margin-top: 25rem;
   background-color: rgba(211, 232, 227, 0.4);
-  padding: 1rem 10rem;
+  padding: 2rem 10rem;
   gap: 5rem;
   justify-content: center;
   align-items: center;
 }
+
 #tokyo-img {
-  width: 30%;
+  width: 40%;
+  height: 35rem;
+  object-fit: cover;
+  object-position: center;
+  padding-right: 7.9rem;
 }
 
 #text-container {
@@ -269,6 +275,7 @@ h2 {
   margin-bottom: 1.5rem;
   color: var(--green);
 }
+
 #tokyo-text {
   font-size: 1.3rem;
   color: black;
@@ -279,6 +286,8 @@ h2 {
 #article-button {
   padding: 0.8rem 1.5rem;
   background-color: var(--brown);
+  text-decoration: none;
+  text-align: center;
   color: var(--offwhite);
   border: none;
   border-radius: 0.6rem;
@@ -384,15 +393,17 @@ footer {
   background-color: var(--offwhite);
   color: var(--green);
   border: none;
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   width: 15rem;
   height: 2.5rem;
 }
 
-#email::placeholder {
+input#email::placeholder {
   color: var(--green);
-  padding-left: 0.5rem;
-  font-size: 1rem;
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
+  font-size: 1.13rem;
+  padding-left: 1rem;
 }
 
 .social-icons a {

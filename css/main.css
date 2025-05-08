@@ -150,15 +150,17 @@ footer {
   background-color: var(--offwhite);
   color: var(--green);
   border: none;
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   width: 15rem;
   height: 2.5rem;
 }
 
-#email::placeholder {
+input#email::placeholder {
   color: var(--green);
-  padding-left: 0.5rem;
-  font-size: 1rem;
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
+  font-size: 1.13rem;
+  padding-left: 1rem;
 }
 
 .social-icons a {
