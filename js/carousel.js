@@ -41,13 +41,18 @@ document.addEventListener("DOMContentLoaded", () => {
     carouselContent.style.transform = `translateX(${offset}px)`;
   }
 
-  // Högerpilen
   arrowRightButton.addEventListener("click", () => {
     if (currentIndex < countries.length - 3) {
-      // Kontrollera att vi inte går förbi slutet
       currentIndex++;
     } else {
-      currentIndex = 0; // Om vi är på sista bilden, börja om från början
+      currentIndex = 0; // Återgå till första bilden
+      // För att förhindra hack eller konstig övergång kan vi återställa transformering direkt
+      carouselContent.style.transition = "none"; // Inget övergång
+      updateTransform();
+      setTimeout(() => {
+        // Återställ transition för smidig rörelse
+        carouselContent.style.transition = "transform 0.3s ease-in-out";
+      }, 20); // Vänta lite innan övergången sätts på igen
     }
     updateTransform();
   });
@@ -55,9 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Vänsterpilen
   arrowLeftButton.addEventListener("click", () => {
     if (currentIndex > 0) {
-      currentIndex--; // Minska index för att gå bakåt
+      currentIndex--;
     } else {
-      currentIndex = countries.length - 3; // Om vi är på första, gå till sista uppsättningen av bilder
+      currentIndex = countries.length - 3; // Gå till sista uppsättningen av bilder
+      // Återställ transformering för att skapa en smidig loop
+      carouselContent.style.transition = "none";
+      updateTransform();
+      setTimeout(() => {
+        carouselContent.style.transition = "transform 0.3s ease-in-out";
+      }, 20);
     }
     updateTransform();
   });
