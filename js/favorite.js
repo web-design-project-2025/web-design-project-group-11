@@ -75,15 +75,27 @@ window.addEventListener("DOMContentLoaded", () => {
   const favoriteAsiaButton = document.getElementById("favorite-button-asia");
   const favoriteAllButton = document.getElementById("favorite-button-all");
 
+  const favoriteButtons = document.querySelectorAll(".filter-button");
+
+  function setActiveButton(clickedButton) {
+    favoriteButtons.forEach((button) => {
+      button.classList.remove("active");
+    });
+    clickedButton.classList.add("active");
+  }
+
   favoriteEuropeButton.addEventListener("click", () => {
+    setActiveButton(favoriteEuropeButton);
     filterByContinent("Europe");
   });
 
   favoriteAsiaButton.addEventListener("click", () => {
+    setActiveButton(favoriteAsiaButton);
     filterByContinent("Asia");
   });
 
   favoriteAllButton.addEventListener("click", () => {
+    setActiveButton(favoriteAllButton);
     const favoriteCountries = countries.filter((country) =>
       likedCountries.includes(country.id)
     );
