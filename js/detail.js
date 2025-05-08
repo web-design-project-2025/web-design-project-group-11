@@ -48,6 +48,43 @@ window.addEventListener("DOMContentLoaded", () => {
       detailcontentElement.appendChild(titleElement);
       titleElement.classList.add("title");
 
+      //LIKE BUTTON
+
+      const likeButtonElement = document.createElement("button");
+      likeButtonElement.classList.add("like-button");
+
+      // Kolla om landet är like:at
+      let likedCountries =
+        JSON.parse(localStorage.getItem("likedCountries")) || [];
+      let isLiked = likedCountries.includes(country.id);
+
+      likeButtonElement.innerHTML = isLiked
+        ? '<img src="img/heart-filled.svg" alt="liked">'
+        : '<img src="img/heart-line.svg" alt="not liked">';
+
+      // Klick-event
+      likeButtonElement.addEventListener("click", () => {
+        isLiked = !isLiked;
+
+        if (isLiked) {
+          if (!likedCountries.includes(country.id)) {
+            likedCountries.push(country.id);
+          }
+        } else {
+          const index = likedCountries.indexOf(country.id);
+          if (index > -1) likedCountries.splice(index, 1);
+        }
+
+        localStorage.setItem("likedCountries", JSON.stringify(likedCountries));
+
+        likeButtonElement.innerHTML = isLiked
+          ? '<img src="img/heart-filled.svg" alt="liked">'
+          : '<img src="img/heart-line.svg" alt="not liked">';
+      });
+
+      // Lägg till knappen någonstans i DOM:en
+      detailcontentElement.appendChild(likeButtonElement);
+
       const temperatureElement = document.createElement("p");
       temperatureElement.id = "temperature";
       temperatureElement.textContent = "Laddar temperatur...";
@@ -113,7 +150,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
           const weatherCode = data.current.weathercode;
           const icon = getWeatherIcon(weatherCode);
-          temperatureElement.innerHTML = `Temperature in <br>${country.capital}:<br>${temperature}°C ${icon}`;
+          temperatureElement.innerHTML = `Temperature in ${country.capital}:<br>${temperature}°C ${icon}`;
         })
         .catch((error) => {
           temperatureElement.textContent = "Kunde inte hämta väderdata.";

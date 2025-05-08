@@ -22,21 +22,28 @@
   color: var(--offwhite);
   background-color: var(--green);
   grid-column: 3;
-  grid-row: 1;
+  grid-row: 2;
   place-self: center;
   width: 17rem;
   height: 7rem;
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
   font-size: 1rem;
-  margin-left: 4rem;
-  margin-bottom: 2rem;
   border-radius: 0.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  grid-row: 2;
+  margin-bottom: 1rem;
+}
+
+.like-button {
+  grid-column: 2;
+  grid-row: 1;
+  scale: 30%;
+  margin-right: 13rem;
+  margin-bottom: 6rem;
+  align-self: center;
 }
 
 .intro {
