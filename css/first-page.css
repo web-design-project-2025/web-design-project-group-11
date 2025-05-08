@@ -315,7 +315,72 @@ h3 {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 22rem;
-  margin-bottom: 16rem;
+  margin-bottom: 2rem;
+}
+
+.carousel-images {
+  width: 100%;
+}
+
+/* Container för karusellen */
+.carousel-container {
+  margin: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wrapper för karusellen där bilderna placeras */
+#all-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 50rem; /* Bredden på karusellen så tre bilder får plats */
+  margin: auto; /* Centrera karusellen horisontellt på sidan */
+}
+
+/* Spår (track) som håller alla bilder */
+#carousel-content {
+  display: flex;
+  gap: 10px; /* Litet mellanrum mellan bilder */
+  transition: transform 0.3s ease-in-out;
+  justify-content: center; /* Gör så att bilderna i spåret är centrerade */
+}
+
+/* Varje bild i karusellen */
+.carousel-item {
+  flex: 0 0 200px; /* Varje bild är 200px bred */
+  width: 200px;
+  height: 150px; /* Justera höjden efter behov */
+  border-radius: 10px;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Pilen för att navigera till vänster och höger */
+.carousel-arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* För att placera vänsterpil och högerpil på rätt position */
+#arrow-left {
+  left: 20%;
+}
+
+#arrow-right {
+  right: 0%;
 }
 
 /*FOOTER*/
