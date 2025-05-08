@@ -37,7 +37,7 @@ body {
   grid-column: 1;
   font-size: 2rem;
   color: var(--green);
-  padding-left: 27rem;
+  padding-left: 20rem;
   margin-right: 10rem;
   margin-bottom: 0;
   font-family: "richmond-display", sans-serif;
@@ -49,7 +49,7 @@ body {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   color: var(--green);
-  padding-right: 27rem;
+  padding-right: 20rem;
   margin-top: 0;
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
@@ -65,7 +65,7 @@ body {
 }
 
 .img-big-button {
-  width: 50%;
+  width: 62%;
   display: block;
   margin: auto;
 }
@@ -85,7 +85,7 @@ body {
 }
 
 .img-small-buttons {
-  width: calc(50.5% - 0.5rem);
+  width: calc(62.5% - 0.5rem);
   display: block;
   justify-content: center;
   margin: auto;
@@ -134,8 +134,8 @@ body {
   color: var(--green);
   font-size: 1.2rem;
   text-align: justify;
-  padding-left: 20rem;
-  padding-right: 20rem;
+  padding-left: 19rem;
+  padding-right: 19rem;
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
   font-size: 1.3rem;
