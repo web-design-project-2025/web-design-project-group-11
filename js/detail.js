@@ -53,6 +53,13 @@ window.addEventListener("DOMContentLoaded", () => {
       temperatureElement.textContent = "Laddar temperatur...";
       detailcontentElement.appendChild(temperatureElement);
 
+      //NEW TEXT
+
+      const introElement = document.createElement("intro");
+      introElement.textContent = country.intro;
+      detailcontentElement.appendChild(introElement);
+      introElement.classList.add("intro");
+
       //FIRST IMAGE
       const firstImage = document.createElement("img");
       firstImage.src = country.additional_images[0].url;
@@ -64,6 +71,11 @@ window.addEventListener("DOMContentLoaded", () => {
       // const moreText = document.createElement("p");
       // moreText.textContent = country.description.slice(200); // resten av beskrivningen
       // detailcontentElement.appendChild(moreText);
+
+      const introTitleElement = document.createElement("intro-title");
+      introTitleElement.textContent = country.subtitle;
+      detailcontentElement.appendChild(introTitleElement);
+      introTitleElement.classList.add("subtitle");
 
       const descriptionElement = document.createElement("p");
       descriptionElement.textContent = country.description;
