@@ -1,11 +1,12 @@
 window.addEventListener("DOMContentLoaded", () => {
   const favoriteContentElement = document.getElementById("favorite-content");
   let likedCountries = JSON.parse(localStorage.getItem("likedCountries")) || [];
+  let countries = [];
 
   async function loadFavorites() {
     const response = await fetch("data/countries.json");
     const json = await response.json();
-    const countries = json.countries;
+    countries = json.countries;
 
     const favoriteCountries = countries.filter((country) =>
       likedCountries.includes(country.id)
@@ -57,6 +58,37 @@ window.addEventListener("DOMContentLoaded", () => {
 
     return countryElement;
   }
+
+  // FILTERING BY CONTINENT
+
+  function filterByContinent(continent) {
+    const filtered = countries.filter(
+      (country) =>
+        likedCountries.includes(country.id) && country.continent === continent
+    );
+    renderContent(filtered);
+  }
+
+  const favoriteEuropeButton = document.getElementById(
+    "favorite-button-europe"
+  );
+  const favoriteAsiaButton = document.getElementById("favorite-button-asia");
+  const favoriteAllButton = document.getElementById("favorite-button-all");
+
+  favoriteEuropeButton.addEventListener("click", () => {
+    filterByContinent("Europe");
+  });
+
+  favoriteAsiaButton.addEventListener("click", () => {
+    filterByContinent("Asia");
+  });
+
+  favoriteAllButton.addEventListener("click", () => {
+    const favoriteCountries = countries.filter((country) =>
+      likedCountries.includes(country.id)
+    );
+    renderContent(favoriteCountries);
+  });
 
   loadFavorites();
 });

@@ -53,16 +53,16 @@ h1 {
 
 /*STYLING BUTTONS*/
 
-#button-all {
+#favorite-button-all {
   width: 16rem;
   padding-left: 0;
   padding-right: 0;
   margin-left: 2rem;
 }
 
-#button-all,
-#button-europe,
-#button-asia {
+#favorite-button-all,
+#favorite-button-europe,
+#favorite-button-asia {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.4rem;
@@ -79,17 +79,17 @@ h1 {
 
 /*BUTTON EFFECTS*/
 
-#button-all:hover {
+#favorite-button-all:hover {
   background-color: rgb(0, 70, 71, 0.5);
   color: var(--offwhite);
 }
 
-#button-asia:hover {
+#favorite-button-asia:hover {
   background-color: rgb(0, 70, 71, 0.5);
   color: var(--offwhite);
 }
 
-#button-europe:hover {
+#favorite-button-europe:hover {
   background-color: rgb(0, 70, 71, 0.5);
   color: var(--offwhite);
 }
