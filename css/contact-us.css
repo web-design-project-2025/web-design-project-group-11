@@ -12,7 +12,7 @@ hr {
 h1 {
   color: var(--green);
   text-align: center;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
   margin-top: 2rem;
   font-size: 3rem;
   font-family: "richmond-display", sans-serif;
@@ -39,7 +39,7 @@ h1 {
   margin-left: 5rem;
 }
 
-input {
+.input-contact {
   height: 2.5rem;
   border: none;
   padding-left: 1rem;

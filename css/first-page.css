@@ -163,6 +163,7 @@ nav a:hover {
   font-family: "peridot-pe-variable", sans-serif;
   border: none;
   background-color: transparent;
+  text-decoration: none;
   color: var(--green);
   font-weight: 700;
   font-size: 1rem;
@@ -245,13 +246,18 @@ h2 {
   display: flex;
   margin-top: 25rem;
   background-color: rgba(211, 232, 227, 0.4);
-  padding: 1rem 10rem;
+  padding: 2rem 10rem;
   gap: 5rem;
   justify-content: center;
   align-items: center;
 }
+
 #tokyo-img {
-  width: 30%;
+  width: 40%;
+  height: 35rem;
+  object-fit: cover;
+  object-position: center;
+  padding-right: 7.9rem;
 }
 
 #text-container {
@@ -269,6 +275,7 @@ h2 {
   margin-bottom: 1.5rem;
   color: var(--green);
 }
+
 #tokyo-text {
   font-size: 1.3rem;
   color: black;
@@ -279,6 +286,8 @@ h2 {
 #article-button {
   padding: 0.8rem 1.5rem;
   background-color: var(--brown);
+  text-decoration: none;
+  text-align: center;
   color: var(--offwhite);
   border: none;
   border-radius: 0.6rem;
@@ -313,7 +322,6 @@ h3 {
 
 footer {
   background-color: rgb(0, 70, 71);
-  margin-top: 5rem;
   padding-top: 5rem;
   display: grid;
   grid-template-columns: repeat (2, 1fr);
@@ -324,7 +332,21 @@ footer {
   padding-left: 11rem;
   padding-right: 5rem;
   padding-bottom: 3rem;
-  color: rgb(254, 251, 246);
+}
+
+.footer-link {
+  display: flex;
+  color: var(--offwhite);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
+  font-size: 1.13rem;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
 #footer-container2 {
@@ -333,48 +355,80 @@ footer {
   padding-right: 5rem;
 }
 
+.subscribe {
+  display: flex;
+}
+
 .subscribe-button {
-  background-color: rgb(254, 251, 246);
-  color: rgb(0, 70, 71);
-  border-color: rgb(0, 70, 71);
+  background-color: var(--offwhite);
+  color: var(--green);
+  border-color: var(--green);
+  border-radius: 0.5rem;
   border-style: solid;
-  border-radius: 1.25rem;
   width: 7rem;
   height: 2.5rem;
   margin-left: 0.5rem;
+  margin-bottom: 1rem;
   cursor: pointer;
 }
 
 .subscribe-button:hover {
-  background-color: rgb(0, 70, 71);
-  color: rgb(254, 251, 246);
-  border-color: rgb(254, 251, 246);
+  background-color: var(--green);
+  color: var(--offwhite);
+  border-color: var(--offwhite);
 }
 
 .subscribe-text {
   letter-spacing: 0.01rem;
   word-spacing: 0.02rem;
-  color: rgb(254, 251, 246);
+  color: var(--offwhite);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
+  font-size: 1.13rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
 }
 
-input {
-  background-color: rgb(254, 251, 246);
-  color: rgb(0, 70, 71);
+#email {
+  background-color: var(--offwhite);
+  color: var(--green);
   border: none;
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   width: 15rem;
   height: 2.5rem;
 }
 
-::placeholder {
-  color: rgb(0, 70, 71);
+input#email::placeholder {
+  color: var(--green);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
+  font-size: 1.13rem;
   padding-left: 1rem;
 }
 
+.social-icons a {
+  text-decoration: none;
+  color: var(--offwhite);
+  margin: 1rem;
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+
+.social-icons {
+  margin-left: 4rem;
+}
+
+.social-icons a:hover {
+  color: rgb(251, 209, 130);
+}
+
 .copy-right {
-  background-color: rgb(0, 70, 71);
+  background-color: var(--green);
   padding-left: 2rem;
-  color: rgb(254, 251, 246);
+  color: var(--offwhite);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
+  font-size: 1rem;
 }
 
 .copy-logo {

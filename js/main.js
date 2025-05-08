@@ -140,17 +140,29 @@ window.addEventListener("DOMContentLoaded", () => {
   const asiaButton = document.getElementById("button-asia");
   const allButton = document.getElementById("button-all");
 
+  const scrollButtons = document.querySelectorAll(".scroll-filter-button");
+
+  function activeButton(clickedButton) {
+    scrollButtons.forEach((button) => {
+      button.classList.remove("active");
+    });
+    clickedButton.classList.add("active");
+  }
+
   europeButton.addEventListener("click", () => {
+    activeButton(europeButton);
     filterByContinent("Europe");
     renderSingleContinent("Europe");
   });
 
   asiaButton.addEventListener("click", () => {
+    activeButton(asiaButton);
     filterByContinent("Asia");
     renderSingleContinent("Asia");
   });
 
   allButton.addEventListener("click", () => {
+    activeButton(allButton);
     renderContent(countries);
     renderSingleContinent("All Destinations");
   });
