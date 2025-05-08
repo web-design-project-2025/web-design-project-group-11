@@ -159,7 +159,7 @@ input#email::placeholder {
   color: var(--green);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
-  font-size: 1.13rem;
+  font-size: 0.9rem;
   padding-left: 1rem;
 }
 
