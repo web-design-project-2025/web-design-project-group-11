@@ -37,6 +37,14 @@ window.addEventListener("DOMContentLoaded", () => {
     renderSingleContinent(
       selectedContinent === "all" ? "All Destinations" : selectedContinent
     );
+
+    if (selectedContinent === "Europe") {
+      activeButton(europeButton);
+    } else if (selectedContinent === "Asia") {
+      activeButton(asiaButton);
+    } else {
+      activeButton(allButton);
+    }
   }
 
   function renderContent(countryList) {
