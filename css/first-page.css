@@ -50,7 +50,7 @@ nav a {
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 500;
   font-size: 1.13rem;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.05rem;
   cursor: pointer;
 }
 
@@ -86,7 +86,6 @@ nav a:hover {
   font-style: normal;
   font-size: 5rem;
   color: var(--offwhite);
-  filter: drop-shadow(0.1rem 0.1rem 0.2rem var(--brown));
   position: absolute;
   bottom: 10rem;
   left: 8rem;
@@ -279,7 +278,7 @@ h2 {
 
 #tokyo-text {
   font-size: 1.3rem;
-  color: black;
+  color: var(--brown);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
 }

@@ -23,7 +23,7 @@ h1 {
   color: var(--brown);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
-  font-size: 1.3rem;
+  font-size: 1.13rem;
   width: 20rem;
   margin-top: 3rem;
   margin-left: 60rem;
@@ -68,6 +68,7 @@ h1 {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
   background-color: var(--offwhite);
+  color: var(--green);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 500;
   font-size: 1.13rem;

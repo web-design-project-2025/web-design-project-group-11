@@ -19,9 +19,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const detailcontentElement = document.getElementById("detail-content");
   let countries = [];
 
-  function getTitleFromURL() {
+  function getIdFromURL() {
     const params = new URLSearchParams(window.location.search);
-    return params.get("title");
+    return params.get("id");
   }
 
   async function loadData() {
@@ -29,16 +29,14 @@ window.addEventListener("DOMContentLoaded", () => {
     const json = await response.json();
     countries = json.countries;
 
-    const title = getTitleFromURL();
-    if (title) {
-      displayCountryDetail(title);
+    const id = getIdFromURL();
+    if (id) {
+      displayCountryDetail(id);
     }
   }
 
-  function displayCountryDetail(title) {
-    const country = countries.find(
-      (c) => c.title.toLowerCase() === title.toLowerCase()
-    );
+  function displayCountryDetail(id) {
+    const country = countries.find((c) => String(c.id) === String(id));
 
     if (country) {
       detailcontentElement.innerHTML = "";
