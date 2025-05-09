@@ -2,28 +2,43 @@ body {
   background-color: var(--offwhite);
 }
 
-hr {
-  width: 22rem;
-  border: 0.05rem solid var(--green);
-  margin-top: 5rem;
-  margin: auto;
-}
-
-h1 {
-  color: var(--green);
-  text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  font-size: 3rem;
-  font-family: "richmond-display", sans-serif;
-  font-weight: 600;
-}
-
 /*MAIN CONTENT*/
 
 .content-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: var(--offwhite);
+  padding-bottom: 2rem;
+}
+
+/*IMAGE*/
+
+.contact-img {
+  grid-column: 1;
+  width: 29rem;
+  max-height: 40rem;
+  object-fit: center;
+  place-self: center;
+}
+
+/*CONTACT TEXT*/
+
+hr {
+  width: 25rem;
+  border: 0.05rem solid var(--green);
+  margin: auto;
+}
+
+h1 {
+  color: var(--green);
+  grid-column: 2;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 0.7rem;
+  font-size: 3rem;
+  font-family: "richmond-display", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
 }
 
 /*INPUT FIELDS*/
@@ -31,22 +46,23 @@ h1 {
 #form {
   display: flex;
   flex-direction: column;
-  grid-column: 1;
-  background-color: var(--green);
+  grid-column: 2;
+  background-color: var(--offwhite);
   padding-top: 3rem;
   padding-bottom: 1.5rem;
   align-items: center;
-  margin-left: 5rem;
+  padding-right: 5rem;
+  place-self: center;
 }
 
 .input-contact {
   height: 2.5rem;
-  border: none;
+  border: 0.1rem solid rgb(0, 70, 71, 0.3);
   padding-left: 1rem;
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
   font-size: 1.3rem;
-  color: var(--green);
+  color: var(--offwhite);
 }
 
 /*FIRST NAME & LAST NAME INPUT FIELDS*/
@@ -57,26 +73,30 @@ h1 {
 
 #first-name,
 #last-name {
+  background-color: var(--offwhite);
   margin-bottom: 1.5rem;
   width: 20rem;
   padding-left: 1rem;
   border-radius: 0;
+  color: var(--green);
 }
 
 /*MAIL & SUBJECT INPUT FIELDS*/
 
 #email-form,
 #subject {
+  background-color: var(--offwhite);
   width: 41.5rem;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   border-radius: 0;
+  color: var(--green);
 }
 
 /*MESSAGE INPUT FIELD*/
 #message {
   width: 41.5rem;
-  height: 20rem;
+  height: 10rem;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   font-family: "peridot-pe-variable", sans-serif;
@@ -84,24 +104,24 @@ h1 {
   font-size: 1.3rem;
   color: var(--green);
   background-color: var(--offwhite);
-  border: none;
+  border: 0.1rem solid rgb(0, 70, 71, 0.3);
 }
 
 input::placeholder {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding-left: 0rem;
 }
 
 #message::placeholder {
   padding-left: 0rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 span {
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
   font-size: 1rem;
-  color: var(--offwhite);
+  color: var(--green);
 }
 
 .button-text {
@@ -109,34 +129,26 @@ span {
   align-items: center;
 }
 
-.thank-you {
-  font-family: "peridot-pe-variable", sans-serif;
-  font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
-  font-size: 1rem;
-  color: var(--offwhite);
-  padding-right: 2rem;
-  display: none;
-}
-
 /*SEND BUTTON*/
+
 .send {
-  width: 8rem;
+  width: 41.5rem;
   height: 3rem;
-  margin-left: 3.5rem;
   align-self: start;
   border-style: solid;
-  background-color: var(--offwhite);
-  border-color: var(--offwhite);
+  background-color: var(--green);
+  border-color: var(--green);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
-  color: var(--green);
+  color: var(--offwhite);
   font-size: 1rem;
   cursor: pointer;
 }
 
 .send:hover {
-  background: var(--green);
-  color: var(--offwhite);
+  background: var(--offwhite);
+  color: var(--green);
+  border-color: var(--green);
   transition: ease 0.2s;
 }
 
@@ -144,26 +156,15 @@ span {
 
 .contact-info {
   color: var(--brown);
-  grid-column: 2;
-  align-content: start;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  display: flex;
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
   font-size: 1.3rem;
   letter-spacing: 0.02rem;
-}
-
-.contact-text {
-  margin-bottom: 1rem;
-}
-
-.contact-text-rubric {
-  font-family: "peridot-pe-variable", sans-serif;
-  font-variation-settings: "ital" 0, "wdth" 100, "wght" 600;
-  font-size: 1.5rem;
-  letter-spacing: 0.02rem;
-  margin-top: 4rem;
+  gap: 4rem;
+  justify-content: center;
+  padding-bottom: 3rem;
+  background-color: var(--blue);
 }
 
 .where,
@@ -172,12 +173,14 @@ span {
   margin-top: 3rem;
   display: flex;
   align-items: center;
-  gap: 10px; /* Optional: keeps space between icon and text */
+  gap: 1rem;
 }
 
 .icon {
-  width: 5%;
+  width: 10%;
 }
+
+/*POP-UP WINDOW*/
 
 .custom-alert {
   background-color: var(--offwhite);

@@ -250,10 +250,11 @@ h2 {
   gap: 5rem;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 #tokyo-img {
-  width: 40%;
+  width: 50%;
   height: 35rem;
   object-fit: cover;
   object-position: center;
@@ -306,6 +307,24 @@ h2 {
   border: 0.2rem solid var(--green);
   color: var(--green);
   transition: ease 0.2s;
+}
+
+/*RECENTLY WATCHED*/
+
+.recently-line {
+  width: 25rem;
+  border: 0.05rem solid var(--green);
+  margin: auto;
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--green);
+  font-family: "richmond-display", sans-serif;
+  text-align: center;
+  padding-top: 0.7rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
 }
 
 /*ROLLING IMAGES*/
@@ -373,15 +392,6 @@ h2 {
 }
 
 /*STOP*/
-
-h3 {
-  font-size: 2rem;
-  color: var(--green);
-  font-family: "richmond-display", sans-serif;
-  text-align: center;
-  padding-top: 4rem;
-  margin-bottom: 2rem;
-}
 
 /* Container för karusellen */
 .carousel-container {

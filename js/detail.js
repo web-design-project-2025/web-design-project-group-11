@@ -54,6 +54,7 @@ window.addEventListener("DOMContentLoaded", () => {
       likeButtonElement.classList.add("like-button");
 
       // Kolla om landet är like:at
+
       let likedCountries =
         JSON.parse(localStorage.getItem("likedCountries")) || [];
       let isLiked = likedCountries.includes(country.id);
@@ -150,7 +151,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
           const weatherCode = data.current.weathercode;
           const icon = getWeatherIcon(weatherCode);
-          temperatureElement.innerHTML = `Temperature in ${country.capital}:<br>${temperature}°C ${icon}`;
+          temperatureElement.innerHTML = `
+  <span class="temperature-label">Temperature in ${country.capital}:</span><br>
+  <span class="temperature-value">${temperature}°C</span>
+  <span class="temperature-icon">${icon}</span>
+`;
         })
         .catch((error) => {
           temperatureElement.textContent = "Kunde inte hämta väderdata.";
