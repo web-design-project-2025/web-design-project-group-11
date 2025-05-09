@@ -4,8 +4,8 @@ body {
 /*TEXT*/
 
 .continent-container {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 
 .title {
@@ -15,6 +15,7 @@ body {
   font-size: 3rem;
   color: var(--brown);
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .description {
@@ -23,6 +24,11 @@ body {
   font-size: 1.13rem;
   color: var(--brown);
   margin-bottom: 2rem;
+  width: 65rem;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 2rem;
+  line-height: 1.5;
 }
 
 /*FILTER CONTAINER*/
@@ -32,10 +38,10 @@ body {
   display: flex;
   align-items: center;
   padding-left: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   height: 4rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 8.8rem;
+  margin-right: 8.8rem;
 }
 
 #filter-icon {
@@ -84,8 +90,8 @@ body {
 /*COUNTRY CONTAINER*/
 
 .container {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
   color: var(--brown);
 }
 
@@ -96,9 +102,14 @@ body {
 }
 
 .content img {
-  width: 80%;
+  width: 70%;
   z-index: 1;
   transition: 0.5 ease;
+}
+
+.content img:hover {
+  opacity: 70%;
+  transition: ease 0.2rem;
 }
 
 .content h2 {
@@ -114,8 +125,9 @@ body {
 .like-button {
   background: var(--offwhite);
   border: none;
-  width: 4%;
+  width: 3%;
   z-index: 1000;
   position: absolute;
-  margin-left: 18rem;
+  margin-left: 19rem;
+  cursor: pointer;
 }

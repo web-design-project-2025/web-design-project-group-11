@@ -55,13 +55,13 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function renderContinents(continentList) {
-    continentElement.innerHTML = "";
-    for (let continent of continentList) {
-      const continentSection = createContinentElement(continent);
-      continentElement.appendChild(continentSection);
-    }
-  }
+  // function renderContinents(continentList) {
+  //   continentElement.innerHTML = "";
+  //   for (let continent of continentList) {
+  //     const continentSection = createContinentElement(continent);
+  //     continentElement.appendChild(continentSection);
+  //   }
+  // }
 
   function createContinentElement(continent) {
     const section = document.createElement("section");
@@ -94,6 +94,20 @@ window.addEventListener("DOMContentLoaded", () => {
       ? '<img src="img/heart-filled.svg" alt="liked">'
       : '<img src="img/heart-line.svg" alt="not liked">';
     likeButtonElement.classList.add("like-button");
+
+    const heartImg = likeButtonElement.querySelector("img");
+
+    if (!isLiked) {
+      likeButtonElement.addEventListener("mouseover", () => {
+        heartImg.src = "img/heart-filled.svg";
+        heartImg.alt = "hovered";
+      });
+
+      likeButtonElement.addEventListener("mouseout", () => {
+        heartImg.src = "img/heart-line.svg";
+        heartImg.alt = "not liked";
+      });
+    }
 
     likeButtonElement.addEventListener("click", () => {
       country.liked_by_user = !country.liked_by_user;
