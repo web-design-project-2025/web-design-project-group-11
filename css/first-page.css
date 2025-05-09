@@ -126,7 +126,7 @@ nav a:hover {
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 0;
+  margin-top: 10rem;
   padding-top: 0;
 }
 #headline-over-mountain {
@@ -244,7 +244,7 @@ h2 {
 
 #tokyo-container {
   display: flex;
-  margin-top: 25rem;
+  margin-top: 19rem;
   background-color: rgba(211, 232, 227, 0.4);
   padding: 2rem 10rem;
   gap: 5rem;
@@ -284,38 +284,161 @@ h2 {
 }
 
 #article-button {
+  color: var(--offwhite);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+  font-size: 1rem;
   padding: 0.8rem 1.5rem;
-  background-color: var(--brown);
+  background-color: var(--green);
   text-decoration: none;
   text-align: center;
-  color: var(--offwhite);
   border: none;
   border-radius: 0.6rem;
   font-weight: bold;
   margin-top: 2.5rem;
   cursor: pointer;
-  font-family: "peridot-pe-variable", sans-serif;
-  font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
-  font-size: 1rem;
   align-self: center;
   width: 10rem;
 }
 
 #article-button:hover {
-  background-color: var(--green);
+  background-color: var(--offwhite);
+  border: 0.2rem solid var(--green);
+  color: var(--green);
   transition: ease 0.2s;
 }
 
 /*ROLLING IMAGES*/
 
-h3 {
-  font-family: "peridot-pe-variable", sans-serif;
-  color: var(--green);
-  font-weight: 1.5rem;
+/*NEW CODE*/
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  justify-content: space-between; /* Lägg till space mellan bilder */
+}
+
+.carousel-item {
+  opacity: 0.8;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  width: 20%; /* Vi vill att varje bild ska ta upp 20% av bredden för att rymma 5 bilder */
+}
+
+.carousel-images {
+  width: 100%; /* Bilder ska ta upp 100% av container-bredden */
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-item.center {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.carousel-item.near {
+  transform: scale(1);
+  opacity: 0.9;
+}
+
+.carousel-item.far {
+  transform: scale(0.8);
+  opacity: 0.7;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
   font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+#arrow-left {
+  left: 0;
+}
+
+#arrow-right {
+  right: 0;
+}
+
+/*STOP*/
+
+h3 {
+  font-size: 2rem;
+  color: var(--green);
+  font-family: "richmond-display", sans-serif;
   text-align: center;
-  margin-top: 22rem;
-  margin-bottom: 16rem;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+/* Container för karusellen */
+.carousel-container {
+  margin: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wrapper för karusellen där bilderna placeras */
+#all-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 70rem; /* Bredden på karusellen så tre bilder får plats */
+  margin: auto; /* Centrera karusellen horisontellt på sidan */
+}
+
+/* Spår (track) som håller alla bilder */
+#carousel-content {
+  display: flex;
+  gap: 10px; /* Litet mellanrum mellan bilder */
+  transition: transform 0.3s ease-in-out;
+  justify-content: center; /* Gör så att bilderna i spåret är centrerade */
+}
+
+/* Varje bild i karusellen */
+.carousel-item {
+  flex: 0 0 30%; /* Varje bild är 200px bred */
+  width: 100%;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+/* Pilen för att navigera till vänster och höger */
+.carousel-arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100000;
+}
+
+/* För att placera vänsterpil och högerpil på rätt position */
+#arrow-left {
+  left: 1rem;
+}
+
+#arrow-right {
+  right: 1rem;
 }
 
 /*FOOTER*/

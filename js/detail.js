@@ -161,6 +161,5 @@ window.addEventListener("DOMContentLoaded", () => {
         "Ingen information hittades för detta land.";
     }
   }
-
   loadData();
 });
