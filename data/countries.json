@@ -17,15 +17,15 @@
       "additional_images": [
         {
           "url": "img/austria1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "Mountains with lake"
         },
         {
           "url": "img/vienna.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "Ancient buildning in Salzburg"
         },
         {
           "url": "img/vienna1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "Skiing in the alps"
         }
       ]
     },
@@ -46,15 +46,15 @@
       "additional_images": [
         {
           "url": "img/belgium1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "A river in the city center"
         },
         {
           "url": "img/brussels.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "A plaza in Brussels"
         },
         {
           "url": "img/brussels1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "Old castle in the woods"
         }
       ]
     },
@@ -75,15 +75,15 @@
       "additional_images": [
         {
           "url": "img/france1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "A small river in a old village"
         },
         {
           "url": "img/paris.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "Drown shot from Paris"
         },
         {
           "url": "img/paris1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "Frence alp village"
         }
       ]
     },
@@ -104,15 +104,15 @@
       "additional_images": [
         {
           "url": "img/germany1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "A big castle on a hill"
         },
         {
           "url": "img/berlin.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "TV tower in Berlin"
         },
         {
           "url": "img/berlin1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "Small german village"
         }
       ]
     },
@@ -133,15 +133,15 @@
       "additional_images": [
         {
           "url": "img/greece1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "A boat in the blue ocean"
         },
         {
           "url": "img/athens.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "Small city streets in Athens"
         },
         {
           "url": "img/athens1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "Blue and white houses in Santorini"
         }
       ]
     },
@@ -162,15 +162,15 @@
       "additional_images": [
         {
           "url": "img/italy1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "Venice river"
         },
         {
           "url": "img/rome.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "Old buildings in the sunset in Rome"
         },
         {
           "url": "img/rome1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "Pizza picnic"
         }
       ]
     },
@@ -191,15 +191,15 @@
       "additional_images": [
         {
           "url": "img/norway1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "Northern norweigan city"
         },
         {
           "url": "img/oslo.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "Busy street in Oslo"
         },
         {
           "url": "img/oslo1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "Trolltungan"
         }
       ]
     },
@@ -220,15 +220,15 @@
       "additional_images": [
         {
           "url": "img/portugal1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "Beach by the mountains"
         },
         {
           "url": "img/lisbon.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "Lisbon in the sunset"
         },
         {
           "url": "img/lisbon1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "River in Porto"
         }
       ]
     },
@@ -249,15 +249,15 @@
       "additional_images": [
         {
           "url": "img/spain1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "Old castle in Spain"
         },
         {
           "url": "img/madrid.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "Cozy street in the city"
         },
         {
           "url": "img/madrid1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "Barcelona skyline"
         }
       ]
     },
@@ -278,15 +278,15 @@
       "additional_images": [
         {
           "url": "img/sweden1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "Swedish nature"
         },
         {
           "url": "img/stockholm.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "Sunset over Stockholm city"
         },
         {
           "url": "img/stockholm1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "Landscape in north of Sweden"
         }
       ]
     },
@@ -307,15 +307,15 @@
       "additional_images": [
         {
           "url": "img/switzerland1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "Cute city by the lake"
         },
         {
           "url": "img/bern.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "Swiss city in the mountains"
         },
         {
           "url": "img/bern1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "A river in the mountains"
         }
       ]
     },
@@ -336,15 +336,15 @@
       "additional_images": [
         {
           "url": "img/england1.jpg",
-          "alt": "A scenic fjord in Austria"
+          "alt": "Old english village"
         },
         {
           "url": "img/london.jpg",
-          "alt": "Hohenwerfen Castle in Salzburg"
+          "alt": "London bridge"
         },
         {
           "url": "img/london1.jpg",
-          "alt": "Vienna State Opera House"
+          "alt": "English landscapes by the ocean"
         }
       ]
     },
@@ -369,7 +369,7 @@
         },
         {
           "url": "img/bejing.jpg",
-          "alt": "Traditional building in China"
+          "alt": "Skyline over Bejing"
         },
         {
           "url": "img/bejing1.jpg",
@@ -398,7 +398,7 @@
         },
         {
           "url": "img/delhi.jpg",
-          "alt": "Dehli"
+          "alt": "Tuktuk in Delhi"
         },
         {
           "url": "img/delhi1.jpg",
