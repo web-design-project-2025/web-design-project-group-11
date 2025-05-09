@@ -68,6 +68,14 @@ p {
   margin-top: 0;
 }
 
+.text-one::first-letter {
+  font-size: 4em;
+  font-weight: bold;
+  float: left;
+  line-height: 0.9;
+  padding-right: 0.8rem;
+}
+
 .quote-one {
   color: var(--green);
   /* font-style: italic; */

@@ -292,7 +292,7 @@ h2 {
   background-color: var(--green);
   text-decoration: none;
   text-align: center;
-  border: none;
+  border: 0.2rem solid var(--green);
   border-radius: 0.6rem;
   font-weight: bold;
   margin-top: 2.5rem;
@@ -462,7 +462,7 @@ footer {
   color: var(--offwhite);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
-  font-size: 1.13rem;
+  font-size: 1rem;
   margin-top: 1rem;
   text-decoration: none;
 }
@@ -483,9 +483,9 @@ footer {
 }
 
 .subscribe-button {
-  background-color: var(--offwhite);
+  background-color: var(--blue);
   color: var(--green);
-  border-color: var(--green);
+  border-color: var(--blue);
   border-radius: 0.5rem;
   border-style: solid;
   width: 7rem;
@@ -493,6 +493,10 @@ footer {
   margin-left: 0.5rem;
   margin-bottom: 1rem;
   cursor: pointer;
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
 }
 
 .subscribe-button:hover {
@@ -507,7 +511,7 @@ footer {
   color: var(--offwhite);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
-  font-size: 1.13rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   margin-left: 2rem;
 }
@@ -516,17 +520,17 @@ footer {
   background-color: var(--offwhite);
   color: var(--green);
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   width: 15rem;
   height: 2.5rem;
+  padding-left: 1rem;
 }
 
 input#email::placeholder {
   color: var(--green);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
-  font-size: 1.13rem;
-  padding-left: 1rem;
+  font-size: 0.9rem;
 }
 
 .social-icons a {
@@ -552,8 +556,10 @@ input#email::placeholder {
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
   font-size: 1rem;
+  padding-bottom: 2rem;
 }
 
 .copy-logo {
   margin-right: 0.2rem;
+  padding-bottom: 2rem;
 }
