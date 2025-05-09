@@ -53,16 +53,14 @@ h1 {
 
 /*STYLING BUTTONS*/
 
-#button-all {
+#favorite-button-all {
   width: 16rem;
   padding-left: 0;
   padding-right: 0;
   margin-left: 2rem;
 }
 
-#button-all,
-#button-europe,
-#button-asia {
+.filter-button {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.4rem;
@@ -79,19 +77,10 @@ h1 {
 
 /*BUTTON EFFECTS*/
 
-#button-all:hover {
+.filter-button:hover,
+.filter-button.active {
   background-color: rgb(0, 70, 71, 0.5);
-  color: var(--offwhite);
-}
-
-#button-asia:hover {
-  background-color: rgb(0, 70, 71, 0.5);
-  color: var(--offwhite);
-}
-
-#button-europe:hover {
-  background-color: rgb(0, 70, 71, 0.5);
-  color: var(--offwhite);
+  color: var(--offwhite); /* använd samma färg som du vill ha för aktiv knapp */
 }
 
 /*FAVORITE CONTAINER*/
@@ -116,6 +105,7 @@ h1 {
   z-index: 1000;
   position: absolute;
   margin-left: 9.5rem;
+  cursor: pointer;
 }
 
 .title {
