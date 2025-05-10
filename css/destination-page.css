@@ -56,6 +56,47 @@ body {
   letter-spacing: 0.02rem;
 }
 
+/* RESPONSIVE FIRST TEXTS*/
+
+@media screen and (max-width: 1220px) {
+  .recharge {
+    font-size: 2rem;
+    margin-right: 3rem;
+    padding-left: 15rem;
+  }
+  .destination-text {
+    font-size: 1rem;
+    padding-right: 15rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .find-your-text {
+    font-size: 2.5rem;
+  }
+
+  .recharge-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .recharge {
+    font-size: 1.3rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .destination-text {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
 /*STYLING BUTTONS*/
 
 .destination-buttons {
@@ -153,4 +194,81 @@ body {
 #food {
   width: 18rem;
   height: 18rem;
+}
+
+/* RESPONSIVE TIPS AND TRICKS*/
+
+@media screen and (max-width: 1220px) {
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tips-text {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .tips-images {
+    justify-items: center;
+    gap: 0.5rem;
+  }
+
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .tips-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .tips-images {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .tips-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .tips-images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+  }
 }

@@ -104,6 +104,8 @@ nav a:hover {
   transform: translate(-50%, -50%);
 } */
 
+/*MOUNTAIN AND TEXT*/
+
 #mountain-container {
   position: relative;
 }
@@ -175,13 +177,13 @@ nav a:hover {
   text-underline-offset: 0.7rem;
 }
 
-/*IMAGES*/
+/*IMAGES LEAF AND PARIS*/
 
 .img-layout {
-  width: 100%;
   display: grid;
   position: relative;
   height: 36rem;
+  width: 100%;
 }
 
 .line-2 {
