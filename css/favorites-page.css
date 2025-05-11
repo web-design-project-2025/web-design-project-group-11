@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--offwhite);
 }
@@ -117,4 +123,266 @@ h1 {
   font-size: 1.13rem;
   color: var(--brown);
   margin-bottom: 3rem;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1340px) {
+  .instructions {
+    margin-left: 50rem;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .line {
+    width: 29rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .instructions {
+    font-size: 1.05rem;
+    margin-left: 39rem;
+  }
+
+  .filter-container {
+    height: 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .continent-buttons {
+    font-size: 0.9rem;
+  }
+
+  .filter-button {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+
+  #favorite-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #favorite-content img {
+    width: 75%;
+  }
+
+  .title {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .instructions {
+    margin-left: 35rem;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  .line {
+    border: 0.02rem solid var(--green);
+  }
+
+  .instructions {
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 40rem;
+  }
+
+  .filter-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .filter-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .line {
+    border: 0.02rem solid var(--green);
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .instructions {
+    width: 30rem;
+    font-size: 1rem;
+  }
+
+  .filter-container {
+    height: 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  #favorite-button-all {
+    width: 10rem;
+  }
+
+  .filter-button {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 0.9rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .filter-container {
+    height: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  #filter-icon {
+    width: 7%;
+  }
+
+  #favorite-button-all {
+    width: 8rem;
+    margin-left: 1rem;
+  }
+
+  .filter-button {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 0.7rem;
+    width: 7rem;
+  }
+
+  #favorite-content {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #favorite-content img {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .line {
+    width: 23rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .instructions {
+    width: 25rem;
+    font-size: 0.8rem;
+  }
+
+  .filter-container {
+    height: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  #favorite-button-all {
+    width: 7rem;
+    margin-left: 0.5rem;
+  }
+
+  .filter-button {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.6rem;
+    width: 5rem;
+  }
+
+  #favorite-content {
+    column-gap: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #favorite-content img {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .line {
+    width: 16rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .instructions {
+    width: 15rem;
+    font-size: 0.7rem;
+    padding-top: 1rem;
+  }
+
+  #filter-icon {
+    width: 10%;
+  }
+
+  .filter-container {
+    height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 0.5rem;
+  }
+
+  .continent-buttons {
+    gap: 0.2rem;
+  }
+
+  #favorite-button-all {
+    width: 5.7rem;
+    margin-left: 0.5rem;
+  }
+
+  .filter-button {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.55rem;
+    width: 3.3rem;
+  }
+
+  #favorite-content {
+    column-gap: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #favorite-content img {
+    width: 90%;
+  }
+
+  .title {
+    margin-bottom: 0.9rem;
+    font-size: 0.7rem;
+  }
 }
