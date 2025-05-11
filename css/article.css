@@ -235,6 +235,7 @@ p {
 
   .main-title {
     font-size: 4rem;
+    margin: auto;
   }
 
   .content-first-part {
@@ -246,7 +247,7 @@ p {
     grid-column: 1;
     grid-row: 1;
     padding-right: 0;
-    width: 50rem;
+    width: auto;
   }
 
   .text-two {
@@ -300,19 +301,19 @@ p {
   }
 
   .text-three {
-    width: 50rem;
+    width: auto;
   }
 
   .author {
-    width: 50rem;
+    width: auto;
   }
 
   .article-info {
-    width: 50rem;
+    width: auto;
   }
 
   .line-over-quote,
   .line-under-quote {
-    width: 50rem;
+    width: auto;
   }
 }
