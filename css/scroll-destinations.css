@@ -135,7 +135,7 @@ body {
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 2561px) {
   #content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -184,7 +184,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
   .description {
-    width: 25rem;
+    width: 35rem;
   }
 }
 
@@ -192,11 +192,39 @@ body {
   .description {
     width: 20rem;
   }
+  .filter-container {
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+    height: 3.5rem;
+  }
+  #filter-icon {
+    width: 10%;
+  }
+  #button-all {
+    width: 12rem;
+    margin-left: 1rem;
+  }
+  .scroll-filter-button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
   #content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .description {
+    margin-bottom: 2rem;
+    width: 15rem;
+    margin: auto;
+  }
+  .filter-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
