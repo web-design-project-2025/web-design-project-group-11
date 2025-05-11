@@ -194,3 +194,125 @@ p {
   width: auto;
   padding-left: 1rem;
 }
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1530px) {
+  main {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  main {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .first-img-container {
+    gap: 1rem;
+  }
+
+  .china-image {
+    width: 50%;
+  }
+
+  .france-image {
+    width: 50%;
+  }
+
+  .second-img-container {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .main-title {
+    font-size: 4rem;
+  }
+
+  .content-first-part {
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+  }
+
+  p {
+    grid-column: 1;
+    grid-row: 1;
+    padding-right: 0;
+    width: 50rem;
+  }
+
+  .text-two {
+    margin-bottom: 2rem;
+  }
+
+  .quote-one {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .first-img-container {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .quote-two {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  br {
+    display: none;
+  }
+
+  .content-second-part {
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+  }
+
+  .second-text {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .second-img-container {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0;
+  }
+
+  .berlin-image {
+    width: 50%;
+  }
+
+  .thailand-image {
+    width: 50%;
+  }
+
+  .text-three {
+    width: 50rem;
+  }
+
+  .author {
+    width: 50rem;
+  }
+
+  .article-info {
+    width: 50rem;
+  }
+
+  .line-over-quote,
+  .line-under-quote {
+    width: 50rem;
+  }
+}
