@@ -56,47 +56,6 @@ body {
   letter-spacing: 0.02rem;
 }
 
-/* RESPONSIVE FIRST TEXTS*/
-
-@media screen and (max-width: 1220px) {
-  .recharge {
-    font-size: 2rem;
-    margin-right: 3rem;
-    padding-left: 15rem;
-  }
-  .destination-text {
-    font-size: 1rem;
-    padding-right: 15rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .find-your-text {
-    font-size: 2.5rem;
-  }
-
-  .recharge-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .recharge {
-    font-size: 1.3rem;
-    padding: 0;
-    margin-bottom: 1rem;
-  }
-
-  .destination-text {
-    font-size: 1rem;
-    padding: 0;
-  }
-}
-
 /*STYLING BUTTONS*/
 
 .destination-buttons {
@@ -196,9 +155,19 @@ body {
   height: 18rem;
 }
 
-/* RESPONSIVE TIPS AND TRICKS*/
+/* RESPONSIVE */
 
 @media screen and (max-width: 1220px) {
+  .recharge {
+    font-size: 2rem;
+    margin-right: 3rem;
+    padding-left: 15rem;
+  }
+  .destination-text {
+    font-size: 1.13rem;
+    padding-right: 15rem;
+  }
+
   #check-list,
   #luggage,
   #money,
@@ -209,10 +178,39 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .find-your-text {
+    font-size: 2rem;
+  }
+
+  .recharge-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .recharge {
+    font-size: 1.2rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .destination-text {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .tips-tricks {
+    font-size: 1.6rem;
+  }
+
   .tips-text {
     padding: 2rem;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .tips-images {
@@ -251,10 +249,40 @@ body {
   }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 660px) {
+  .line-1,
+  .line-2 {
+    width: 20rem;
+  }
+
+  .find-your-text {
+    font-size: 2rem;
+  }
+
+  .recharge-text {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .recharge {
+    font-size: 1.5rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .destination-text {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  section .small-images {
+    padding-bottom: 3rem;
+  }
+
   .tips-text {
     padding-left: 1rem;
     padding-right: 1rem;
+    font-size: 1rem;
   }
   .tips-images {
     display: grid;
@@ -263,12 +291,16 @@ body {
     gap: 2rem;
   }
 
+  .tips-tricks {
+    font-size: 1.5rem;
+  }
+
   #check-list,
   #luggage,
   #money,
   #food {
     width: 100%;
-    max-width: 22rem;
+    max-width: 16rem;
     height: auto;
   }
 }
