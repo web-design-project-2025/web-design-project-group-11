@@ -229,13 +229,17 @@ p {
 
 @media screen and (max-width: 1300px) {
   main {
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
   }
 
   .main-title {
     font-size: 4rem;
     margin: auto;
+  }
+
+  .underline-title {
+    margin-top: 1.8rem;
   }
 
   .content-first-part {
@@ -315,5 +319,112 @@ p {
   .line-over-quote,
   .line-under-quote {
     width: auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .main-title {
+    font-size: 3.1rem;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .main-title {
+    font-size: 2.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .article-title {
+    font-size: 2rem;
+  }
+
+  .quote-two {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  main {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .article-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .content-first-part {
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: repeat(2, 0.2fr);
+  }
+
+  .text-two {
+    letter-spacing: 0.02rem;
+  }
+
+  .underline-title {
+    margin-top: 1rem;
+  }
+
+  .overline-title {
+    margin-bottom: 1rem;
+  }
+
+  .mini-title {
+    margin: auto;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .article-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .line-under-quote {
+    margin-bottom: 1.5rem;
+  }
+
+  .content-second-part {
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: repeat(2, 0.2fr);
+  }
+
+  .second-text {
+    letter-spacing: 0.02rem;
+  }
+
+  .text-three {
+    letter-spacing: 0.02rem;
   }
 }
