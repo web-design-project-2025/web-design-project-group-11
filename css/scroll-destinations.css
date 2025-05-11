@@ -1,6 +1,7 @@
 body {
   background-color: var(--offwhite);
 }
+
 /*TEXT*/
 
 .continent-container {
@@ -37,7 +38,6 @@ body {
   background-color: rgb(0, 70, 71, 0.1);
   display: flex;
   align-items: center;
-  padding-left: 1rem;
   margin-bottom: 3rem;
   height: 4rem;
   margin-left: 8.8rem;
@@ -131,4 +131,72 @@ body {
   position: absolute;
   margin-left: 16rem;
   cursor: pointer;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 2560px) {
+  #content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .description {
+    width: 105rem;
+  }
+  .filter-container {
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  #content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .description {
+    width: 75rem;
+  }
+  .filter-container {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .description {
+    width: 55rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .description {
+    width: 45rem;
+  }
+  .filter-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .description {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .description {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
