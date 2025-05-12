@@ -141,7 +141,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
   }
   .description {
-    width: 105rem;
+    width: 70rem;
   }
   .filter-container {
     height: 5rem;
@@ -154,7 +154,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
   .description {
-    width: 75rem;
+    width: 60rem;
   }
   .filter-container {
     margin-left: 7rem;
@@ -164,13 +164,13 @@ body {
 
 @media screen and (max-width: 1600px) {
   .description {
-    width: 55rem;
+    width: 50rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .description {
-    width: 45rem;
+    width: 40rem;
   }
   .filter-container {
     margin-left: 5rem;
@@ -186,11 +186,19 @@ body {
   .description {
     width: 35rem;
   }
+  .filter-container {
+    width: 63rem;
+    scale: 0.8;
+    margin-left: 0;
+  }
+  .continent-buttons {
+    scale: 0.95;
+  }
 }
 
 @media screen and (max-width: 750px) {
   .description {
-    width: 20rem;
+    max-width: 20rem;
   }
   .filter-container {
     margin-left: 4.8rem;
