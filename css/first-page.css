@@ -308,7 +308,9 @@ h2 {
   transition: ease 0.2s;
 }
 
-/*RECENTLY WATCHED*/
+/*IMAGE CAROUSEL*/
+
+/* RECENTLY WATCHED */
 
 .recently-line {
   width: 25rem;
@@ -326,128 +328,57 @@ h3 {
   letter-spacing: 0.1rem;
 }
 
-/*ROLLING IMAGES*/
-
-/*NEW CODE*/
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  position: relative;
+/* SWIPER COVERFLOW STIL */
+/* Swiper-wrapper */
+.trending-slider {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative; /* <-- Lägg till denna rad */
 }
 
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
-  justify-content: space-between; /* Lägg till space mellan bilder */
-}
-
-.carousel-item {
-  opacity: 0.8;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  width: 20%; /* Vi vill att varje bild ska ta upp 20% av bredden för att rymma 5 bilder */
+/* Swiper slides */
+.swiper-slide {
+  background: none;
+  width: 100%; /* Swiper hanterar bredden */
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .carousel-images {
-  width: 100%; /* Bilder ska ta upp 100% av container-bredden */
-  height: 30rem;
-  object-fit: cover;
+  width: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
-.carousel-item.center {
-  transform: scale(1.2);
-  opacity: 1;
-}
-
-.carousel-item.near {
-  transform: scale(1);
-  opacity: 0.9;
-}
-
-.carousel-item.far {
-  transform: scale(0.8);
-  opacity: 0.7;
-}
-
-.carousel-arrow {
+/* Navigationspilar */
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--green);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0.5rem;
+  z-index: 10;
 }
 
-#arrow-left {
-  left: 0;
+.swiper-button-prev {
+  left: -5rem; /* Justera hur långt utanför karusellen den ska vara */
 }
 
-#arrow-right {
-  right: 0;
+.swiper-button-next {
+  right: -5rem;
 }
 
-/*STOP*/
-
-/* Container för karusellen */
-.carousel-container {
-  margin: 2rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Pagination bullets */
+.swiper-pagination-bullet {
+  background: var(--green);
 }
 
-/* Wrapper för karusellen där bilderna placeras */
-#all-carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  width: 70rem; /* Bredden på karusellen så tre bilder får plats */
-  margin: auto; /* Centrera karusellen horisontellt på sidan */
-}
-
-/* Spår (track) som håller alla bilder */
-#carousel-content {
-  display: flex;
-  gap: 10px; /* Litet mellanrum mellan bilder */
-  transition: transform 0.3s ease-in-out;
-  justify-content: center; /* Gör så att bilderna i spåret är centrerade */
-}
-
-/* Varje bild i karusellen */
-.carousel-item {
-  flex: 0 0 30%; /* Varje bild är 200px bred */
-  width: 100%;
-  position: relative;
-}
-
-.carousel-item img {
-  width: 100%;
-}
-
-/* Pilen för att navigera till vänster och höger */
-.carousel-arrow {
-  background: none;
-  border: none;
-  font-size: 2rem;
+.swiper-pagination {
   position: absolute;
-  cursor: pointer;
-  z-index: 100000;
-}
-
-/* För att placera vänsterpil och högerpil på rätt position */
-#arrow-left {
-  left: 1rem;
-}
-
-#arrow-right {
-  right: 1rem;
+  bottom: -80px; /* Flyttar ner den från botten av .trending-slider */
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /*FOOTER*/

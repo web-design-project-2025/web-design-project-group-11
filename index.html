@@ -10,6 +10,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <title>JOURNEE</title>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
 
   <body>
@@ -109,16 +117,20 @@
         </section>
       </section>
 
-      <!--RECENTLY WATCHED CAROUSEL-->
+      <!-- RECENTLY WATCHED CAROUSEL -->
       <hr class="recently-line" />
       <h3>Recently Watched</h3>
-      <section class="carousel-container">
-        <div id="all-carousel">
-          <button class="carousel-arrow" id="arrow-left">&lt;</button>
-          <div id="carousel-content" class="carousel-track"></div>
-          <button class="carousel-arrow" id="arrow-right">&gt;</button>
+
+      <div class="swiper trending-slider">
+        <div class="swiper-wrapper" id="carousel-content">
+          <!-- Slides läggs till här -->
         </div>
-      </section>
+
+        <!-- Navigation & Pagination -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </main>
 
     <footer>

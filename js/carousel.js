@@ -76,88 +76,55 @@
 //   loadData();
 // });
 
-//NEW CODE
-
 document.addEventListener("DOMContentLoaded", () => {
   const carouselContent = document.getElementById("carousel-content");
-  const arrowRightButton = document.getElementById("arrow-right");
-  const arrowLeftButton = document.getElementById("arrow-left");
-
+  let swiper; // Swiper-instans
   let countries = [];
-  let currentIndex = 0; // Starta från den första bilden
 
   // Ladda data från JSON
   async function loadData() {
-    const response = await fetch("data/countries.json"); // Ange sökvägen till din JSON-fil
+    const response = await fetch("data/countries.json");
     const data = await response.json();
     countries = data.countries;
 
-    renderCarousel(); // Rendera karusellen när data är laddad
-    updateTransform(); // Uppdatera scroll-positionen
+    renderCarousel(); // Rendera karusellen
+    initSwiper(); // Initiera Swiper med coverflow
   }
 
-  // Rendera karusellen med bilder
+  // Rendera karusellbilder i Swiper-format
   function renderCarousel() {
-    carouselContent.innerHTML = ""; // Töm karusell-track innan vi fyller på
+    carouselContent.innerHTML = "";
 
-    // Visa alltid 5 bilder (2 innan och 2 efter)
-    const visibleItems = countries.slice(
-      currentIndex, // Börja från den aktuella indexet
-      currentIndex + 5 // Hämta 5 bilder (index till index+5)
-    );
+    countries.forEach((country) => {
+      const slide = document.createElement("div");
+      slide.classList.add("swiper-slide");
 
-    visibleItems.forEach((country, i) => {
-      const item = document.createElement("div");
-      item.classList.add("carousel-item");
+      slide.innerHTML = `
+        <img src="${country.image}" alt="${country.title}" class="carousel-images" />
+        <p>${country.title}</p>
+      `;
 
-      const img = document.createElement("img");
-      img.classList.add("carousel-images");
-      img.src = country.image;
-      img.alt = country.title;
-
-      const title = document.createElement("p");
-      title.textContent = country.title;
-
-      item.appendChild(img);
-      item.appendChild(title);
-      carouselContent.appendChild(item);
-    });
-
-    // Uppdatera bildernas storlek och position
-    updateCarouselItems();
-  }
-
-  // Uppdatera position och storlek på bilder beroende på deras index
-  function updateCarouselItems() {
-    const items = carouselContent.querySelectorAll(".carousel-item");
-    items.forEach((item, index) => {
-      item.classList.remove("center", "near", "far");
-      if (index === 2) {
-        // Mittersta bilden
-        item.classList.add("center");
-      } else if (index === 1 || index === 3) {
-        // Nära bilder
-        item.classList.add("near");
-      } else {
-        // De längre bort
-        item.classList.add("far");
-      }
+      carouselContent.appendChild(slide);
     });
   }
 
-  // Högerpil
-  arrowRightButton.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % countries.length; // Loop tillbaks till första när vi når slutet
-    renderCarousel();
-    updateTransform();
-  });
+  function initSwiper() {
+    if (swiper) swiper.destroy(true, true);
 
-  // Vänsterpil
-  arrowLeftButton.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + countries.length) % countries.length; // Loop tillbaks till sista när vi går till vänster
-    renderCarousel();
-    updateTransform();
-  });
+    swiper = new Swiper(".trending-slider", {
+      slidesPerView: 5,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
 
-  loadData(); // Ladda och rendera karusellen när sidan är klar
+  loadData();
 });

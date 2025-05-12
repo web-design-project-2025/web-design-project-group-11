@@ -20,6 +20,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const json = await response.json();
     countries = json.countries;
 
+    countries.sort((a, b) => a.title.localeCompare(b.title));
+
     const continentResponse = await fetch("data/continents.json");
     const continentJson = await continentResponse.json();
     continents = continentJson.continents;
