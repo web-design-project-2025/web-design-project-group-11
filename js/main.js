@@ -126,6 +126,21 @@ window.addEventListener("DOMContentLoaded", () => {
       likeButtonElement.innerHTML = country.liked_by_user
         ? '<img src="img/heart-filled.svg" alt="liked">'
         : '<img src="img/heart-line.svg" alt="not liked">';
+
+      const heartImg = likeButtonElement.querySelector("img");
+
+      // Lägg till hover endast om det inte är likat
+      if (!country.liked_by_user) {
+        likeButtonElement.addEventListener("mouseover", () => {
+          heartImg.src = "img/heart-filled.svg";
+          heartImg.alt = "hovered";
+        });
+
+        likeButtonElement.addEventListener("mouseout", () => {
+          heartImg.src = "img/heart-line.svg";
+          heartImg.alt = "not liked";
+        });
+      }
     });
 
     countryElement.appendChild(likeButtonElement);
