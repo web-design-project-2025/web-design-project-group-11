@@ -104,10 +104,10 @@ h1 {
 .like-button {
   background: var(--offwhite);
   border: none;
-  width: 4%;
+  width: 3%;
   z-index: 1000;
   position: absolute;
-  margin-left: 9.5rem;
+  margin-left: 11%;
   cursor: pointer;
 }
 

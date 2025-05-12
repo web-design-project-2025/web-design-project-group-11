@@ -41,27 +41,41 @@ window.addEventListener("DOMContentLoaded", () => {
     if (country) {
       detailcontentElement.innerHTML = "";
 
+      const likeButtonElement = document.createElement("button");
+      likeButtonElement.classList.add("like-button");
+
       const titleElement = document.createElement("h1");
       titleElement.textContent = country.title;
       detailcontentElement.appendChild(titleElement);
       titleElement.classList.add("title");
 
-      //LIKE BUTTON
-
-      const likeButtonElement = document.createElement("button");
-      likeButtonElement.classList.add("like-button");
-
-      // Kolla om landet är like:at
-
       let likedCountries =
         JSON.parse(localStorage.getItem("likedCountries")) || [];
       let isLiked = likedCountries.includes(country.id);
 
-      likeButtonElement.innerHTML = isLiked
-        ? '<img src="img/heart-filled.svg" alt="liked">'
-        : '<img src="img/heart-line.svg" alt="not liked">';
+      function updateLikeButton() {
+        const heartImg = document.createElement("img");
+        heartImg.src = isLiked ? "img/heart-filled.svg" : "img/heart-line.svg";
+        heartImg.alt = isLiked ? "liked" : "not liked";
 
-      // Klick-event
+        likeButtonElement.innerHTML = ""; // töm knappen
+        likeButtonElement.appendChild(heartImg);
+
+        if (!isLiked) {
+          likeButtonElement.addEventListener("mouseover", () => {
+            heartImg.src = "img/heart-filled.svg";
+            heartImg.alt = "hovered";
+          });
+
+          likeButtonElement.addEventListener("mouseout", () => {
+            heartImg.src = "img/heart-line.svg";
+            heartImg.alt = "not liked";
+          });
+        }
+      }
+
+      updateLikeButton();
+
       likeButtonElement.addEventListener("click", () => {
         isLiked = !isLiked;
 
@@ -75,10 +89,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
 
         localStorage.setItem("likedCountries", JSON.stringify(likedCountries));
-
-        likeButtonElement.innerHTML = isLiked
-          ? '<img src="img/heart-filled.svg" alt="liked">'
-          : '<img src="img/heart-line.svg" alt="not liked">';
+        updateLikeButton(); // Uppdatera knappen efter klick
       });
 
       // Lägg till knappen någonstans i DOM:en
