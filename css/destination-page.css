@@ -156,6 +156,12 @@ body {
 }
 
 /* RESPONSIVE */
+@media screen and (max-width: 1500px) {
+  .tips-text {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
 
 @media screen and (max-width: 1220px) {
   .recharge {
@@ -179,7 +185,8 @@ body {
 
 @media screen and (max-width: 1000px) {
   .find-your-text {
-    font-size: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
   }
 
   .recharge-text {
@@ -193,24 +200,27 @@ body {
   }
 
   .recharge {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     padding: 0;
     margin-bottom: 1rem;
+    margin-right: 0;
   }
 
   .destination-text {
     font-size: 1rem;
     padding: 0;
   }
+  .small-images {
+    padding-bottom: 2rem;
+  }
 
   .tips-tricks {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
   }
 
   .tips-text {
-    padding: 2rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.13rem;
   }
 
   .tips-images {
@@ -229,8 +239,9 @@ body {
 
 @media screen and (max-width: 860px) {
   .tips-text {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0rem;
   }
   .tips-images {
     display: grid;
@@ -284,15 +295,9 @@ body {
     padding-right: 1rem;
     font-size: 1rem;
   }
-  .tips-images {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    gap: 2rem;
-  }
 
   .tips-tricks {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   #check-list,
@@ -302,5 +307,15 @@ body {
     width: 100%;
     max-width: 16rem;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .line-1,
+  .line-2 {
+    width: 15rem;
+  }
+  .tips-tricks {
+    font-size: 1.7rem;
   }
 }

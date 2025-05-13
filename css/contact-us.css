@@ -117,7 +117,7 @@ input::placeholder {
   font-size: 1rem;
 }
 
-span {
+.error-message {
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
   font-size: 1rem;
@@ -298,7 +298,7 @@ span {
     padding-top: 0.2rem;
   }
 
-  span {
+  .error-message {
     font-size: 0.7rem;
   }
 
@@ -358,7 +358,7 @@ span {
     padding-top: 0.2rem;
   }
 
-  span {
+  .error-message {
     font-size: 0.7rem;
   }
 
@@ -441,7 +441,7 @@ span {
     padding-top: 0.2rem;
   }
 
-  span {
+  .error-message {
     font-size: 0.9rem;
   }
 
@@ -540,7 +540,7 @@ span {
     padding-top: 0.2rem;
   }
 
-  span {
+  .error-message {
     font-size: 0.7rem;
   }
 

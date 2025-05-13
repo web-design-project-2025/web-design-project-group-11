@@ -129,7 +129,7 @@ body {
   width: 3%;
   z-index: 1000;
   position: absolute;
-  margin-left: 16rem;
+  margin-left: 17%;
   cursor: pointer;
 }
 
@@ -154,7 +154,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
   .description {
-    width: 60rem;
+    width: auto;
   }
   .filter-container {
     margin-left: 7rem;
@@ -164,7 +164,7 @@ body {
 
 @media screen and (max-width: 1600px) {
   .description {
-    width: 50rem;
+    width: auto;
   }
 }
 
@@ -178,61 +178,196 @@ body {
   }
 }
 
+@media screen and (max-width: 1170px) {
+  .filter-container {
+    height: 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  .continent-buttons {
+    font-size: 0.9rem;
+  }
+  .scroll-filter-button {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+  #filter-icon {
+    width: 10%;
+    padding-left: 0.9rem;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .description {
-    width: 35rem;
+    width: auto;
   }
+  .like-button {
+    margin-left: 22%;
+    width: 5%;
+  }
+}
+@media screen and (max-width: 900px) {
   .filter-container {
-    width: 63rem;
-    scale: 0.8;
-    margin-left: 0;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-right: 0;
   }
-  .continent-buttons {
-    scale: 0.95;
+  .scroll-filter-button {
+    font-size: 0.9rem;
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
+  .continent-container {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
   .description {
-    max-width: 20rem;
+    width: auto;
+  }
+  img {
+    place-self: center;
   }
   .filter-container {
-    margin-left: 4.8rem;
-    margin-right: 4.8rem;
-    height: 3.5rem;
-  }
-  #filter-icon {
-    width: 10%;
+    height: 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
   #button-all {
-    width: 12rem;
+    width: 10rem;
+    margin-left: 1rem;
+  }
+  .like-button {
+    margin-left: 7%;
+  }
+  .content img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .description {
+    width: 25rem;
+    place-self: center;
+  }
+  .filter-container {
+    place-self: center;
+    width: 35rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 2.5rem;
+  }
+
+  #button-all {
+    width: 8rem;
     margin-left: 1rem;
   }
   .scroll-filter-button {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 0.7rem;
+    width: 7rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: var(--brown);
+  }
+
+  .scroll-filter-button {
+    font-size: 0.7rem;
+  }
+  #button-all {
+    width: 7rem;
+    margin-left: 0.6rem;
+    margin-left: 0.1rem;
+  }
+  #button-asia,
+  #button-europe {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    width: 7rem;
+  }
+
+  .continent-buttons {
+    gap: 0.5rem;
+  }
+  .filter-container {
+    width: 28rem;
+  }
+
+  #filter-icon {
+    padding-left: 0.5rem;
+  }
+  .description {
+    margin-bottom: 2rem;
+    width: auto;
+    margin: auto;
+  }
+  .like-button {
+    width: 7%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .description {
+    width: 30rem;
+    place-self: center;
+    font-size: 1.13rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .content img {
+    width: 90%;
+  }
+  .description {
+    width: auto;
+    font-size: 1rem;
+  }
+  .filter-container {
+    width: 25rem;
+  }
+
+  .scroll-filter-button {
+    font-size: 0.7rem;
+  }
+
+  #button-asia,
+  #button-europe {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    width: 4rem;
+  }
+
+  .content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 @media screen and (max-width: 400px) {
-  #content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
   .title {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
+
   .description {
-    margin-bottom: 2rem;
-    width: 15rem;
-    margin: auto;
+    width: auto;
   }
+
   .filter-container {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    width: 18.5rem;
+  }
+
+  .like-button {
+    width: 8%;
+    margin-left: 9%;
   }
 }
