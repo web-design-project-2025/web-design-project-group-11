@@ -59,7 +59,7 @@ p {
 
 .content-first-part {
   display: grid;
-  grid-template-columns: repeat (2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: auto;
 }
 
@@ -122,7 +122,7 @@ p {
 
 .content-second-part {
   display: grid;
-  grid-template-columns: repeat (2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: auto;
 }
 
@@ -234,7 +234,7 @@ p {
   }
 
   .content-first-part {
-    grid-template-columns: repeat (1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 0.5fr);
   }
 
