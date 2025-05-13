@@ -21,14 +21,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //CREATE THE SWIPER SLIDE WITH IMAGES
   function renderCarousel() {
-    carouselContent.innerHTML = ""; // Töm karusell-track innan vi fyller på
+    carouselContent.innerHTML = ""; // Clear existing slides
 
     countries.forEach((country) => {
       const slide = document.createElement("div");
       slide.classList.add("swiper-slide");
 
       slide.innerHTML = `
-        <img src="${country.image}" alt="Country image" class="carousel-images" />
+        <img src="${country.image}" alt="${country.title}" class="carousel-images" />
+        <p>${country.title}</p>
       `;
 
       carouselContent.appendChild(slide);
