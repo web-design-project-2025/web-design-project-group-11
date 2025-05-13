@@ -1,29 +1,34 @@
+//WEATHER CODES
+
 function getWeatherIcon(code) {
-  if (code === 0) return "☀️"; // Clear sky
-  if ([1, 2, 3].includes(code)) return "⛅"; // Mainly clear, partly cloudy, overcast
-  if ([45, 48].includes(code)) return "🌫️"; // Fog
-  if ([51, 53, 55].includes(code)) return "🌦️"; // Drizzle
-  if ([56, 57].includes(code)) return "🥶🌦️"; // Freezing Drizzle
-  if ([61, 63, 65].includes(code)) return "🌧️"; // Rain
-  if ([66, 67].includes(code)) return "🥶🌧️"; // Freezing Rain
-  if ([71, 73, 75].includes(code)) return "❄️"; // Snow fall
-  if (code === 77) return "🌨️"; // Snow grains
-  if ([80, 81, 82].includes(code)) return "🌦️"; // Rain showers
-  if ([85, 86].includes(code)) return "🌨️"; // Snow showers
-  if (code === 95) return "⛈️"; // Thunderstorm
-  if ([96, 99].includes(code)) return "🌩️❄️"; // Thunderstorm with hail
-  return "❓"; // Unknown
+  if (code === 0) return "☀️"; //CLEAR SKY
+  if ([1, 2, 3].includes(code)) return "⛅"; //MAINLY CLEAR, PARTLY CLOUDY
+  if ([45, 48].includes(code)) return "🌫️"; //FOG
+  if ([51, 53, 55].includes(code)) return "🌦️"; //DRIZZLE
+  if ([56, 57].includes(code)) return "🥶🌦️"; //FREEZING DRIZZLE
+  if ([61, 63, 65].includes(code)) return "🌧️"; //RAIN
+  if ([66, 67].includes(code)) return "🥶🌧️"; //FREEZING RAIN
+  if ([71, 73, 75].includes(code)) return "❄️"; //SNOW FALL
+  if (code === 77) return "🌨️"; //SNOW GRAINS
+  if ([80, 81, 82].includes(code)) return "🌦️"; //RAIN SHOWER
+  if ([85, 86].includes(code)) return "🌨️"; //SNOW SHOWERS
+  if (code === 95) return "⛈️"; //THUNDERSTORM
+  if ([96, 99].includes(code)) return "🌩️❄️"; //THUNDERSTORM WITH HAIL
+  return "❓"; //UNKNOWN
 }
 
+//RUNS WHEN THE HTML IS LOADED
 window.addEventListener("DOMContentLoaded", () => {
   const detailcontentElement = document.getElementById("detail-content");
   let countries = [];
 
+  //CREATE THE RIGHT URL
   function getIdFromURL() {
     const params = new URLSearchParams(window.location.search);
     return params.get("id");
   }
 
+  //FETCH THE DATA FROM JSON COUNTRIES - DISPLAY COUNTRY DETAILS BASED ON ID
   async function loadData() {
     const response = await fetch("data/countries.json");
     const json = await response.json();
@@ -35,12 +40,14 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  //FINDS DATA FROM THE JSON COUNTRY FILE (ID)
   function displayCountryDetail(id) {
     const country = countries.find((c) => String(c.id) === String(id));
 
     if (country) {
       detailcontentElement.innerHTML = "";
 
+      //CREATE HTML ELEMENTS
       const likeButtonElement = document.createElement("button");
       likeButtonElement.classList.add("like-button");
 
@@ -48,6 +55,8 @@ window.addEventListener("DOMContentLoaded", () => {
       titleElement.textContent = country.title;
       detailcontentElement.appendChild(titleElement);
       titleElement.classList.add("title");
+
+      //LIKE A COUNTRY AND STORE WITH LOCAL STORAGE
 
       let likedCountries =
         JSON.parse(localStorage.getItem("likedCountries")) || [];
@@ -58,7 +67,7 @@ window.addEventListener("DOMContentLoaded", () => {
         heartImg.src = isLiked ? "img/heart-filled.svg" : "img/heart-line.svg";
         heartImg.alt = isLiked ? "liked" : "not liked";
 
-        likeButtonElement.innerHTML = ""; // töm knappen
+        likeButtonElement.innerHTML = "";
         likeButtonElement.appendChild(heartImg);
 
         if (!isLiked) {
@@ -76,6 +85,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
       updateLikeButton();
 
+      //IN ORDER TO HOVER IF THE BUTTON HAS BEEN LIKED BEFORE
+
       likeButtonElement.addEventListener("click", () => {
         isLiked = !isLiked;
 
@@ -89,18 +100,18 @@ window.addEventListener("DOMContentLoaded", () => {
         }
 
         localStorage.setItem("likedCountries", JSON.stringify(likedCountries));
-        updateLikeButton(); // Uppdatera knappen efter klick
+        updateLikeButton();
       });
 
-      // Lägg till knappen någonstans i DOM:en
       detailcontentElement.appendChild(likeButtonElement);
 
+      //CREATE TEMPERATURE ELEMENTS (OPEN MATEO - API)
       const temperatureElement = document.createElement("p");
       temperatureElement.id = "temperature";
-      temperatureElement.textContent = "Laddar temperatur...";
+      temperatureElement.textContent = "Load temperature...";
       detailcontentElement.appendChild(temperatureElement);
 
-      //NEW TEXT
+      //INTRO TEXT
 
       const introElement = document.createElement("intro");
       introElement.textContent = country.intro;
@@ -119,11 +130,13 @@ window.addEventListener("DOMContentLoaded", () => {
       // moreText.textContent = country.description.slice(200); // resten av beskrivningen
       // detailcontentElement.appendChild(moreText);
 
+      //INTRO TITLE
       const introTitleElement = document.createElement("intro-title");
       introTitleElement.textContent = country.subtitle;
       detailcontentElement.appendChild(introTitleElement);
       introTitleElement.classList.add("subtitle");
 
+      //DESCRIPTION
       const descriptionElement = document.createElement("p");
       descriptionElement.textContent = country.description;
       detailcontentElement.appendChild(descriptionElement);
@@ -143,11 +156,12 @@ window.addEventListener("DOMContentLoaded", () => {
       thirdImage.classList.add("third-image");
       detailcontentElement.appendChild(thirdImage);
 
-      //GET WEATHER FROM RIGHT COUNTRY//
+      //GET WEATHER FROM RIGHT COUNTRY
       const lat = country.location.latitude;
       const lon = country.location.longitude;
       const apiURL = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weathercode`;
 
+      //WAITS FOR THE RESPONS FROM THE API, ERROR MESSAGE IF DATA COULD NOT BE LOADED
       fetch(apiURL)
         .then((response) => {
           if (!response.ok) {
@@ -166,13 +180,15 @@ window.addEventListener("DOMContentLoaded", () => {
   <span class="temperature-icon">${icon}</span>
 `;
         })
+
+        //ERROR HANDLING - IF SOMETHING IS WRONG IN THE FETCH PROCESS
         .catch((error) => {
-          temperatureElement.textContent = "Kunde inte hämta väderdata.";
-          console.error("Fel vid väderhämtning:", error);
+          temperatureElement.textContent = "Could not fetch weather data.";
+          console.error("Error when rendering weather data:", error);
         });
     } else {
       detailcontentElement.innerHTML =
-        "Ingen information hittades för detta land.";
+        "No information was found about this country.";
     }
   }
   loadData();

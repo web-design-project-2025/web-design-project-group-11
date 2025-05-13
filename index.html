@@ -10,10 +10,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <title>JOURNEE</title>
+    <!--SWIPER CSS-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--SWIPER JS-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
 
   <body>
-    <!-- HEADER -->
+    <!--HEADER-->
 
     <header>
       <a href="index.html">
@@ -31,10 +39,10 @@
       /></a>
     </header>
 
-    <!-- MAIN -->
+    <!--MAIN CONTENT-->
 
     <main>
-      <!--IMAGE FOR HEADER WITH TEXT -->
+      <!--IMAGE FOR HEADER WITH TEXT-->
 
       <section id="header-container">
         <h1 id="header-text">Explore stunning <br />places.</h1>
@@ -45,7 +53,7 @@
         />
       </section>
 
-      <!--IMAGES UNDER HEADER -->
+      <!--SKETCHED MOUNTAIN AND TEXT-->
       <section id="mountain-container">
         <!-- <hr class="line-1" /> -->
         <img
@@ -63,6 +71,9 @@
           </p>
         </section>
       </section>
+
+      <!--EXPLORE BUTTON-->
+
       <section class="arrow-text">
         <img
           class="thick-arrow-img"
@@ -73,6 +84,8 @@
           Explore now
         </a>
       </section>
+
+      <!--LEAF IMAGE AND TEXT-->
       <section class="test">
         <section class="img-layout">
           <hr class="line-2" />
@@ -90,7 +103,7 @@
         </section>
       </section>
 
-      <!-- IMAGE AND TEXT, GO TO ARTICLE -->
+      <!--IMAGE AND TEXT, GO TO ARTICLE-->
       <section id="tokyo-container">
         <img
           id="tokyo-img"
@@ -109,14 +122,20 @@
         </section>
       </section>
 
-      <!--RECENTLY WATCHED CAROUSEL-->
+      <!--SOURCE FOR CAROUSEL - https://github.com/devression/card-slider/blob/main/index.html-->
+
+      <!--IMAGE CAROUSEL-->
       <hr class="recently-line" />
-      <h3>Recently Watched</h3>
-      <section class="carousel-container">
-        <div id="all-carousel">
-          <button class="carousel-arrow" id="arrow-left">&lt;</button>
-          <div id="carousel-content" class="carousel-track"></div>
-          <button class="carousel-arrow" id="arrow-right">&gt;</button>
+      <h3>Favorite Destinations</h3>
+
+      <section class="carousel-section">
+        <div class="swiper trending-slider">
+          <div class="swiper-wrapper" id="carousel-content"></div>
+
+          <!--ARROWS AND PAGINATION-->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
     </main>
@@ -143,7 +162,9 @@
           />
           <button class="subscribe-button">SUBSCRIBE</button>
         </div>
-        <!--SOURCE-->
+
+        <!--SOCIAL MEDIA ICONS - SOURCE-->
+
         <div class="social-icons">
           <a href="https://www.facebook.com" target="_blank"
             ><i class="fab fa-facebook-f"></i
