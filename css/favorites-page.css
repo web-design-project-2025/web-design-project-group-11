@@ -104,7 +104,7 @@ h1 {
 }
 
 #favorite-content img {
-  width: 65%;
+  width: 70%;
 }
 
 .like-button {
@@ -113,7 +113,7 @@ h1 {
   width: 4%;
   z-index: 1000;
   position: absolute;
-  margin-left: 9.5rem;
+  margin-left: 11%;
   cursor: pointer;
 }
 
@@ -172,6 +172,10 @@ h1 {
 
   .title {
     margin-bottom: 2rem;
+  }
+
+  .like-button {
+    margin-left: 17%;
   }
 }
 
@@ -233,9 +237,17 @@ h1 {
     font-size: 0.9rem;
   }
 
+  #favorite-content img {
+    place-self: center;
+  }
+
   .title {
     font-size: 1rem;
     margin-bottom: 1.5rem;
+  }
+
+  .like-button {
+    margin-left: 5%;
   }
 }
 
@@ -275,6 +287,11 @@ h1 {
   .title {
     font-size: 1rem;
     margin-bottom: 1.3rem;
+  }
+
+  .like-button {
+    width: 6%;
+    margin-left: 10%;
   }
 }
 
@@ -324,6 +341,10 @@ h1 {
 
   .title {
     font-size: 0.8rem;
+  }
+
+  .like-button {
+    margin-left: 15%;
   }
 }
 
