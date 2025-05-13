@@ -196,3 +196,237 @@ p {
   width: auto;
   padding-left: 1rem;
 }
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1530px) {
+  main {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  main {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .first-img-container {
+    gap: 1rem;
+  }
+
+  .china-image {
+    width: 50%;
+  }
+
+  .france-image {
+    width: 50%;
+  }
+
+  .second-img-container {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+  .main-title {
+    font-size: 4rem;
+    margin: auto;
+  }
+
+  .underline-title {
+    margin-top: 1.8rem;
+  }
+
+  .content-first-part {
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+  }
+
+  p {
+    grid-column: 1;
+    grid-row: 1;
+    padding-right: 0;
+    width: auto;
+  }
+
+  .text-two {
+    margin-bottom: 2rem;
+  }
+
+  .quote-one {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .first-img-container {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .quote-two {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  br {
+    display: none;
+  }
+
+  .content-second-part {
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+  }
+
+  .second-text {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .second-img-container {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0;
+  }
+
+  .berlin-image {
+    width: 50%;
+  }
+
+  .thailand-image {
+    width: 50%;
+  }
+
+  .text-three {
+    width: auto;
+  }
+
+  .author {
+    width: auto;
+  }
+
+  .article-info {
+    width: auto;
+  }
+
+  .line-over-quote,
+  .line-under-quote {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .main-title {
+    font-size: 3.1rem;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .main-title {
+    font-size: 2.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .article-title {
+    font-size: 2rem;
+  }
+
+  .quote-two {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  main {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .article-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .content-first-part {
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: repeat(2, 0.2fr);
+  }
+
+  .text-two {
+    letter-spacing: 0.02rem;
+  }
+
+  .underline-title {
+    margin-top: 1rem;
+  }
+
+  .overline-title {
+    margin-bottom: 1rem;
+  }
+
+  .mini-title {
+    margin: auto;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .article-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .line-under-quote {
+    margin-bottom: 1.5rem;
+  }
+
+  .content-second-part {
+    grid-template-columns: repeat (1, 1fr);
+    grid-template-rows: repeat(2, 0.2fr);
+  }
+
+  .second-text {
+    letter-spacing: 0.02rem;
+  }
+
+  .text-three {
+    letter-spacing: 0.02rem;
+  }
+}

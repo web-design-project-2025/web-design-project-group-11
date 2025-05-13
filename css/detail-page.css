@@ -1,4 +1,4 @@
-/*CONTENT CONTAINER*/
+/*MAIN CONTENT*/
 
 .detail-content {
   display: grid;
@@ -44,13 +44,14 @@
   background-color: var(--green);
   grid-column: 3;
   grid-row: 2;
-  place-self: center;
+  place-self: start;
+  align-self: center;
   width: 17rem;
   height: 7rem;
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
   font-size: 1rem;
-  border-radius: 0.6rem;
+  border-radius: 0.3rem;
   text-align: center;
   padding-top: 1.5rem;
 }
@@ -82,7 +83,21 @@ button.like-button {
   cursor: pointer;
   margin-right: 10rem;
   margin-bottom: 0.1rem;
-  margin-left: 45%;
+}
+
+/*FIRST TEXT*/
+
+.intro {
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
+  font-size: 1.2rem;
+  color: var(--brown);
+  grid-column: 1/3;
+  grid-row: 2;
+  text-align: justify;
+  line-height: 1.6rem;
+  place-self: center;
+  padding-right: 10rem;
 }
 
 /*FIRST IMAGE*/
@@ -104,7 +119,7 @@ button.like-button {
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
   font-size: 2rem;
   color: var(--green);
-  grid-column: 1;
+  grid-column: 1/3;
   grid-row: 4;
   margin-bottom: 1rem;
   padding-top: 1rem;
@@ -115,14 +130,14 @@ button.like-button {
 .description {
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--brown);
-  grid-column: 1;
+  grid-column: 1/2;
   grid-row: 4/5;
   padding-right: 2rem;
   text-align: justify;
   margin-top: 4.8rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
 
 /*IMAGES*/
@@ -142,4 +157,192 @@ button.like-button {
   max-width: 26.688rem;
   place-self: end;
   margin-top: 1rem;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 1765px) {
+  #detail-content {
+    margin-right: 7rem;
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .detail-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 0.2fr);
+  }
+  .second-image {
+    padding-right: 1rem;
+    place-self: center;
+  }
+  .third-image {
+    padding-left: 1rem;
+    place-self: center;
+  }
+  .button.like-button {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 1352px) {
+  #detail-content {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  main {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .title {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: start;
+    margin-bottom: 1rem;
+  }
+  .intro {
+    padding-right: 0;
+  }
+  .button.like-button {
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 20rem;
+  }
+  #temperature {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0rem;
+    place-self: center;
+  }
+  .intro {
+    grid-column: 1/2;
+    grid-row: 2;
+    text-align: left;
+  }
+  .first-image {
+    grid-column: 1/3;
+    grid-row: 4;
+    width: 100%;
+  }
+  .subtitle {
+    grid-column: 1/3;
+    grid-row: 5;
+  }
+  .description {
+    grid-column: 1/3;
+    grid-row: 5;
+    text-align: left;
+  }
+  .second-image {
+    grid-column: 1;
+    grid-row: 6;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .third-image {
+    grid-column: 2;
+    grid-row: 6;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .first-image {
+    padding-right: 1.5rem;
+  }
+  .third-image {
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .detail-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 0.2fr);
+  }
+  .title {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .button.like-button {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 20rem;
+  }
+  #temperature {
+    grid-column: 1;
+    grid-row: 3;
+    width: 12rem;
+    height: 6rem;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+  .temperature-value {
+    font-size: 1.2rem;
+  }
+  .temperature-icon {
+    font-size: 1.2rem;
+  }
+  .intro {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .first-image {
+    grid-column: 1;
+    grid-row: 4;
+    width: 100%;
+    height: 10rem;
+  }
+  .subtitle {
+    grid-column: 1;
+    grid-row: 5;
+    text-align: center;
+  }
+  .description {
+    grid-column: 1;
+    grid-row: 5;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    padding-right: 0;
+  }
+  .second-image {
+    grid-column: 1;
+    grid-row: 6;
+    width: 100%;
+    height: 100%;
+    place-self: center;
+    margin-bottom: 0rem;
+    padding-right: 0rem;
+  }
+  .third-image {
+    grid-column: 1;
+    grid-row: 7;
+    width: 100%;
+    place-self: center;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .detail-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 0.2fr);
+  }
+  .subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .description {
+    padding-top: 1.6rem;
+  }
 }

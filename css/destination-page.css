@@ -154,3 +154,153 @@ body {
   width: 18rem;
   height: 18rem;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1220px) {
+  .recharge {
+    font-size: 2rem;
+    margin-right: 3rem;
+    padding-left: 15rem;
+  }
+  .destination-text {
+    font-size: 1.13rem;
+    padding-right: 15rem;
+  }
+
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .find-your-text {
+    font-size: 2rem;
+  }
+
+  .recharge-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .recharge {
+    font-size: 1.2rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .destination-text {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .tips-tricks {
+    font-size: 1.6rem;
+  }
+
+  .tips-text {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .tips-images {
+    justify-items: center;
+    gap: 0.5rem;
+  }
+
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .tips-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .tips-images {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .line-1,
+  .line-2 {
+    width: 20rem;
+  }
+
+  .find-your-text {
+    font-size: 2rem;
+  }
+
+  .recharge-text {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .recharge {
+    font-size: 1.5rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .destination-text {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  section .small-images {
+    padding-bottom: 3rem;
+  }
+
+  .tips-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
+  .tips-images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .tips-tricks {
+    font-size: 1.5rem;
+  }
+
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 100%;
+    max-width: 16rem;
+    height: auto;
+  }
+}
