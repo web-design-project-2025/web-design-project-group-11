@@ -528,15 +528,7 @@ h3 {
   background: var(--green);
 }
 
-.carousel-item img {
-  width: 100%;
-}
-
-/* Pilen för att navigera till vänster och höger */
-.carousel-arrow {
-  background: none;
-  border: none;
-  font-size: 2rem;
+.swiper-pagination {
   position: absolute;
   bottom: -1rem;
   left: 0;
