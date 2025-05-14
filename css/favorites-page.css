@@ -8,6 +8,8 @@ body {
   background-color: var(--offwhite);
 }
 
+/*INTRO TEXT*/
+
 .line {
   border: 0.05rem solid var(--green);
   width: 33rem;
@@ -110,7 +112,7 @@ h1 {
 .like-button {
   background: var(--offwhite);
   border: none;
-  width: 4%;
+  width: 3%;
   z-index: 1000;
   position: absolute;
   margin-left: 11%;

@@ -473,133 +473,68 @@ h3 {
   color: var(--green);
   font-family: "richmond-display", sans-serif;
   text-align: center;
+  place-self: center;
   padding-top: 0.7rem;
   margin-bottom: 2rem;
   letter-spacing: 0.1rem;
 }
 
-/* ROLLING IMAGES
 
-/*NEW CODE*/
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+/*IMAGES - SWIPER CONTAINER*/
+
+.trending-slider {
+  max-width: 1000px;
   position: relative;
 }
 
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
-  justify-content: space-between; /* Lägg till space mellan bilder */
+.carousel-section {
+  position: relative;
 }
 
-.carousel-item {
-  opacity: 0.8;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  width: 20%; /* Vi vill att varje bild ska ta upp 20% av bredden för att rymma 5 bilder */
+.swiper-slide {
+  background: none;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .carousel-images {
-  width: 100%; /* Bilder ska ta upp 100% av container-bredden */
-  height: 30rem;
+  width: 100%;
+  border-radius: 0.3rem;
   object-fit: cover;
-  border-radius: 10px;
 }
 
-.carousel-item.center {
-  transform: scale(1.2);
-  opacity: 1;
-}
-
-.carousel-item.near {
-  transform: scale(1);
-  opacity: 0.9;
-}
-
-.carousel-item.far {
-  transform: scale(0.8);
-  opacity: 0.7;
-}
-
-.carousel-arrow {
+/*STYLE NAVIGATION ARROWS*/
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--green);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0.5rem;
+  z-index: 10;
 }
 
-#arrow-left {
-  left: 0;
+/*POSITION NAVIGATION ARROWS*/
+
+.swiper-button-prev {
+  left: -5rem;
 }
 
-#arrow-right {
-  right: 0;
+.swiper-button-next {
+  right: -5rem;
 }
 
-/*STOP*/
-
-/* Container för karusellen */
-.carousel-container {
-  margin: 2rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*PAGINATION BULLETS*/
+.swiper-pagination-bullet {
+  background: var(--green);
 }
 
-/* Wrapper för karusellen där bilderna placeras */
-#all-carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  width: 70rem; /* Bredden på karusellen så tre bilder får plats */
-  margin: auto; /* Centrera karusellen horisontellt på sidan */
-}
-
-/* Spår (track) som håller alla bilder */
-#carousel-content {
-  display: flex;
-  gap: 10px; /* Litet mellanrum mellan bilder */
-  transition: transform 0.3s ease-in-out;
-  justify-content: center; /* Gör så att bilderna i spåret är centrerade */
-}
-
-/* Varje bild i karusellen */
-.carousel-item {
-  flex: 0 0 30%; /* Varje bild är 200px bred */
-  width: 100%;
-  position: relative;
-}
-
-.carousel-item img {
-  width: 100%;
-}
-
-/* Pilen för att navigera till vänster och höger */
-.carousel-arrow {
-  background: none;
-  border: none;
-  font-size: 2rem;
+.swiper-pagination {
   position: absolute;
-  cursor: pointer;
-  z-index: 100000;
-}
-
-/* För att placera vänsterpil och högerpil på rätt position */
-#arrow-left {
-  left: 1rem;
-}
-
-#arrow-right {
-  right: 1rem;
+  bottom: -1rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 */
 
@@ -640,6 +575,8 @@ footer {
   padding-right: 5rem;
 }
 
+/*SUBSCRIBE*/
+
 .subscribe {
   display: flex;
 }
@@ -678,6 +615,8 @@ footer {
   margin-left: 2rem;
 }
 
+/*INPUT FIELDS*/
+
 #email {
   background-color: var(--offwhite);
   color: var(--green);
@@ -695,6 +634,8 @@ input#email::placeholder {
   font-size: 0.9rem;
 }
 
+/*SOCIAL MEDIA ICONS - SOURCE*/
+
 .social-icons a {
   text-decoration: none;
   color: var(--offwhite);
@@ -711,6 +652,8 @@ input#email::placeholder {
 .social-icons a:hover {
   color: rgb(251, 209, 130);
 }
+
+/*COPYRIGHT TEXT*/
 
 .copy-right {
   background-color: var(--green);

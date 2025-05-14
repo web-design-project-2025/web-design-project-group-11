@@ -1,4 +1,4 @@
-//Inspired from https://chatgpt.com/c/681896cc-9914-8001-94c3-ac0e2a9127bf
+//INSPIRED FROM https://chatgpt.com/c/681896cc-9914-8001-94c3-ac0e2a9127bf
 
 const form = document.getElementById("form");
 
@@ -8,25 +8,28 @@ const email = document.getElementById("email-form");
 const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 
-// Felmeddelande-element
+//ERROR MESSAGES
 const errorFirstName = document.getElementById("error-first-name");
 const errorLastName = document.getElementById("error-last-name");
 const errorEmail = document.getElementById("error-email");
 const errorSubject = document.getElementById("error-subject");
 const errorMessage = document.getElementById("error-message");
 
+//CONFIRMATION ALERT POP-UP
 const customAlert = document.getElementById("custom-alert");
 
+//RUNS WHEN THE FORM IS SUBMITTED
 form.addEventListener("submit", (e) => {
   let hasError = false;
 
-  // Rensa gamla fel
+  //CLEARS OUT PREVIOUS ERROR MESSAGES
   errorFirstName.textContent = "";
   errorLastName.textContent = "";
   errorEmail.textContent = "";
   errorSubject.textContent = "";
   errorMessage.textContent = "";
 
+  //CHECKS IF THE VALUE IS EMPTY => ERROR MESSAGE
   if (firstName.value.trim() === "") {
     errorFirstName.textContent = "*Please enter first name";
     hasError = true;
@@ -48,17 +51,19 @@ form.addEventListener("submit", (e) => {
     hasError = true;
   }
 
+  //IF FORM IS INVALID, STOP THE PROCESS
   if (hasError) {
     e.preventDefault();
   } else {
-    e.preventDefault(); // valfritt: hindra att sidan laddas om
+    e.preventDefault(); //PREVENT PRELOAD
     customAlert.classList.add("show");
 
-    // Valfritt: göm meddelandet efter 3 sekunder
+    //SET TIME FOR ALERT MESSAGE
     setTimeout(() => {
       customAlert.classList.remove("show");
     }, 3000);
 
-    form.reset(); // töm formuläret
+    //CLEAR THE FORM
+    form.reset();
   }
 });
