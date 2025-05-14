@@ -1,11 +1,14 @@
 /*MAIN CONTENT*/
+main {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
 
 .detail-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 0.2fr);
-  margin-right: 3rem;
-  margin-left: 3rem;
+  row-gap: 2rem;
 }
 
 /*FIRST TEXT*/
@@ -123,7 +126,6 @@ button.like-button {
   grid-column: 1/3;
   grid-row: 4;
   margin-bottom: 1rem;
-  padding-top: 1rem;
   align-items: center;
   justify-items: center;
 }
@@ -135,7 +137,6 @@ button.like-button {
   color: var(--brown);
   grid-column: 1/2;
   grid-row: 4/5;
-  padding-right: 2rem;
   text-align: justify;
   margin-top: 4.8rem;
   line-height: 1.6rem;
@@ -147,187 +148,146 @@ button.like-button {
   grid-column: 2;
   grid-row: 4/5;
   height: 40rem;
-  max-width: 26.688rem;
+  max-width: 25.688rem;
   place-self: end;
+  align-self: start;
 }
 
 .third-image {
   grid-column: 3;
   grid-row: 4/5;
   min-height: 40rem;
-  max-width: 26.688rem;
+  max-width: 25.688rem;
   place-self: end;
-  margin-top: 1rem;
+  align-self: start;
 }
 
 /*RESPONSIVE*/
 
-@media screen and (min-width: 1765px) {
-  #detail-content {
-    margin-right: 7rem;
-    margin-left: 7rem;
-  }
-}
+/*  */
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1450px) {
   .detail-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 0.2fr);
+    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-rows: repeat(5, 0.2fr);
+    row-gap: 0;
   }
-  .second-image {
-    padding-right: 1rem;
-    place-self: center;
-  }
-  .third-image {
-    padding-left: 1rem;
-    place-self: center;
-  }
-  .button.like-button {
-    margin-left: 4rem;
-  }
-}
 
-@media screen and (max-width: 1352px) {
-  #detail-content {
-    margin-right: 0;
-    margin-left: 0;
+  .first-image {
+    width: 177%;
+    grid-column: 1/3;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
-  main {
-    margin-right: 2rem;
-    margin-left: 2rem;
-  }
-  .title {
-    grid-column: 1;
-    grid-row: 1;
-    text-align: start;
-    margin-bottom: 1rem;
-  }
-  .intro {
-    padding-right: 0;
-  }
-  .button.like-button {
+
+  .second-image {
     grid-column: 3;
-    grid-row: 1;
-    margin-left: 20rem;
+    grid-row: 4;
+    justify-self: start;
+    align-self: start;
   }
-  #temperature {
-    grid-column: 2;
-    grid-row: 2;
-    margin-top: 0rem;
-    place-self: center;
+  .third-image {
+    grid-column: 3;
+    grid-row: 5;
+    justify-self: start;
   }
-  .intro {
-    grid-column: 1/2;
-    grid-row: 2;
+
+  .subtitle {
+    grid-column: 1;
+    grid-row: 4;
+    max-width: 30rem;
+    text-align: left;
+    justify-self: center;
+  }
+
+  .description {
+    grid-column: 1;
+    grid-row: 4/5;
+    max-width: 30rem;
+    justify-self: end;
     text-align: left;
   }
-  .first-image {
-    grid-column: 1/3;
+}
+@media screen and (max-width: 1245px) {
+  .second-image {
+    grid-column: 3;
     grid-row: 4;
+    height: auto;
+    object-fit: cover;
+    justify-self: start;
+    align-self: start;
+  }
+
+  .third-image {
+    grid-column: 3;
+    grid-row: 4;
+    height: auto;
+    object-fit: cover;
+    justify-self: start;
+    align-self: start;
+    margin-top: 42rem;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  .first-image {
+    grid-column: 1 /4;
+    max-height: 30rem;
     width: 100%;
+    object-fit: cover;
   }
   .subtitle {
-    grid-column: 1/3;
-    grid-row: 5;
-  }
-  .description {
-    grid-column: 1/3;
-    grid-row: 5;
-    text-align: left;
+    justify-self: start;
   }
   .second-image {
-    grid-column: 1;
-    grid-row: 6;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    height: auto;
+    max-width: 25rem;
+    min-width: 25rem;
+    object-fit: cover;
   }
+
   .third-image {
-    grid-column: 2;
-    grid-row: 6;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-top: 40rem;
+    height: auto;
+    max-width: 25rem;
+    min-width: 25rem;
   }
 }
 
-@media screen and (max-width: 920px) {
-  .first-image {
-    padding-right: 1.5rem;
-  }
-  .third-image {
-    padding-right: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1025px) {
   .detail-content {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7, 0.2fr);
-  }
-  .title {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .button.like-button {
-    grid-column: 1;
-    grid-row: 1;
-    margin-left: 20rem;
-  }
-  #temperature {
-    grid-column: 1;
-    grid-row: 3;
-    width: 12rem;
-    height: 6rem;
-    font-size: 0.8rem;
-    margin-top: 1rem;
-  }
-  .temperature-value {
-    font-size: 1.2rem;
-  }
-  .temperature-icon {
-    font-size: 1.2rem;
-  }
-  .intro {
-    grid-column: 1;
-    grid-row: 2;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 0.2fr);
   }
   .first-image {
-    grid-column: 1;
-    grid-row: 4;
-    width: 100%;
-    height: 10rem;
+    grid-column: 1/4;
+    max-width: 60rem;
+    height: auto;
   }
   .subtitle {
-    grid-column: 1;
-    grid-row: 5;
-    text-align: center;
+    grid-column: 1/4;
+    max-width: 55%;
+    justify-self: center;
   }
+
   .description {
-    grid-column: 1;
-    grid-row: 5;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    padding-right: 0;
+    grid-column: 1/4;
+    max-width: 55%;
+    justify-self: center;
   }
   .second-image {
-    grid-column: 1;
-    grid-row: 6;
-    width: 100%;
-    height: 100%;
-    place-self: center;
-    margin-bottom: 0rem;
-    padding-right: 0rem;
+    margin-top: 3rem;
+    grid-column: 2;
+    grid-row: 5/6;
   }
   .third-image {
-    grid-column: 1;
-    grid-row: 7;
-    width: 100%;
-    place-self: center;
-    margin-top: 2rem;
-    margin-bottom: 0rem;
-    padding-left: 0rem;
-    padding-right: 0;
+    grid-column: 2;
+    grid-row: 6/7;
+    margin-top: 3rem;
   }
 }
 

@@ -51,7 +51,6 @@ main {
 
 p {
   color: var(--brown);
-  grid-column: 1;
   font-family: "peridot-pe-variable", sans-serif;
   text-align: justify;
   width: 40rem;
@@ -62,11 +61,12 @@ p {
 
 .content-first-part {
   display: grid;
-  grid-template-columns: repeat (2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: auto;
 }
 
 .text-one {
+  grid-column: 1;
   margin-top: 0;
 }
 
@@ -124,7 +124,7 @@ p {
 
 .content-second-part {
   display: grid;
-  grid-template-columns: repeat (2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: auto;
 }
 
@@ -148,15 +148,6 @@ p {
   grid-column: 2;
   padding-left: 6rem;
   padding-right: 0rem;
-}
-
-/*THIRD SECTION*/
-
-.text-three {
-  color: var(--brown);
-  width: auto;
-  padding-right: 0;
-  margin-top: 1rem;
 }
 
 /*ARTICLE SIGNATURE*/
@@ -189,7 +180,7 @@ p {
 .article-info {
   color: var(--brown);
   background-color: var(--blue);
-  border-top: 0.06rem solid black;
+  border-top: 0.06rem solid var(--brown);
   font-size: 0.8rem;
   font-style: italic;
   margin-right: 0;
@@ -245,7 +236,7 @@ p {
   }
 
   .content-first-part {
-    grid-template-columns: repeat (1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 0.5fr);
   }
 
@@ -281,7 +272,7 @@ p {
   }
 
   .content-second-part {
-    grid-template-columns: repeat (1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 0.5fr);
   }
 
@@ -304,10 +295,6 @@ p {
 
   .thailand-image {
     width: 50%;
-  }
-
-  .text-three {
-    width: auto;
   }
 
   .author {
@@ -369,23 +356,25 @@ p {
   .article-title {
     font-size: 1.9rem;
   }
+  p {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 650px) {
   .main-title {
     font-size: 2.5rem;
   }
+  .content-first-part {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 0.2fr);
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
   main {
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-
-  .content-first-part {
-    grid-template-columns: repeat (1, 1fr);
-    grid-template-rows: repeat(2, 0.2fr);
   }
 
   .text-two {
@@ -418,15 +407,11 @@ p {
   }
 
   .content-second-part {
-    grid-template-columns: repeat (1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 0.2fr);
   }
 
   .second-text {
-    letter-spacing: 0.02rem;
-  }
-
-  .text-three {
     letter-spacing: 0.02rem;
   }
 }

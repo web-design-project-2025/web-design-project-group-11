@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
     countryElement.classList.add("country");
 
     const link = document.createElement("a");
-    link.href = `detail-page.html?title=${encodeURIComponent(country.title)}`;
+    link.href = `detail-page.html?id=${encodeURIComponent(country.id)}`;
 
     const likeButtonElement = document.createElement("button");
     likeButtonElement.innerHTML =
