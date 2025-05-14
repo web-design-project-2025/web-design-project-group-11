@@ -7,28 +7,31 @@ document.addEventListener("DOMContentLoaded", () => {
   let swiper;
   let countries = [];
 
-  //FETCH DATA FROM JSON FILE - COUNTIRES
+  //FETCH DATA FROM JSON FILE - COUNTRIES
   async function loadData() {
     const response = await fetch("data/countries.json");
     const data = await response.json();
     countries = data.countries;
 
-    //RENDER THE SLIDES AND START SWIPER CAROUSEL
     renderCarousel();
     initSwiper();
   }
 
   //CREATE THE SWIPER SLIDE WITH IMAGES
   function renderCarousel() {
-    carouselContent.innerHTML = ""; // Clear existing slides
+    carouselContent.innerHTML = "";
 
     countries.forEach((country) => {
       const slide = document.createElement("div");
       slide.classList.add("swiper-slide");
 
       slide.innerHTML = `
-        <img src="${country.image}" alt="${country.title}" class="carousel-images" />
-        <p>${country.title}</p>
+        <a href="detail-page.html?id=${encodeURIComponent(country.id)}">
+          <img src="${country.image}" alt="${
+        country.title
+      }" class="carousel-images" />
+          <p>${country.title}</p>
+        </a>
       `;
 
       carouselContent.appendChild(slide);
@@ -41,12 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (swiper) swiper.destroy(true, true);
 
     swiper = new Swiper(".trending-slider", {
-      //CREATING NEW SWIPER FROM HTML
       slidesPerView: 4,
       spaceBetween: 35,
       loop: true,
-      centeredSlides: true, //MIDDLE SLIDE CENTERED
-      effect: "coverflow", //ENABLES ANIMATION
+      centeredSlides: true,
+      effect: "coverflow",
       coverflowEffect: {
         rotate: 0,
         stretch: 14,
@@ -55,14 +57,12 @@ document.addEventListener("DOMContentLoaded", () => {
         slideShadows: false,
       },
       navigation: {
-        //CREATING NAVIGATION ARROWS FROM HTML
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".carousel-section .swiper-button-next",
+        prevEl: ".carousel-section .swiper-button-prev",
       },
       pagination: {
-        //CLICKABLE DOTS UNDER THE CAROUSEL
-        el: ".swiper-pagination",
-        clickable: true,
+        el: ".carousel-section .swiper-pagination",
+        clickable: false,
       },
     });
   }
