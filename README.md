@@ -22,3 +22,30 @@ PROJECT STRUCTURE:
 -
 Through the development of Journee, we have worked with GitHub and multiple branches. We have one production branch where the final version of the website is distributed. Additionally we have one main branch which is the live version of the code and from the main branch we have created multiple feature branches and bug fix branches to keep the structure nice and clear. Every once in a while when a new feature is done and works as we would like it we have merged these branches back to main, making sure the main branch always has a working version of the website.
 
+USAGE GUIDELINES:
+-
+To ensure the best experience, please follow these guidelines:
+
+For Users:
+
+Explore Destinations: Browse popular countries in Europe and Asia. Each destination includes current weather data and inspiring visuals helping user make the best decisions on where to travel to next.
+
+Save Favorites: Use the like feature to mark your favorite destinations. These are stored in a local storage, meaning they will remain there next time you open the Journee website.
+
+Responsive Experience: Journee is fully responsive and works across all screen sizes—from desktops to mobile devices.
+
+Contact Us: Fill out the contact form if you wish to reach out to us. We use form validation to help guide you so that you do not miss anything.
+
+For Developers:
+
+All destination and continent data is managed through JSON files to load all data in a accessible way.
+
+Real-time weather data is fetched from the OpenMeteo API.
+
+To contribute or build upon this project, follow the project structure:
+
+The production branch holds the finalized version of the website.
+
+The main branch holds the live version of the website.
+
+All new features and bug fixes are developed in dedicated branches created from the main branch.
