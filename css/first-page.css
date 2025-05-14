@@ -250,7 +250,7 @@ h2 {
   display: flex;
   margin-top: 19rem;
   background-color: rgba(211, 232, 227, 0.4);
-  padding: 2rem 10rem;
+  padding: 2rem 5rem;
   gap: 5rem;
   justify-content: center;
   align-items: center;
@@ -258,9 +258,8 @@ h2 {
 }
 
 #tokyo-img {
-  width: 50%;
+  width: 70%;
   height: 35rem;
-  min-width: 30rem;
   object-fit: cover;
   object-position: center;
   padding-right: 7.9rem;
@@ -269,8 +268,6 @@ h2 {
 #text-container {
   display: flex;
   flex-direction: column;
-  max-width: 35em;
-  min-width: 25rem;
 }
 
 #tokyo-heading {
@@ -336,7 +333,7 @@ h3 {
 /*IMAGES - SWIPER CONTAINER*/
 
 .carousel-section {
-  max-width: 1000px;
+  max-width: 65.5rem;
   margin: 0 auto;
   padding: 2rem 0;
   text-align: center;
@@ -414,6 +411,14 @@ h3 {
   section.arrow-text {
     margin-top: 5rem;
   }
+  #tokyo-container {
+    gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #tokyo-img {
+    padding-right: 4rem;
+  }
 }
 
 @media screen and (max-width: 1060px) {
@@ -421,6 +426,11 @@ h3 {
     width: 26rem;
     margin-top: 6.8rem;
     margin-left: 30rem;
+  }
+
+  #footer-container2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -435,6 +445,7 @@ h3 {
     margin-left: 30rem;
   }
   #tokyo-img {
+    width: 60%;
     padding-right: 2rem;
   }
 }
@@ -514,7 +525,6 @@ h3 {
   #tokyo-img {
     width: 50%;
     height: auto;
-    min-width: 15rem;
   }
 }
 @media screen and (max-width: 470px) {
@@ -531,11 +541,6 @@ h3 {
     margin-top: 7rem;
     margin-left: 7rem;
     margin-right: 7rem;
-  }
-
-  #text-container {
-    max-width: 23em;
-    min-width: 20rem;
   }
 }
 

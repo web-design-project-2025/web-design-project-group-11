@@ -64,6 +64,28 @@ document.addEventListener("DOMContentLoaded", () => {
         el: ".carousel-section .swiper-pagination",
         clickable: false,
       },
+      breakpoints: {
+        // När bredden är ≥ 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        // När bredden är ≥ 640px
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        // När bredden är ≥ 1024px
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        // När bredden är ≥ 1280px
+        1110: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
     });
   }
 
