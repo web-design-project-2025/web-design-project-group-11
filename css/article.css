@@ -242,8 +242,9 @@ p {
 
   p {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
     padding-right: 0;
+    align-self: end;
     width: auto;
   }
 
