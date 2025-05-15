@@ -40,6 +40,8 @@ For Developers:
 
 All destination and continent data is managed through JSON files to load all data in a accessible way.
 
+Multiple JS files are used to ensure a clear code, each file named after which page it are attached to. The main.js file is javascript code for destination and scroll-destination pages and HTML/CSS files.
+
 Real-time weather data is fetched from the OpenMeteo API.
 
 To contribute or build upon this project, follow the project structure:
