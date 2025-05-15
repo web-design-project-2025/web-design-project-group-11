@@ -294,6 +294,7 @@ input#email::placeholder {
   }
   .social-icons {
     place-self: center;
+    justify-content: center;
     margin-left: 0;
   }
   .footer-link {
@@ -318,5 +319,9 @@ input#email::placeholder {
     align-items: center;
     place-self: center;
     gap: 1rem;
+  }
+
+  .subscribe-button {
+    margin-left: 0rem;
   }
 }
