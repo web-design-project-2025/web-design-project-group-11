@@ -160,6 +160,7 @@ button.like-button {
 .second-image {
   grid-column: 2;
   grid-row: 4/5;
+  height: 40rem;
   max-width: 25.688rem;
   place-self: end;
   align-self: start;
@@ -171,6 +172,7 @@ button.like-button {
   max-width: 25.688rem;
   place-self: end;
   align-self: start;
+  height: 40rem;
 }
 
 /* RESPONSIVE*/
@@ -260,6 +262,10 @@ button.like-button {
   .subtitle {
     grid-column: 1/4;
     justify-self: start;
+  }
+  .temperature-value,
+  .temperature-icon {
+    font-size: 1.5rem;
   }
 
   .description {
