@@ -1,3 +1,4 @@
+//RUNS WHEN THE HTML IS LOADED
 window.addEventListener("DOMContentLoaded", () => {
   let countries = [];
 
@@ -9,19 +10,24 @@ window.addEventListener("DOMContentLoaded", () => {
 
   let likedCountries = JSON.parse(localStorage.getItem("likedCountries")) || [];
 
-  // ChatGPT https://chatgpt.com/c/680b5321-980c-8001-ba93-747dc051dc71
+  //GOT HELP FROM ChatGPT https://chatgpt.com/c/680b5321-980c-8001-ba93-747dc051dc71
+
+  //EXTRACTS ?CONTINENT="CONTINENT" FROM THE URL
   function getContinentFromURL() {
     const params = new URLSearchParams(window.location.search);
     return params.get("continent"); // t.ex. "Asia", "Europe", eller null
   }
 
+  //FETCHES COUNTRY AND CONTINENT DATA FROM JSON FILES
   async function loadData() {
     const response = await fetch("data/countries.json");
     const json = await response.json();
     countries = json.countries;
 
+    //SORTS COUNTRIES ALPHABETICALLY
     countries.sort((a, b) => a.title.localeCompare(b.title));
 
+    //CHECK FOR A CONTINENT URL
     const continentResponse = await fetch("data/continents.json");
     const continentJson = await continentResponse.json();
     continents = continentJson.continents;
@@ -36,6 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
       renderContent(countries);
     }
 
+    //DISPLAY THE MATCHING CONTINENT DESCRIPTION
     renderSingleContinent(
       selectedContinent === "all" ? "All Destinations" : selectedContinent
     );
@@ -49,6 +56,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  //CLEAR THE EXISTING CONTENT & ITERATES OVER THE COUNTRY LIST AND APPENDS EACH TO THE DOM VIA createCountryElement
   function renderContent(countryList) {
     contentElement.innerHTML = "";
     for (let country of countryList) {
@@ -57,6 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  //CREATE ELEMENTS ON DESTINATION PAGE
   function createContinentElement(continent) {
     const section = document.createElement("section");
 
@@ -73,6 +82,7 @@ window.addEventListener("DOMContentLoaded", () => {
     return section;
   }
 
+  //CREATE ELEMENTS
   function createCountryElement(country) {
     const countryElement = document.createElement("section");
     countryElement.classList.add("country");
@@ -80,6 +90,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const link = document.createElement("a");
     link.href = `detail-page.html?id=${encodeURIComponent(country.id)}`;
 
+    //FILLED HEART IF LIKED/HOVER EFFECT AND LOCAL STORAGE
     const isLiked = likedCountries.includes(country.id);
     country.liked_by_user = isLiked;
 
@@ -123,7 +134,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
       const heartImg = likeButtonElement.querySelector("img");
 
-      // Lägg till hover endast om det inte är likat
+      //HOVER EFFECT IF NOT LIKED
       if (!country.liked_by_user) {
         likeButtonElement.addEventListener("mouseover", () => {
           heartImg.src = "img/heart-filled.svg";
@@ -157,6 +168,7 @@ window.addEventListener("DOMContentLoaded", () => {
     renderContent(filtered);
   }
 
+  //FINDS THE MATCHING CONTINENT FROM CONTINENTS
   function renderSingleContinent(continentName) {
     const selected = continents.find((c) => c.title === continentName);
     continentElement.innerHTML = "";
@@ -167,12 +179,14 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  //GRABS FILTER BUTTONS FOR INTERACTION
   const europeButton = document.getElementById("button-europe");
   const asiaButton = document.getElementById("button-asia");
   const allButton = document.getElementById("button-all");
 
   const scrollButtons = document.querySelectorAll(".scroll-filter-button");
 
+  //HIGHLIGHT THE ACTIVE BUTTON
   function activeButton(clickedButton) {
     scrollButtons.forEach((button) => {
       button.classList.remove("active");
@@ -180,10 +194,11 @@ window.addEventListener("DOMContentLoaded", () => {
     clickedButton.classList.add("active");
   }
 
+  //GRABS FILTER BUTTONS FOR INTERACTION
   europeButton.addEventListener("click", () => {
-    activeButton(europeButton);
-    filterByContinent("Europe");
-    renderSingleContinent("Europe");
+    activeButton(europeButton); //HIGHLIGT ACTIVE BUTTON
+    filterByContinent("Europe"); //FILTER THE COUNTRY LIST
+    renderSingleContinent("Europe"); //UPDATE THE DISPLAYED CONTINENT DESCRIPTION
   });
 
   asiaButton.addEventListener("click", () => {

@@ -30,14 +30,14 @@ hr {
 }
 
 h1 {
-  color: var(--green);
   grid-column: 2;
-  text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 0.7rem;
+  color: var(--green);
   font-size: 3rem;
   font-family: "richmond-display", sans-serif;
   font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 0.7rem;
   letter-spacing: 0.1rem;
 }
 
@@ -56,13 +56,13 @@ h1 {
 }
 
 .input-contact {
-  height: 2.5rem;
-  border: 0.1rem solid rgb(0, 70, 71, 0.3);
-  padding-left: 1rem;
+  color: var(--offwhite);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
   font-size: 1.3rem;
-  color: var(--offwhite);
+  height: 2.5rem;
+  border: 0.1rem solid rgb(0, 70, 71, 0.3);
+  padding-left: 1rem;
 }
 
 /*FIRST NAME & LAST NAME INPUT FIELDS*/
@@ -74,11 +74,11 @@ h1 {
 #first-name,
 #last-name {
   background-color: var(--offwhite);
+  color: var(--green);
   margin-bottom: 1.5rem;
   width: 20rem;
   padding-left: 1rem;
   border-radius: 0;
-  color: var(--green);
 }
 
 /*MAIL & SUBJECT INPUT FIELDS*/
@@ -86,25 +86,25 @@ h1 {
 #email-form,
 #subject {
   background-color: var(--offwhite);
+  color: var(--green);
   width: 41.5rem;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   border-radius: 0;
-  color: var(--green);
 }
 
 /*MESSAGE INPUT FIELD*/
 
 #message {
+  color: var(--green);
+  background-color: var(--offwhite);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
+  font-size: 1.3rem;
   width: 41.5rem;
   height: 10rem;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
-  font-family: "peridot-pe-variable", sans-serif;
-  font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
-  font-size: 1.3rem;
-  color: var(--green);
-  background-color: var(--offwhite);
   border: 0.1rem solid rgb(0, 70, 71, 0.3);
 }
 
@@ -119,10 +119,10 @@ input::placeholder {
 }
 
 .error-message {
+  color: var(--green);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
   font-size: 1rem;
-  color: var(--green);
 }
 
 .button-text {
@@ -133,16 +133,16 @@ input::placeholder {
 /*SEND BUTTON*/
 
 .send {
-  width: 41.5rem;
-  height: 3rem;
-  align-self: start;
-  border-style: solid;
+  color: var(--offwhite);
   background-color: var(--green);
   border-color: var(--green);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
-  color: var(--offwhite);
   font-size: 1rem;
+  width: 41.5rem;
+  height: 3rem;
+  align-self: start;
+  border-style: solid;
   cursor: pointer;
 }
 
@@ -156,8 +156,9 @@ input::placeholder {
 /*CONTACT INFO SECTION*/
 
 .contact-info {
-  color: var(--brown);
   display: flex;
+  background-color: var(--blue);
+  color: var(--brown);
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 300;
   font-size: 1.1rem;
@@ -165,14 +166,13 @@ input::placeholder {
   gap: 4rem;
   justify-content: center;
   padding-bottom: 3rem;
-  background-color: var(--blue);
 }
 
 .where,
 .number,
 .our-mail {
-  margin-top: 3rem;
   display: flex;
+  margin-top: 3rem;
   align-items: center;
   gap: 1rem;
 }
@@ -184,6 +184,7 @@ input::placeholder {
 /*POP-UP WINDOW*/
 
 .custom-alert {
+  display: none;
   background-color: var(--offwhite);
   color: var(--green);
   border: 0.5rem solid var(--green);
@@ -191,7 +192,6 @@ input::placeholder {
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 500;
   font-size: 1.5rem;
-  display: none;
   position: fixed;
   top: 35%;
   left: 50%;
@@ -203,6 +203,7 @@ input::placeholder {
 }
 
 /*RESPONSIVE*/
+
 @media screen and (max-width: 1340px) {
   #form {
     padding-right: 3rem;
@@ -521,11 +522,11 @@ input::placeholder {
   }
 
   #message {
+    font-size: 0.7rem;
     width: 18rem;
     height: 6rem;
     margin-bottom: 1rem;
     padding-left: 0.5rem;
-    font-size: 0.7rem;
   }
 
   input::placeholder {
@@ -544,9 +545,9 @@ input::placeholder {
   }
 
   .send {
+    font-size: 0.7rem;
     width: 18rem;
     height: 1.8rem;
-    font-size: 0.7rem;
     align-self: center;
   }
 

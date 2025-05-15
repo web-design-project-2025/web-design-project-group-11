@@ -8,16 +8,18 @@ body {
   background-color: var(--offwhite);
 }
 
+/*MAIN CONTENT*/
+
 /*STYLING TEXT + LINE IN TOP*/
 
 .find-your-text {
   color: var(--green);
-  text-align: center;
+  font-family: "richmond-display", sans-serif;
+  font-weight: 600;
   font-size: 3rem;
   padding-bottom: 2rem;
   margin-top: 0.7rem;
-  font-family: "richmond-display", sans-serif;
-  font-weight: 600;
+  text-align: center;
 }
 
 .line-1 {
@@ -35,24 +37,24 @@ body {
 
 .recharge {
   grid-column: 1;
-  font-size: 2rem;
   color: var(--green);
+  font-family: "richmond-display", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
   padding-left: 20rem;
   margin-right: 10rem;
   margin-bottom: 0;
-  font-family: "richmond-display", sans-serif;
-  font-weight: 500;
 }
 
 .destination-text {
   grid-column: 2;
-  font-size: 1.13rem;
-  margin-bottom: 2rem;
   color: var(--green);
-  padding-right: 20rem;
-  margin-top: 0;
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
+  font-size: 1.13rem;
+  margin-bottom: 2rem;
+  padding-right: 20rem;
+  margin-top: 0;
   letter-spacing: 0.02rem;
 }
 
@@ -64,8 +66,8 @@ body {
 }
 
 .img-big-button {
-  width: 62%;
   display: block;
+  width: 62%;
   margin: auto;
 }
 
@@ -84,8 +86,8 @@ body {
 }
 
 .img-small-buttons {
-  width: calc(62.5% - 0.5rem);
   display: block;
+  width: calc(62.5% - 0.5rem);
   justify-content: center;
   margin: auto;
 }
@@ -121,23 +123,22 @@ body {
 
 .tips-tricks {
   color: var(--green);
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 2rem;
-  padding-bottom: 2rem;
   font-family: "richmond-display", sans-serif;
   font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .tips-text {
   color: var(--green);
-  font-size: 1.2rem;
-  text-align: justify;
-  padding-left: 19rem;
-  padding-right: 19rem;
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
   font-size: 1.3rem;
+  text-align: justify;
+  padding-left: 19rem;
+  padding-right: 19rem;
   padding-bottom: 2rem;
 }
 

@@ -4,7 +4,7 @@ main {
   margin-bottom: 3rem;
 }
 
-/*TEXT CONTAINER*/
+/*MAIN CONTENT*/
 
 /*ARTICLE TITLE*/
 
@@ -19,8 +19,6 @@ main {
   font-size: 5rem;
   font-weight: 500;
   letter-spacing: 0.5rem;
-  /* text-decoration: underline;
-  text-underline-offset: 1rem; */
   text-align: center;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -80,7 +78,6 @@ p {
 
 .quote-one {
   color: var(--green);
-  /* font-style: italic; */
   font-size: 1.3rem;
   text-align: center;
 }
@@ -153,10 +150,10 @@ p {
 /*ARTICLE SIGNATURE*/
 
 .author {
-  color: var(--brown);
   display: flex;
-  width: auto;
   background-color: var(--blue);
+  color: var(--brown);
+  width: auto;
   margin-top: 2rem;
   align-items: center;
 }
