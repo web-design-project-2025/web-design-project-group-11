@@ -19,7 +19,7 @@ const errorMessage = document.getElementById("error-message");
 const customAlert = document.getElementById("custom-alert");
 
 //RUNS WHEN THE FORM IS SUBMITTED
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (evenet) => {
   let hasError = false;
 
   //CLEARS OUT PREVIOUS ERROR MESSAGES
@@ -53,9 +53,9 @@ form.addEventListener("submit", (e) => {
 
   //IF FORM IS INVALID, STOP THE PROCESS
   if (hasError) {
-    e.preventDefault();
+    evenet.preventDefault();
   } else {
-    e.preventDefault(); //PREVENT PRELOAD
+    evenet.preventDefault(); //PREVENT PRELOAD
     customAlert.classList.add("show");
 
     //SET TIME FOR ALERT MESSAGE

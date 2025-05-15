@@ -65,25 +65,32 @@ document.addEventListener("DOMContentLoaded", () => {
         clickable: false,
       },
       breakpoints: {
-        // När bredden är ≥ 320px
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        // När bredden är ≥ 640px
-        640: {
+        300: {
           slidesPerView: 2,
-          spaceBetween: 20,
+          spaceBetween: 2,
+          coverflowEffect: {
+            depth: 60,
+            modifier: 0.5,
+            stretch: 10,
+          },
         },
-        // När bredden är ≥ 1024px
-        1024: {
+        768: {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 35,
+          coverflowEffect: {
+            depth: 100,
+            modifier: 1,
+            stretch: 14,
+          },
         },
-        // När bredden är ≥ 1280px
-        1110: {
-          slidesPerView: 3,
-          spaceBetween: 10,
+        1050: {
+          slidesPerView: 4,
+          spaceBetween: 35,
+          coverflowEffect: {
+            depth: 100,
+            modifier: 1,
+            stretch: 14,
+          },
         },
       },
     });

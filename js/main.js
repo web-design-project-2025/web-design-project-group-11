@@ -57,14 +57,6 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // function renderContinents(continentList) {
-  //   continentElement.innerHTML = "";
-  //   for (let continent of continentList) {
-  //     const continentSection = createContinentElement(continent);
-  //     continentElement.appendChild(continentSection);
-  //   }
-  // }
-
   function createContinentElement(continent) {
     const section = document.createElement("section");
 

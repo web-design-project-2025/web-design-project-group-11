@@ -12,6 +12,20 @@ body {
   width: 100%;
 }
 
+main {
+  animation-name: slideInLeft;
+  animation-duration: 1.5s;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /*GLOBAL COLORS*/
 :root {
   --offwhite: rgb(248, 246, 243);

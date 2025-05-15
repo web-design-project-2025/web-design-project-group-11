@@ -311,6 +311,7 @@ h2 {
   color: var(--green);
   transition: ease 0.2s;
 }
+
 /*FAVORITE DESTINATIONS*/
 
 .recently-line {
@@ -333,19 +334,48 @@ h3 {
 /*IMAGES - SWIPER CONTAINER*/
 
 .carousel-section {
-  max-width: 65.5rem;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 0;
   text-align: center;
 }
 
+/*ändrat*/
 .trending-slider {
-  overflow: hidden;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/*ändrat*/
 .carousel-images {
   width: 100%;
+  height: 22rem; /* du kan ändra detta */
+  object-fit: cover;
   border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 1020px) {
+  .carousel-section {
+    padding-inline: 1.5rem;
+  }
+  .swiper-button-prev {
+    padding-inline: 1.8rem;
+  }
+  .swiper-button-next {
+    padding-inline: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel-images {
+    height: 10rem;
+  }
+  .swiper-pagination {
+    display: none;
+  }
 }
 
 .carousel-section {
