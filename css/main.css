@@ -121,8 +121,7 @@ footer {
   margin-right: 5rem;
 }
 
-/*SUBSCRIBE*/
-
+/* SUBSCRIBE */
 .subscribe {
   display: flex;
 }
@@ -263,8 +262,6 @@ input#email::placeholder {
 }
 
 /*RESPONSIVE FOOTER*/
-@media screen and (max-width: 950px) {
-}
 
 @media screen and (max-width: 950px) {
   #footer-container1 {

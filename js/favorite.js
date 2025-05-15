@@ -40,7 +40,10 @@ window.addEventListener("DOMContentLoaded", () => {
       likedCountries = likedCountries.filter((id) => id !== country.id);
       localStorage.setItem("likedCountries", JSON.stringify(likedCountries));
       // Remove from UI
-      countryElement.remove();
+      countryElement.classList.add("fade-out");
+      setTimeout(() => {
+        countryElement.remove();
+      }, 400);
     });
 
     countryElement.appendChild(likeButtonElement);

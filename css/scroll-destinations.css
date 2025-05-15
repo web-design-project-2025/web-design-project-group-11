@@ -252,8 +252,7 @@ body {
 
 @media screen and (max-width: 700px) {
   .description {
-    width: 25rem;
-    place-self: center;
+    width: auto;
   }
   .filter-container {
     place-self: center;
@@ -276,6 +275,10 @@ body {
 }
 
 @media screen and (max-width: 620px) {
+  main {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -302,25 +305,21 @@ body {
   }
   .filter-container {
     width: 28rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   #filter-icon {
     padding-left: 0.5rem;
   }
+
   .description {
-    margin-bottom: 2rem;
     width: auto;
-    margin: auto;
+    place-self: center;
+    font-size: 1.13rem;
   }
   .like-button {
     width: 7%;
-  }
-}
-@media screen and (max-width: 620px) {
-  .description {
-    width: 30rem;
-    place-self: center;
-    font-size: 1.13rem;
   }
 }
 
