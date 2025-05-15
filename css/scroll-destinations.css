@@ -129,7 +129,7 @@ body {
   width: 3%;
   z-index: 1000;
   position: absolute;
-  margin-left: 17%;
+  margin-left: 15%;
   cursor: pointer;
 }
 
@@ -146,6 +146,9 @@ body {
   .filter-container {
     height: 5rem;
   }
+  .like-button {
+    margin-left: 12%;
+  }
 }
 
 @media screen and (max-width: 2000px) {
@@ -160,11 +163,18 @@ body {
     margin-left: 7rem;
     margin-right: 7rem;
   }
+  .like-button {
+    margin-left: 17%;
+  }
 }
 
 @media screen and (max-width: 1600px) {
   .description {
     width: auto;
+  }
+
+  .like-button {
+    margin-left: 15%;
   }
 }
 
@@ -195,6 +205,9 @@ body {
     width: 10%;
     padding-left: 0.9rem;
   }
+  .like-button {
+    width: 4%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -206,14 +219,13 @@ body {
     width: auto;
   }
   .like-button {
-    margin-left: 22%;
+    margin-left: 21%;
     width: 5%;
   }
 }
 @media screen and (max-width: 900px) {
   .filter-container {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin: 2rem;
     padding-right: 0;
   }
   .scroll-filter-button {
@@ -235,8 +247,8 @@ body {
   }
   .filter-container {
     height: 3rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
   #button-all {
     width: 10rem;
@@ -255,10 +267,9 @@ body {
     width: auto;
   }
   .filter-container {
-    place-self: center;
     width: 35rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: auto;
+    margin-bottom: 2rem;
     height: 2.5rem;
   }
 
@@ -274,7 +285,7 @@ body {
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 627px) {
   main {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -304,9 +315,9 @@ body {
     gap: 0.5rem;
   }
   .filter-container {
-    width: 28rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    width: 25rem;
+    margin: auto;
+    margin-bottom: 2rem;
   }
 
   #filter-icon {
@@ -332,7 +343,7 @@ body {
     font-size: 1rem;
   }
   .filter-container {
-    width: 25rem;
+    width: 21rem;
   }
 
   .scroll-filter-button {
