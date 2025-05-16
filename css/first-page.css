@@ -907,6 +907,9 @@ input#email::placeholder {
 }
 
 @media screen and (max-width: 500px) {
+  #header-text {
+    left: 4rem;
+  }
   .subscribe {
     flex-direction: column;
     align-items: center;

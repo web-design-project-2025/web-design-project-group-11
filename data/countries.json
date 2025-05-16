@@ -495,7 +495,7 @@
     },
     {
       "id": "my",
-      "image": "img/Malaysia.jpg",
+      "image": "img/malaysia.jpg",
       "title": "Malaysia",
       "continent": "Asia",
       "capital": "Kuala Lumpur",
@@ -524,7 +524,7 @@
     },
     {
       "id": "ph",
-      "image": "img/Philippines.jpg",
+      "image": "img/philippines.jpg",
       "title": "Philippines",
       "continent": "Asia",
       "capital": "Manila",
@@ -611,7 +611,7 @@
     },
     {
       "id": "th",
-      "image": "img/Thailand.jpg",
+      "image": "img/thailand.jpg",
       "title": "Thailand",
       "continent": "Asia",
       "capital": "Bangkok",
@@ -640,7 +640,7 @@
     },
     {
       "id": "vm",
-      "image": "img/Vietnam.jpg",
+      "image": "img/vietnam.jpg",
       "title": "Vietnam",
       "continent": "Asia",
       "capital": "Hanoi",
