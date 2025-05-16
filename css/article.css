@@ -1,0 +1,415 @@
+main {
+  margin-right: 8rem;
+  margin-left: 8rem;
+  margin-bottom: 3rem;
+}
+
+/*MAIN CONTENT*/
+
+/*ARTICLE TITLE*/
+
+.overline-title {
+  color: var(--green);
+  margin-bottom: 1.8rem;
+}
+
+.main-title {
+  color: var(--green);
+  font-family: "richmond-display", sans-serif;
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  word-spacing: 0.5rem;
+}
+
+.underline-title {
+  color: var(--green);
+}
+
+.mini-title {
+  color: rgb(251, 209, 130);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.3rem;
+}
+
+.article-title {
+  color: var(--green);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 600;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/*FIRST SECTION*/
+
+p {
+  color: var(--brown);
+  font-family: "peridot-pe-variable", sans-serif;
+  text-align: justify;
+  width: 40rem;
+  padding-right: 3rem;
+  font-size: 1rem;
+  line-height: 2.1rem;
+}
+
+.content-first-part {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: auto;
+}
+
+.text-one {
+  grid-column: 1;
+  margin-top: 0;
+}
+
+.text-one::first-letter {
+  font-size: 4em;
+  font-weight: bold;
+  float: left;
+  line-height: 0.9;
+  padding-right: 0.8rem;
+}
+
+.quote-one {
+  color: var(--green);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.first-img-container {
+  display: flex;
+  grid-column: 2;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.china-image {
+  width: 46%;
+}
+
+.france-image {
+  width: 46%;
+}
+
+/*BIG QUOTE*/
+
+.line-over-quote {
+  margin-top: 2rem;
+}
+
+.quote-two {
+  color: var(--green);
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 450;
+}
+
+.line-under-quote {
+  margin-bottom: 2rem;
+}
+
+/*SECOND SECTION*/
+
+.content-second-part {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: auto;
+}
+
+.second-img-container {
+  display: flex;
+  grid-column: 1;
+  gap: 2rem;
+  justify-content: center;
+  padding-left: 3rem;
+}
+
+.berlin-image {
+  width: 55%;
+}
+
+.thailand-image {
+  width: 55%;
+}
+
+.second-text {
+  grid-column: 2;
+  padding-left: 6rem;
+  padding-right: 0rem;
+}
+
+/*ARTICLE SIGNATURE*/
+
+.author {
+  display: flex;
+  background-color: var(--blue);
+  color: var(--brown);
+  width: auto;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.name-hannah {
+  color: var(--brown);
+  margin-left: 1rem;
+}
+
+.selfie {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.article-info {
+  color: var(--brown);
+  background-color: var(--blue);
+  border-top: 0.06rem solid var(--brown);
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-right: 0;
+  width: auto;
+  padding-left: 1rem;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1530px) {
+  main {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  main {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .first-img-container {
+    gap: 1rem;
+  }
+
+  .china-image {
+    width: 50%;
+  }
+
+  .france-image {
+    width: 50%;
+  }
+
+  .second-img-container {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+  .main-title {
+    font-size: 4rem;
+    margin: auto;
+  }
+
+  .underline-title {
+    margin-top: 1.8rem;
+  }
+
+  .content-first-part {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+  }
+
+  p {
+    grid-column: 1;
+    grid-row: 2;
+    padding-right: 0;
+    align-self: end;
+    width: auto;
+  }
+
+  .text-two {
+    margin-bottom: 2rem;
+  }
+
+  .quote-one {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .first-img-container {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .quote-two {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  br {
+    display: none;
+  }
+
+  .content-second-part {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+  }
+
+  .second-text {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .second-img-container {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0;
+  }
+
+  .berlin-image {
+    width: 50%;
+  }
+
+  .thailand-image {
+    width: 50%;
+  }
+
+  .author {
+    width: auto;
+  }
+
+  .article-info {
+    width: auto;
+  }
+
+  .line-over-quote,
+  .line-under-quote {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .main-title {
+    font-size: 3.1rem;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .main-title {
+    font-size: 2.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .article-title {
+    font-size: 2rem;
+  }
+
+  .quote-two {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  main {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .article-title {
+    font-size: 1.9rem;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+  .content-first-part {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 0.2fr);
+  }
+}
+
+@media screen and (max-width: 630px) {
+  main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .text-two {
+    letter-spacing: 0.02rem;
+  }
+
+  .underline-title {
+    margin-top: 1rem;
+  }
+
+  .overline-title {
+    margin-bottom: 1rem;
+  }
+
+  .mini-title {
+    margin: auto;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .article-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .line-under-quote {
+    margin-bottom: 1.5rem;
+  }
+
+  .content-second-part {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 0.2fr);
+  }
+
+  .second-text {
+    letter-spacing: 0.02rem;
+  }
+}

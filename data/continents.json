@@ -1,0 +1,19 @@
+{
+  "continents": [
+    {
+      "id": "eu",
+      "title": "Europe",
+      "description": "Europe is a continent full of history, charm, and cultural diversity. From the romantic streets of Paris to the dramatic fjords of Norway, its landscapes and cities are endlessly captivating. Each country offers its own language, cuisine, and traditions, making every visit a unique experience. You can explore ancient ruins, stroll through world-class museums, or relax on beautiful Mediterranean beaches."
+    },
+    {
+      "id": "as",
+      "title": "Asia",
+      "description": "Asia is the largest and most diverse continent in the world, offering a stunning blend of ancient traditions and modern marvels. From the bustling cities of Tokyo and Bangkok to the serene landscapes of the Himalayas and rice fields of Vietnam, every corner holds something unique. It’s home to a vast range of cultures, languages, and religions, including the roots of Buddhism, Hinduism, and Islam."
+    },
+    {
+      "id": "all",
+      "title": "All Destinations",
+      "description": "Asia and Europe, though distinct, are deeply connected through history, culture, and geography. Together they form the vast Eurasian landmass, where ancient civilizations rose, empires expanded, and trade routes like the Silk Road brought people and ideas together. Europe offers timeless art, historic cities, and a mosaic of cultures, while Asia enchants with spiritual heritage, vibrant traditions, and breathtaking natural wonders."
+    }
+  ]
+}

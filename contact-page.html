@@ -5,7 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/contact-us.css" />
-    <title>JOURNEE</title>
+    <link rel="stylesheet" href="https://use.typekit.net/izz5dre.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="js/contact.js" defer></script>
+    <title>Contact us</title>
   </head>
-  <body></body>
+
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <img id="background-header" src="img/small-header.jpg" alt="Sky with mountains" />
+      <section id="all-header">
+        <a href="index.html">
+          <img id="logo" src="img/journee-logo.svg" alt="Logo Journee"
+        /></a>
+        <nav>
+          <a href="destination-page.html">Destinations</a>
+          <a href="contact-page.html">Contact us</a>
+        </nav>
+        <a id="heart-link" href="favorite-page.html">
+          <img
+          class="heart-icon"
+          src="img/heart-filled.svg"
+          alt="Small heart as like button"
+        /></a>
+      </section>
+    </header>
+
+<!--MAIN CONTENT-->
+
+    <main>
+
+      <!--ALERT POP-UP-->
+
+      <section id="custom-alert" class="custom-alert hidden">
+        Thank you for your message!
+      </section>
+
+      <!--CONTACT FORM-->
+
+      <section class="content-container">
+
+        <!--IMAGE-->
+
+        <img
+          class="contact-img"
+          src="img/contact-image.jpg"
+          alt="Girl working on the beach"
+        />
+
+        <form id="form">
+          <hr />
+          <h1>Contact us today!</h1>
+          
+          <!--INPUT FIELDS-->
+
+          <section class="first-last-name">
+            <section>
+              <span class="error-message" id="error-first-name"></span><br />
+              <input class="input-contact" type="text" id="first-name" placeholder="First Name*" />
+            </section>
+
+            <section>
+              <span class="error-message" id="error-last-name"></span> <br />
+              <input class="input-contact" type="text" id="last-name" placeholder="Last Name*" />
+            </section>
+          </section>
+
+          <section>
+            <span class="error-message" id="error-email"></span><br />
+            <input class="input-contact" type="text" id="email-form" placeholder="Email*" />
+          </section>
+
+          <section>
+            <span class="error-message" id="error-subject"></span> <br />
+            <input class="input-contact" type="text" id="subject" placeholder="Subject*" />
+            <br />
+            <span class="error-message" id="error-subject"></span>
+          </section>
+
+          <section>
+            <span class="error-message" id="error-message"></span><br />
+            <textarea
+              id="message"
+              placeholder="Write message here*"
+              rows="10"
+            ></textarea>
+          </section>
+
+<!--SEND BUTTON-->
+
+          <section>
+            <button class="send">SEND</button>
+          </section>
+        </form>
+      </section>
+
+      <!--CONTACT INFO-->
+
+      <section class="contact-info">
+        <section class="where">
+          <img src="img/location.png" alt="location icon" class="icon" />
+          <p id="where">Jönköping, Sweden</p>
+        </section>
+
+        <section class="number">
+          <img src="img/phone.png" alt="phone icon" class="icon" />
+          <p id="number">+4670-1234567</p>
+        </section>
+
+        <section class="our-mail">
+          <img src="img/email.png" alt="email icon" class="icon" />
+          <p id="our-email">info@journee.com</p>
+        </section>
+      </section>
+      </section>
+
+    </main>
+
+    <footer>
+      <!--FOOTER-->
+
+      <section id="footer-container1">
+        <a class="footer-link" href="contact-page.html">CONTACT US</a>
+        <a class="footer-link" href="article.html">BLOG</a>
+        <a class="footer-link" href="destination-page.html">DESTINATIONS</a>
+      </section>
+
+      <!--SUBSCRIBE BUTTON IN INPUT FIELD-->
+
+      <section id="footer-container2">
+        <p class="subscribe-text">SUBSCRIBE TO OUR NEWSLETTER!</p>
+        <section class="subscribe">
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your Email Address"
+          />
+          <button class="subscribe-button">SUBSCRIBE</button>
+        </section>
+
+        <!--SOCIAL MEDIA ICONS - https://cdnjs.com/libraries/font-awesome/6.5.0 -->
+        
+        <section class="social-icons">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </section>
+      </section>
+
+      <!--COPY RIGHT TEXT-->
+
+      <p class="copy-right">
+        <span class="copy-logo">&#169;</span>Copyright JOURNEE 2025
+      </p>
+    </footer>
+  </body>
 </html>

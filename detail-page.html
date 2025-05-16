@@ -5,7 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/detail-page.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.typekit.net/izz5dre.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Country Details</title>
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <img
+        id="background-header"
+        src="img/small-header.jpg"
+        alt="Sky with mountains"
+      />
+      <section id="all-header">
+        <a href="index.html">
+          <img id="logo" src="img/journee-logo.svg" alt="Logo Journee"
+        /></a>
+        <nav>
+          <a href="destination-page.html">Destinations</a>
+          <a href="contact-page.html">Contact us</a>
+        </nav>
+        <a id="heart-link" href="favorite-page.html">
+          <img
+            class="heart-icon"
+            src="img/heart-filled.svg"
+            alt="Small heart as like button"
+        /></a>
+      </section>
+    </header>
+
+    <!--LOAD JSON FILES-->
+
+    <main>
+      <section class="detail-container">
+        <div class="detail-content" id="detail-content"></div>
+      </section>
+    </main>
+
+    <footer>
+      <!--FOOTER-->
+
+      <section id="footer-container1">
+        <a class="footer-link" href="contact-page.html">CONTACT US</a>
+        <a class="footer-link" href="article.html">BLOG</a>
+        <a class="footer-link" href="destination-page.html">DESTINATIONS</a>
+      </section>
+
+      <!--SUBSCRIBE BUTTON IN INPUT FIELD-->
+
+      <section id="footer-container2">
+        <p class="subscribe-text">SUBSCRIBE TO OUR NEWSLETTER!</p>
+        <section class="subscribe">
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your Email Address"
+          />
+          <button class="subscribe-button">SUBSCRIBE</button>
+        </section>
+
+        <!--SOCIAL MEDIA ICONS - https://cdnjs.com/libraries/font-awesome/6.5.0 -->
+
+        <section class="social-icons">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </section>
+      </section>
+
+      <!--COPY RIGHT TEXT-->
+
+      <p class="copy-right">
+        <span class="copy-logo">&#169;</span>Copyright JOURNEE 2025
+      </p>
+    </footer>
+
+    <!--LOAD JAVASCRIPT-->
+
+    <script src="js/main.js" defer></script>
+    <script src="js/detail.js" defer></script>
+  </body>
 </html>

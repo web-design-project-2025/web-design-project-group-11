@@ -5,7 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/favorites-page.css" />
-    <title>JOURNEE</title>
+    <link rel="stylesheet" href="https://use.typekit.net/izz5dre.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>My favorites</title>
+      <!--SWIPER CSS-->
+      <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--SWIPER JS-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <img
+        id="background-header"
+        src="img/small-header.jpg"
+        alt="Sky with mountains"
+      />
+      <section id="all-header">
+        <a href="index.html">
+          <img id="logo" src="img/journee-logo.svg" alt="Logo Journee"
+        /></a>
+        <nav>
+          <a href="destination-page.html">Destinations</a>
+          <a href="contact-page.html">Contact us</a>
+        </nav>
+        <a id="heart-link" href="favorite-page.html">
+          <img
+            class="heart-icon"
+            src="img/heart-filled.svg"
+            alt="Small heart as like button"
+        /></a>
+      </section>
+    </header>
+
+    <!--MAIN CONTENT-->
+
+    <!--INTRO TEXT-->
+
+    <main>
+      <section class="full-height">
+      <hr class="line" />
+      <h1>My favorite destinations</h1>
+      <p class="instructions">
+        We collected all your favorite destinations in a list. They will stay
+        here for as long as you want. If you want to remove a destination, just
+        easily click on the heart icon.
+      </p>
+
+      <!--FILTER CONTAINER-->
+
+      <section class="filter-container">
+        <img id="filter-icon" src="img/filter-icon.svg" alt="Filter icon" />
+        <section class="continent-buttons">
+          <button class="filter-button" id="favorite-button-all">
+            All Destinations
+          </button>
+          <button class="filter-button" id="favorite-button-europe">
+            Europe
+          </button>
+          <button class="filter-button" id="favorite-button-asia">Asia</button>
+        </section>
+      </section>
+
+      <!--LOAD JSON FILES-->
+
+      <div id="favorite-content"></div>
+
+      <!--SOURCE FOR CAROUSEL - https://github.com/devression/card-slider/blob/main/index.html-->
+
+      <!--IMAGE CAROUSEL-->
+
+      <hr class="recently-line" />
+      <h3>Explore more destinations</h3>
+
+      <section class="carousel-section">
+        <div class="swiper trending-slider">
+          <div class="swiper-wrapper" id="carousel-content">
+            <!-- Slides här via JS -->
+          </div>
+        </div>
+
+        <!--ARROWS AND PAGINATION OUTSIDE SWIPER-->
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+    </main>
+
+    <footer>
+      <!--FOOTER-->
+
+      <section id="footer-container1">
+        <a class="footer-link" href="contact-page.html">CONTACT US</a>
+        <a class="footer-link" href="article.html">BLOG</a>
+        <a class="footer-link" href="destination-page.html">DESTINATIONS</a>
+      </section>
+
+      <!--SUBSCRIBE BUTTON IN INPUT FIELD-->
+
+      <section id="footer-container2">
+        <p class="subscribe-text">SUBSCRIBE TO OUR NEWSLETTER!</p>
+        <section class="subscribe">
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your Email Address"
+          />
+          <button class="subscribe-button">SUBSCRIBE</button>
+        </section>
+
+        <!--SOCIAL MEDIA ICONS - https://cdnjs.com/libraries/font-awesome/6.5.0 -->
+
+        <section class="social-icons">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </section>
+      </section>
+
+      <!--COPY RIGHT TEXT-->
+
+      <p class="copy-right">
+        <span class="copy-logo">&#169;</span>Copyright JOURNEE 2025
+      </p>
+    </footer>
+  </section>
+
+    <!--LOAD JAVASCRIPT-->
+
+    <script src="js/main.js" defer></script>
+    <script src="js/favorite.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+  </body>
 </html>

@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--offwhite);
+}
+
+/*MAIN CONTENT*/
+
+/*STYLING TEXT + LINE IN TOP*/
+
+.find-your-text {
+  color: var(--green);
+  font-family: "richmond-display", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  margin-top: 0.7rem;
+  text-align: center;
+}
+
+.line-1 {
+  width: 37rem;
+  border: 0.05rem solid var(--green);
+  margin: auto;
+  justify-content: center;
+}
+
+.recharge-text {
+  display: grid;
+  grid-template-columns: 2;
+  align-items: center;
+}
+
+.recharge {
+  grid-column: 1;
+  color: var(--green);
+  font-family: "richmond-display", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-left: 20rem;
+  margin-right: 10rem;
+  margin-bottom: 0;
+}
+
+.destination-text {
+  grid-column: 2;
+  color: var(--green);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
+  font-size: 1.13rem;
+  margin-bottom: 2rem;
+  padding-right: 20rem;
+  margin-top: 0;
+  letter-spacing: 0.02rem;
+}
+
+/*STYLING BUTTONS*/
+
+.destination-buttons {
+  max-width: 100%;
+  margin: auto;
+}
+
+.img-big-button {
+  display: block;
+  width: 62%;
+  margin: auto;
+}
+
+.img-big-button:hover {
+  opacity: 70%;
+  transition: ease 0.2s;
+}
+
+.small-images {
+  display: flex;
+  row-gap: 2rem;
+  gap: 1rem;
+  margin: auto;
+  margin-top: 1rem;
+  padding-bottom: 10rem;
+}
+
+.img-small-buttons {
+  display: block;
+  width: calc(62.5% - 0.5rem);
+  justify-content: center;
+  margin: auto;
+}
+
+.img-small-buttons:hover {
+  opacity: 70%;
+  transition: ease 0.2s;
+}
+
+#asia-button {
+  margin-right: 0;
+}
+
+#europe-button {
+  margin-left: 0;
+}
+
+/*STYLING TIPS & TRICKS SECTION*/
+
+.tips-and-tricks {
+  background-color: rgb(211, 232, 227, 0.5);
+  padding: 2rem;
+}
+
+.line-2 {
+  width: 30rem;
+  border: 0.05rem solid var(--green);
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin: auto;
+}
+
+.tips-tricks {
+  color: var(--green);
+  font-family: "richmond-display", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.tips-text {
+  color: var(--green);
+  font-family: "peridot-pe-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wdth" 100, "wght" 200;
+  font-size: 1.3rem;
+  text-align: justify;
+  padding-left: 19rem;
+  padding-right: 19rem;
+  padding-bottom: 2rem;
+}
+
+.tips-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#check-list,
+#luggage,
+#money,
+#food {
+  width: 18rem;
+  height: 18rem;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1500px) {
+  .tips-text {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .recharge {
+    font-size: 2rem;
+    margin-right: 3rem;
+    padding-left: 15rem;
+  }
+  .destination-text {
+    font-size: 1.13rem;
+    padding-right: 15rem;
+  }
+
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .find-your-text {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .recharge-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .recharge {
+    font-size: 1.6rem;
+    padding: 0;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .destination-text {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .small-images {
+    padding-bottom: 2rem;
+  }
+
+  .tips-tricks {
+    font-size: 2.5rem;
+  }
+
+  .tips-text {
+    text-align: center;
+    font-size: 1.13rem;
+  }
+
+  .tips-images {
+    justify-items: center;
+    gap: 0.5rem;
+  }
+
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .tips-text {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0rem;
+  }
+  .tips-images {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .line-1,
+  .line-2 {
+    width: 20rem;
+  }
+
+  .find-your-text {
+    font-size: 2rem;
+  }
+
+  .recharge-text {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .recharge {
+    font-size: 1.5rem;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .destination-text {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  section .small-images {
+    padding-bottom: 3rem;
+  }
+
+  .tips-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .tips-tricks {
+    font-size: 2rem;
+  }
+
+  #check-list,
+  #luggage,
+  #money,
+  #food {
+    width: 100%;
+    max-width: 16rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .line-1,
+  .line-2 {
+    width: 15rem;
+  }
+  .tips-tricks {
+    font-size: 1.7rem;
+  }
+}

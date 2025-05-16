@@ -1,0 +1,700 @@
+{
+  "countries": [
+    {
+      "id": "at",
+      "image": "img/austria.jpg",
+      "title": "Austria",
+      "continent": "Europe",
+      "capital": "Vienna",
+      "subtitle": "Travel destinations",
+      "intro": "Austria is a landlocked country in the heart of Europe, known for its breathtaking Alpine landscapes, rich cultural heritage, and historic cities. With its capital in Vienna, Austria has long been a center of music, art, and intellectual thought. The country is famously associated with classical composers like Mozart, Beethoven, and Strauss, whose legacies still echo in concert halls today. Vienna’s grand architecture, elegant coffee houses, and vibrant cultural scene make it one of Europe’s most charming cities.",
+      "description": "Vienna, the capital city, is a cultural treasure known for its imperial palaces, world-class museums, and vibrant music scene. Salzburg, the birthplace of Mozart, enchants visitors with its baroque architecture and the majestic Hohensalzburg Fortress overlooking the city. Innsbruck, nestled in the heart of the Alps, is a favorite for winter sports enthusiasts and offers stunning mountain views year-round. Hallstatt is a postcard-perfect lakeside village, famous for its charming houses, salt mines, and serene natural beauty. Graz, Austria’s second-largest city, combines Renaissance courtyards with a modern art scene and a lively university atmosphere. The Wachau Valley, along the Danube River, is known for its vineyards, medieval castles, and picturesque towns like Dürnstein. Zell am See is a scenic resort town surrounded by mountains and a crystal-clear lake, perfect for both skiing and summer hiking. The Grossglockner High Alpine Road offers a breathtaking drive through the Alps, leading to Austria’s highest peak. St. Anton am Arlberg is one of Europe’s top ski destinations, attracting skiers and snowboarders from around the world. Klagenfurt, near Lake Wörthersee, is a sunny summer spot ideal for swimming, boating, and lakeside relaxation.",
+      "location": {
+        "latitude": 48.210033,
+        "longitude": 16.363449
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/austria1.jpg",
+          "alt": "Mountains with lake"
+        },
+        {
+          "url": "img/vienna.jpg",
+          "alt": "Ancient buildning in Salzburg"
+        },
+        {
+          "url": "img/vienna1.jpg",
+          "alt": "Skiing in the alps"
+        }
+      ]
+    },
+    {
+      "id": "be",
+      "image": "img/belgium.jpg",
+      "title": "Belgium",
+      "continent": "Europe",
+      "capital": "Brussels",
+      "subtitle": "Travel destinations",
+      "intro": "Belgium is a small yet culturally rich country in Western Europe, known for its medieval towns, Renaissance architecture, and vibrant culinary scene. With its capital in Brussels, Belgium serves as the administrative heart of the European Union and NATO. The nation is renowned for its diverse linguistic regions, including Dutch-speaking Flanders, French-speaking Wallonia, and bilingual Brussels. Belgium's contributions to art, particularly through Flemish painters like Rubens and Van Eyck, are celebrated worldwide.",
+      "description": "Brussels, the capital, is a cultural hub known for its majestic Grand Place, European Parliament, and delicious chocolates. Bruges offers a fairytale-like atmosphere with its winding canals and medieval architecture. Antwerp is a stylish city, famous for its fashion scene, diamond district, and the stunning Cathedral of Our Lady. Ghent, with its vibrant arts scene, charming canals, and the Gravensteen Castle, is a must-visit for history lovers. The Ardennes region offers beautiful hiking trails, serene forests, and small villages, perfect for outdoor enthusiasts. Leuven is home to one of Europe’s oldest universities and boasts lively cafes and beer culture. The picturesque town of Dinant lies on the banks of the Meuse River and is known for its impressive citadel. Waterloo, the site of Napoleon’s famous defeat, attracts history buffs. Ostend, located by the coast, offers sandy beaches and a lively seaside atmosphere. The medieval city of Liège combines ancient heritage with modern vibrancy. The Belgian countryside offers numerous castles, such as the Château de Bouillon, perfect for exploring the country’s rich history. With its thriving beer culture, Belgium is home to many breweries where visitors can sample a variety of world-famous brews.",
+      "location": {
+        "latitude": 50.85045,
+        "longitude": 50.85045
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/belgium1.jpg",
+          "alt": "A river in the city center"
+        },
+        {
+          "url": "img/brussels.jpg",
+          "alt": "A plaza in Brussels"
+        },
+        {
+          "url": "img/brussels1.jpg",
+          "alt": "Old castle in the woods"
+        }
+      ]
+    },
+    {
+      "id": "fr",
+      "image": "img/france.jpg",
+      "title": "France",
+      "continent": "Europe",
+      "capital": "Paris",
+      "subtitle": "Travel destinations",
+      "intro": "France is a prominent country in Western Europe, celebrated for its rich history, art, and culinary excellence. With its capital in Paris, France has long been a center of culture, fashion, and intellectual thought. The country is renowned for its iconic landmarks like the Eiffel Tower, the Louvre Museum, and its picturesque countryside. French cuisine and wine are integral to its national identity, influencing culinary traditions globally.",
+      "description": "Paris, the City of Light, offers iconic landmarks like the Eiffel Tower, Louvre Museum, and world-class cuisine. Nice, situated on the French Riviera, is known for its glamorous beaches, Mediterranean climate, and beautiful old town. Lyon, a UNESCO World Heritage city, is famous for its Renaissance architecture and gastronomic delights. Bordeaux is a wine lover’s paradise, surrounded by vineyards and stunning châteaux. The lavender fields of Provence offer a picture-perfect landscape during the summer months. The Alps provide world-renowned skiing, breathtaking mountain views, and scenic hiking trails. Mont-Saint-Michel, with its medieval abbey perched on a rocky island, is a must-see. The Loire Valley’s châteaux, like Château de Chambord, offer a glimpse into France’s royal history. Normandy, with its D-Day beaches, the historical town of Rouen, and the stunning cliffs of Etretat, is a historical wonder. The Côte d'Azur is home to beautiful coastal cities like Cannes, Monaco, and Antibes. Corsica, an island known for its rugged mountains, beautiful beaches, and historic towns, offers an escape into nature. The wine regions of Burgundy and Champagne are perfect for wine connoisseurs looking to explore some of the finest vineyards in Europe.",
+      "location": {
+        "latitude": 48.864716,
+        "longitude": 2.349014
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/france1.jpg",
+          "alt": "A small river in a old village"
+        },
+        {
+          "url": "img/paris.jpg",
+          "alt": "Drown shot from Paris"
+        },
+        {
+          "url": "img/paris1.jpg",
+          "alt": "Frence alp village"
+        }
+      ]
+    },
+    {
+      "id": "de",
+      "image": "img/germany.jpg",
+      "title": "Germany",
+      "continent": "Europe",
+      "capital": "Berlin",
+      "subtitle": "Travel destinations",
+      "intro": "Germany is a leading nation in Central Europe, known for its influential history, engineering prowess, and vibrant cultural scene. With its capital in Berlin, Germany has played a pivotal role in European affairs and innovation. The country is famed for its contributions to philosophy, music, and science, with figures like Beethoven and Einstein. Germany's diverse landscapes range from the Bavarian Alps to the Rhine Valley, offering rich experiences for visitors.",
+      "description": "Berlin is a dynamic city known for its rich history, the Brandenburg Gate, and the iconic Berlin Wall. Munich is famous for Oktoberfest, beautiful beer gardens, and the impressive Nymphenburg Palace. The Rhine Valley offers scenic cruises, charming villages, and ancient castles like Burg Eltz. Hamburg is a lively port city with modern attractions such as the Elbphilharmonie and a historic harbor. The Bavarian Alps provide stunning views and year-round outdoor adventures, from skiing to hiking. Heidelberg, with its romantic old town and Heidelberg Castle, is a charming destination. The Black Forest is perfect for hiking and discovering quaint villages. Neuschwanstein Castle, with its fairy-tale beauty, is one of Europe’s most popular tourist destinations. Rothenburg ob der Tauber, a medieval town, offers well-preserved fortifications and a glimpse into the past. Cologne, with its magnificent Gothic cathedral, is a must-visit for architecture enthusiasts. The Zugspitze, Germany’s highest peak, offers skiing and panoramic views. The city of Dresden, with its baroque architecture, has a rich cultural and historical significance, offering travelers a sense of the country's artistic heritage.",
+      "location": {
+        "latitude": 52.520008,
+        "longitude": 13.404954
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/germany1.jpg",
+          "alt": "A big castle on a hill"
+        },
+        {
+          "url": "img/berlin.jpg",
+          "alt": "TV tower in Berlin"
+        },
+        {
+          "url": "img/berlin1.jpg",
+          "alt": "Small german village"
+        }
+      ]
+    },
+    {
+      "id": "el",
+      "image": "img/greece.jpg",
+      "title": "Greece",
+      "continent": "Europe",
+      "capital": "Athens",
+      "subtitle": "Travel destinations",
+      "intro": "Greece is a southeastern European country, celebrated as the cradle of Western civilization and democracy. With its capital in Athens, Greece boasts ancient landmarks like the Parthenon and a rich mythological heritage. The nation comprises thousands of islands, each offering unique landscapes and traditions. Greek cuisine, with its emphasis on fresh ingredients and olive oil, reflects the country's Mediterranean roots.",
+      "description": "Athens, the capital, is home to the Acropolis, the Parthenon, and centuries of ancient history. Santorini, with its whitewashed buildings and blue-domed churches, is a picture-perfect island in the Aegean Sea. Crete offers rich history, including the ancient Minoan ruins of Knossos, and stunning beaches. Mykonos is known for its vibrant nightlife, charming streets, and beautiful beaches. Rhodes combines ancient ruins, medieval architecture, and stunning coastlines. Thessaloniki is a bustling city full of history, culture, and delicious food. Corfu, with its lush landscapes and Venetian influence, offers a unique blend of cultures. Meteora, famous for its monasteries perched high on cliffs, is a UNESCO World Heritage site. The island of Naxos is known for its beautiful beaches, ancient ruins, and charming villages. Delphi, an important archaeological site, offers a glimpse into the ancient Greek world. Thessaloniki’s waterfront is a lovely spot to stroll, with cafes offering views of the Aegean Sea. The island of Paros offers a mix of ancient and modern Greek life with picturesque villages and a laid-back atmosphere.",
+      "location": {
+        "latitude": 37.98381,
+        "longitude": 23.727539
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/greece1.jpg",
+          "alt": "A boat in the blue ocean"
+        },
+        {
+          "url": "img/athens.jpg",
+          "alt": "Small city streets in Athens"
+        },
+        {
+          "url": "img/athens1.jpg",
+          "alt": "Blue and white houses in Santorini"
+        }
+      ]
+    },
+    {
+      "id": "it",
+      "image": "img/italy.jpg",
+      "title": "Italy",
+      "continent": "Europe",
+      "capital": "Rome",
+      "subtitle": "Travel destinations",
+      "intro": "Italy is a southern European country, renowned for its profound impact on art, architecture, and gastronomy. With its capital in Rome, Italy is home to ancient ruins, Renaissance masterpieces, and vibrant street life. The country's diverse regions offer a tapestry of cultures, from the canals of Venice to the vineyards of Tuscany. Italian cuisine, characterized by pasta, pizza, and espresso, is beloved worldwide.",
+      "description": "Rome, the Eternal City, is filled with iconic landmarks like the Colosseum, the Roman Forum, and the Vatican City. Venice, with its romantic canals, charming gondolas, and historic architecture, is a top destination for lovers. Florence, the birthplace of the Renaissance, boasts stunning art museums, galleries, and architecture. The Amalfi Coast offers spectacular cliffs, colorful villages, and Mediterranean beauty. Milan is a global fashion capital with stunning Gothic architecture and art treasures like Leonardo da Vinci’s The Last Supper. Sicily is rich in history, with ancient ruins, beautiful beaches, and Mount Etna. The Cinque Terre, five charming coastal villages, offers hiking trails and breathtaking views. Lake Como is surrounded by mountains, providing a scenic getaway with luxurious villas. Naples, home to delicious pizza, is located near the ruins of Pompeii and the majestic Mount Vesuvius. Bologna is famous for its culinary heritage, historical university, and medieval architecture. The medieval hilltop town of San Gimignano, famous for its towers, provides a unique glimpse into Italy’s past. The coastal city of Genoa boasts beautiful views of the Mediterranean and a rich maritime history, making it a great stop for travelers.",
+      "location": {
+        "latitude": 41.902782,
+        "longitude": 12.496366
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/italy1.jpg",
+          "alt": "Venice river"
+        },
+        {
+          "url": "img/rome.jpg",
+          "alt": "Old buildings in the sunset in Rome"
+        },
+        {
+          "url": "img/rome1.jpg",
+          "alt": "Pizza picnic"
+        }
+      ]
+    },
+    {
+      "id": "no",
+      "image": "img/norway.jpg",
+      "title": "Norway",
+      "continent": "Europe",
+      "capital": "Oslo",
+      "subtitle": "Travel destinations",
+      "intro": "Norway is a Nordic country in Northern Europe, famed for its stunning fjords, mountainous terrain, and maritime heritage. With its capital in Oslo, Norway combines modern design with deep-rooted traditions. The nation is known for its commitment to sustainability and high quality of life. Norwegian culture is enriched by folklore, outdoor pursuits, and a strong connection to nature.",
+      "description": "Oslo, the capital, is a vibrant city surrounded by stunning fjords and home to cultural treasures like the Munch Museum. Bergen is a picturesque town set against a backdrop of seven mountains and is home to the UNESCO-listed Bryggen. The Lofoten Islands are famous for their dramatic landscapes, pristine beaches, and traditional fishing villages. Geirangerfjord, a UNESCO World Heritage site, is known for its breathtaking cliffs and waterfalls. Tromsø, above the Arctic Circle, offers the Northern Lights in winter and the midnight sun in summer. The Atlantic Road is a scenic drive with views of the rugged coastline and the open sea. Svalbard, an Arctic wilderness, is home to polar bears, glaciers, and unique wildlife. Røros, a UNESCO-listed mining town, is a charming destination with wooden houses and historic streets. The Jotunheimen National Park offers spectacular hiking and the chance to see Norway’s highest peaks. The Hardangerfjord region is famous for its natural beauty, including fruit orchards, waterfalls, and fjords. The Romsdalen valley provides a stunning mix of towering peaks and green pastures, ideal for outdoor enthusiasts. The town of Ålesund, known for its art nouveau architecture, offers picturesque views over the surrounding islands and fjords.",
+      "location": {
+        "latitude": 59.91273,
+        "longitude": 10.74609
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/norway1.jpg",
+          "alt": "Northern norweigan city"
+        },
+        {
+          "url": "img/oslo.jpg",
+          "alt": "Busy street in Oslo"
+        },
+        {
+          "url": "img/oslo1.jpg",
+          "alt": "Trolltungan"
+        }
+      ]
+    },
+    {
+      "id": "pt",
+      "image": "img/portugal.jpg",
+      "title": "Portugal",
+      "continent": "Europe",
+      "capital": "Lisbon",
+      "subtitle": "Travel destinations",
+      "intro": "Portugal is a southwestern European country, known for its rich maritime history, charming cities, and diverse landscapes. With its capital in Lisbon, Portugal offers a blend of traditional architecture and contemporary culture. The country is celebrated for its contributions to exploration during the Age of Discoveries. Portuguese cuisine, featuring dishes like bacalhau and pastel de nata, reflects its coastal heritage.",
+      "description": "Lisbon, the capital, is a vibrant city known for its historical sites like the Belem Tower, picturesque neighborhoods like Alfama, and its lively riverside atmosphere. Porto, famous for its wine, offers charming streets, a stunning riverside, and the beautiful Livraria Lello. The Algarve region boasts golden beaches, dramatic cliffs, and traditional fishing villages. Sintra, with its fairy-tale palaces and lush forests, is one of the most enchanting places in Portugal. Madeira, an archipelago off the coast, offers hiking trails, stunning botanical gardens, and scenic viewpoints. The Douro Valley, known for its terraced vineyards along the river, is a haven for wine lovers. The city of Évora, with its Roman ruins and medieval architecture, takes visitors back in time. The Azores, a volcanic archipelago, is renowned for its natural beauty, with crater lakes, hot springs, and unique wildlife. Cascais, a former fishing village, is a lovely coastal retreat with beautiful beaches and a charming town center. Obidos is a medieval town surrounded by walls, offering cobbled streets and historic architecture. Nazaré is a famous beach destination, known for its giant waves that attract surfers from around the world. The coastal town of Tavira offers traditional Portuguese charm, with a lovely old town, Roman bridge, and beautiful beaches.",
+      "location": {
+        "latitude": 38.736946,
+        "longitude": -9.142685
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/portugal1.jpg",
+          "alt": "Beach by the mountains"
+        },
+        {
+          "url": "img/lisbon.jpg",
+          "alt": "Lisbon in the sunset"
+        },
+        {
+          "url": "img/lisbon1.jpg",
+          "alt": "River in Porto"
+        }
+      ]
+    },
+    {
+      "id": "es",
+      "image": "img/spain.jpg",
+      "title": "Spain",
+      "continent": "Europe",
+      "capital": "Madrid",
+      "subtitle": "Travel destinations",
+      "intro": "Spain is a vibrant country in southwestern Europe, renowned for its diverse cultures, historic landmarks, and lively festivals. With its capital in Madrid, Spain boasts world-class art museums and dynamic urban life. The nation's regions, from Catalonia to Andalusia, offer unique languages, cuisines, and traditions. Spanish cuisine, including tapas and paella, is central to its social and cultural fabric.",
+      "description": "Madrid, the capital, is a vibrant city home to the Prado Museum, the Royal Palace, and bustling squares like Puerta del Sol. Barcelona offers stunning architecture by Antoni Gaudí, including the iconic Sagrada Familia and Parc Güell. Seville enchants visitors with its historic Alcázar Palace, the stunning Seville Cathedral, and flamenco culture. Granada, at the foot of the Sierra Nevada, is home to the magnificent Alhambra Palace. Valencia is known for its futuristic architecture in the City of Arts and Sciences and its beautiful beaches. The Balearic Islands, including Mallorca and Ibiza, offer sunny beaches, vibrant nightlife, and scenic landscapes. The Canary Islands are a year-round destination with volcanic landscapes, beaches, and charming towns. The Basque Country, with cities like Bilbao and San Sebastián, is famous for its culinary scene and beautiful coastlines. Salamanca, a university city, boasts a stunning Plaza Mayor and one of Europe’s oldest universities. Cordoba is home to the majestic Mezquita, a symbol of the city’s rich Moorish history. The Camino de Santiago is a famous pilgrimage route that attracts thousands of walkers each year. The Costa Brava offers a rugged coastline with cliffs, sandy beaches, and picturesque fishing villages.",
+      "location": {
+        "latitude": 40.416775,
+        "longitude": -3.70379
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/spain1.jpg",
+          "alt": "Old castle in Spain"
+        },
+        {
+          "url": "img/madrid.jpg",
+          "alt": "Cozy street in the city"
+        },
+        {
+          "url": "img/madrid1.jpg",
+          "alt": "Barcelona skyline"
+        }
+      ]
+    },
+    {
+      "id": "se",
+      "image": "img/sweden.jpg",
+      "title": "Sweden",
+      "continent": "Europe",
+      "capital": "Stockholm",
+      "subtitle": "Travel destinations",
+      "intro": "Sweden is a Scandinavian country in Northern Europe, known for its innovation, natural beauty, and commitment to social welfare. With its capital in Stockholm, Sweden blends historic charm with modern design. The country's landscapes range from northern arctic regions to southern beaches. Swedish culture emphasizes equality, environmentalism, and a strong connection to nature.",
+      "description": "Stockholm, the capital, is spread across 14 islands and is famous for its beautiful archipelago, the Royal Palace, and vibrant cultural scene. Gothenburg offers a laid-back atmosphere, with beautiful canals, a lively harbor, and great shopping. Malmö, a multicultural city, offers a modern vibe with historic buildings and beautiful parks. Kiruna, located in the far north, is famous for its stunning northern lights and the Icehotel, a hotel made entirely of ice. Visby, on the island of Gotland, is a medieval town with cobbled streets, ancient ruins, and a lively summer atmosphere. The Swedish Lapland is a dream destination for winter enthusiasts, offering skiing, dog sledding, and snowshoeing. The island of Öland is known for its picturesque landscape, with lighthouses, sandy beaches, and lush fields. Lake Vänern, Sweden’s largest lake, offers beautiful islands, quaint villages, and nature reserves. Åre, Sweden’s premier ski resort, offers year-round activities and stunning views of the surrounding mountains. Uppsala is home to one of the oldest universities in Sweden, with beautiful botanical gardens and historical buildings. Gotland is known for its medieval architecture, charming villages, and beautiful beaches. Skåne, located in southern Sweden, offers rolling hills, coastal landscapes, and vibrant cities like Malmö.",
+      "location": {
+        "latitude": 59.334591,
+        "longitude": 18.06324
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/sweden1.jpg",
+          "alt": "Swedish nature"
+        },
+        {
+          "url": "img/stockholm.jpg",
+          "alt": "Sunset over Stockholm city"
+        },
+        {
+          "url": "img/stockholm1.jpg",
+          "alt": "Landscape in north of Sweden"
+        }
+      ]
+    },
+    {
+      "id": "swi",
+      "image": "img/switzerland.jpg",
+      "title": "Switzerland",
+      "continent": "Europe",
+      "capital": "Bern",
+      "subtitle": "Travel destinations",
+      "intro": "Switzerland is a landlocked country in Central Europe, famed for its alpine scenery, neutrality, and precision industries. With its capital in Bern, Switzerland is home to multiple official languages and a rich cultural tapestry. The nation is renowned for its banking sector, watchmaking, and high standard of living. Swiss cuisine, including cheese fondue and chocolate, reflects its diverse regional influences.",
+      "description": "Zurich, the largest city, is a hub for finance, culture, and beautiful lakeside views. Lucerne is a picture-perfect city, with a medieval old town, charming wooden bridges, and views of the surrounding mountains. Interlaken is a paradise for adventure seekers, offering activities like skiing, paragliding, and hiking with views of the Eiger, Mönch, and Jungfrau mountains. Zermatt, a car-free resort town, offers breathtaking views of the Matterhorn and is famous for skiing and mountaineering. Geneva is home to international organizations, stunning lakeside promenades, and a beautiful old town. Bern, the capital, offers a charming medieval center and the famous Zytglogge clock tower. The Swiss National Park, located in the Alps, is perfect for hiking, wildlife watching, and exploring pristine landscapes. St. Moritz, a luxury ski resort town, offers upscale shopping, fine dining, and world-class skiing. The Lauterbrunnen Valley, with its stunning waterfalls, is a popular destination for hiking and scenic beauty. The Montreux Jazz Festival attracts music lovers from all over the world every summer. Lake Geneva offers boat rides with views of vineyards and castles. The town of Grindelwald is a picturesque village nestled in the Bernese Alps, offering hiking, skiing, and stunning views.",
+      "location": {
+        "latitude": 46.947456,
+        "longitude": 7.451123
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/switzerland1.jpg",
+          "alt": "Cute city by the lake"
+        },
+        {
+          "url": "img/bern.jpg",
+          "alt": "Swiss city in the mountains"
+        },
+        {
+          "url": "img/bern1.jpg",
+          "alt": "A river in the mountains"
+        }
+      ]
+    },
+    {
+      "id": "uk",
+      "image": "img/england.jpg",
+      "title": "England",
+      "continent": "Europe",
+      "capital": "London",
+      "subtitle": "Travel destinations",
+      "intro": "England is a country within the United Kingdom, known for its historical landmarks, literary heritage, and cultural influence. With its capital in London, England offers iconic sites like the Tower of London and Buckingham Palace. The nation has produced renowned figures in literature, science, and the arts. English traditions, from afternoon tea to football, are celebrated worldwide.",
+      "description": "London, the capital, is a cosmopolitan hub with iconic landmarks like the Tower of London, Buckingham Palace, and the British Museum. Bath, famous for its Roman baths, offers beautiful Georgian architecture and a relaxing atmosphere. Oxford and Cambridge, two of the world’s oldest and most prestigious universities, offer stunning architecture, museums, and history. Stonehenge, the prehistoric monument, is a UNESCO World Heritage site and one of the most iconic landmarks in England. The Lake District, with its rolling hills, picturesque lakes, and charming villages, is a UNESCO World Heritage site. The Cotswolds offer quaint villages, rolling countryside, and charming stone cottages. The Jurassic Coast, a UNESCO-listed coastline, offers fossil hunting and beautiful cliffs. Brighton, located by the coast, offers a vibrant arts scene, lively beach culture, and a famous pier. The city of York offers medieval walls, a stunning cathedral, and historic streets like The Shambles. Windsor, home to Windsor Castle, is a charming town that offers a royal experience. The Peak District is known for its stunning natural landscapes, with hiking trails, caves, and historic villages. Canterbury, with its medieval architecture, offers history and charm, particularly the famous Canterbury Cathedral.",
+      "location": {
+        "latitude": 51.509865,
+        "longitude": -0.118092
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/england1.jpg",
+          "alt": "Old english village"
+        },
+        {
+          "url": "img/london.jpg",
+          "alt": "London bridge"
+        },
+        {
+          "url": "img/london1.jpg",
+          "alt": "English landscapes by the ocean"
+        }
+      ]
+    },
+    {
+      "id": "ch",
+      "image": "img/china.jpg",
+      "title": "China",
+      "continent": "Asia",
+      "capital": "Bejing",
+      "subtitle": "Travel destinations",
+      "intro": "China is a vast country in East Asia, with a rich history spanning thousands of years and a rapidly growing economy. With its capital in Beijing, China is home to ancient wonders like the Great Wall and the Forbidden City. The nation's diverse landscapes range from deserts to tropical coastlines. Chinese culture, including its cuisine, philosophy, and festivals, has had a profound global impact.",
+      "description": "Beijing, the capital, is home to historic landmarks like the Great Wall, the Forbidden City, and the Temple of Heaven. Xi’an is famous for the Terracotta Army and its rich ancient history as the starting point of the Silk Road. The Karst mountains in Guilin are famous for their stunning limestone peaks and tranquil rivers, creating a picture-perfect landscape. The city of Hangzhou, with its beautiful West Lake, is known for its ancient temples, tea plantations, and scenic beauty. Shanghai, a bustling metropolis, is renowned for its futuristic skyline, the Bund, and vibrant cultural scene. Chengdu, the capital of Sichuan, is famous for its giant pandas and spicy cuisine. The Zhangjiajie National Forest Park inspired the floating mountains in the film Avatar and offers stunning views and hiking trails. Lijiang, a UNESCO World Heritage city, is known for its preserved ancient town and beautiful surrounding mountains. The Potala Palace in Lhasa is a symbol of Tibet’s unique culture and offers breathtaking views of the Himalayas. The Li River, flowing through Guilin, offers tranquil boat rides surrounded by stunning karst formations. The Yellow Mountains, or Huangshan, are a must-visit for hikers, offering misty landscapes, hot springs, and ancient pine trees.",
+      "location": {
+        "latitude": 39.916668,
+        "longitude": 116.383331
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/china1.jpg",
+          "alt": "Traditional building in China"
+        },
+        {
+          "url": "img/bejing.jpg",
+          "alt": "Skyline over Bejing"
+        },
+        {
+          "url": "img/bejing1.jpg",
+          "alt": "Great Wall of China"
+        }
+      ]
+    },
+    {
+      "id": "ii",
+      "image": "img/india.jpg",
+      "title": "India",
+      "continent": "Asia",
+      "capital": "New Delhi",
+      "subtitle": "Travel destinations",
+      "intro": "India is a diverse and populous country in South Asia, known for its rich cultural heritage, spiritual traditions, and vibrant democracy. With its capital in New Delhi, India encompasses a multitude of languages, religions, and cuisines. The country's landmarks, from the Taj Mahal to the Himalayas, attract visitors worldwide. Indian arts, including Bollywood cinema and classical music, are integral to its national identity.",
+      "description": "Delhi, the capital, is a bustling city filled with historical landmarks such as the Red Fort, India Gate, and Jama Masjid. Agra, home to the Taj Mahal, is a must-visit for those seeking an iconic glimpse of one of the Seven Wonders of the World. Jaipur, known as the Pink City, is rich in palaces, forts, and vibrant bazaars. Kerala, often referred to as God's Own Country, is famous for its backwaters, beaches, and lush landscapes. The holy city of Varanasi, located on the banks of the Ganges River, offers a spiritual experience like no other. The Himalayan region, including destinations like Manali and Leh, offers breathtaking mountain landscapes and adventure activities. Rishikesh and Haridwar are famous for yoga, meditation, and spiritual retreats along the Ganges River. The beaches of Goa offer a laid-back atmosphere with golden sands and vibrant nightlife. Udaipur, known as the City of Lakes, boasts romantic views, grand palaces, and historic temples. Kolkata, the cultural capital of India, is known for its colonial architecture, vibrant festivals, and literary history. The Andaman Islands, with their pristine beaches and clear waters, offer the perfect tropical getaway. Hampi, a UNESCO World Heritage site, is famous for its ancient ruins and historical temples.",
+      "location": {
+        "latitude": 28.6448,
+        "longitude": 77.216721
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/india1.jpg",
+          "alt": "Street of India"
+        },
+        {
+          "url": "img/delhi.jpg",
+          "alt": "Tuktuk in Delhi"
+        },
+        {
+          "url": "img/delhi1.jpg",
+          "alt": "Taj Mahal"
+        }
+      ]
+    },
+    {
+      "id": "io",
+      "image": "img/indonesia.jpg",
+      "title": "Indonesia",
+      "continent": "Asia",
+      "capital": "Jakarta",
+      "subtitle": "Travel destinations",
+      "intro": "Indonesia is a Southeast Asian nation comprising thousands of islands, known for its cultural diversity and natural beauty. With its capital in Jakarta, Indonesia is the world's largest archipelago and has a rich tapestry of languages and traditions. The country's landscapes include tropical rainforests, volcanoes, and pristine beaches. Indonesian cuisine, such as nasi goreng and satay, reflects its varied cultural influences.",
+      "description": "Bali is famous for its stunning beaches, vibrant nightlife, and temples like Tanah Lot and Uluwatu. Jakarta, the capital, is a bustling metropolis with a mix of modern skyscrapers, shopping malls, and cultural attractions. Yogyakarta is known for its historical and cultural significance, including the magnificent Borobudur and Prambanan temples. The Gili Islands offer crystal-clear waters, vibrant coral reefs, and a relaxed island atmosphere perfect for snorkeling and diving. Mount Bromo, an active volcano in East Java, offers a surreal landscape with volcanic craters and beautiful sunrise views. Komodo Island is home to the famous Komodo dragons and offers some of the world’s best diving spots. Lombok, an island near Bali, offers stunning beaches, waterfalls, and the towering Mount Rinjani. The cultural hub of Ubud, located in Bali, is known for its lush rice paddies, art scene, and yoga retreats. Raja Ampat, located in West Papua, offers some of the world’s most biodiverse marine life and untouched islands. Labuan Bajo is a popular gateway to explore Komodo National Park and its pristine landscapes. Sumatra is home to vast rainforests, orangutans, and the stunning Lake Toba. The island of Sulawesi offers beautiful beaches, diving spots, and cultural experiences in places like Toraja.",
+      "location": {
+        "latitude": -6.2,
+        "longitude": 106.816666
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/indonesia1.jpg",
+          "alt": "Rice field"
+        },
+        {
+          "url": "img/bali.jpg",
+          "alt": "Blue water"
+        },
+        {
+          "url": "img/bali1.jpg",
+          "alt": "Jakarta city"
+        }
+      ]
+    },
+    {
+      "id": "ir",
+      "image": "img/iran.jpg",
+      "title": "Iran",
+      "continent": "Asia",
+      "capital": "Teheran",
+      "subtitle": "Travel destinations",
+      "intro": "Iran is a country in Western Asia, known for its ancient history, architectural wonders, and rich cultural traditions. With its capital in Tehran, Iran has been a center of civilization since antiquity. The nation boasts landmarks like Persepolis and the intricate mosques of Isfahan. Persian art, poetry, and cuisine continue to influence cultures around the world.",
+      "description": "Tehran, the capital, is a bustling metropolis with a rich history and cultural landmarks like the Golestan Palace and the National Museum of Iran. Isfahan, often called the half of the world, is famous for its stunning Islamic architecture, including the Sheikh Lotfollah Mosque and Naqsh-e Jahan Square. Shiraz is home to ancient ruins like Persepolis, the tomb of Hafez, and lush gardens. Yazd is a desert city known for its ancient mudbrick architecture, Zoroastrian heritage, and wind towers. The Caspian Sea coast offers beaches, resorts, and a laid-back atmosphere. The city of Kerman is famous for its historic sites, including the Ganjali Khan Complex and the unique Rayen Citadel. The city of Tabriz is known for its vibrant bazaar, a UNESCO World Heritage site, and beautiful mosques. Mashhad, the holiest city in Iran, is a major pilgrimage destination due to the shrine of Imam Reza. The Persian Gulf is home to beautiful coastal cities like Bandar Abbas and Kish Island, offering both culture and relaxation. Mount Damavand, the highest peak in Iran, is a popular destination for mountaineers and nature lovers. The Lut Desert, a UNESCO World Heritage site, is famous for its stunning salt plains and extreme climate. Qeshm Island is known for its striking geological formations, like the Valley of Stars and the Hara Forest.",
+      "location": {
+        "latitude": 35.715298,
+        "longitude": 51.404343
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/iran1.jpg",
+          "alt": "Mountain"
+        },
+        {
+          "url": "img/teheran.jpg",
+          "alt": "Drivinglane with green trees"
+        },
+        {
+          "url": "img/teheran1.jpg",
+          "alt": "High building"
+        }
+      ]
+    },
+    {
+      "id": "ja",
+      "image": "img/japan.jpg",
+      "title": "Japan",
+      "continent": "Asia",
+      "capital": "Tokyo",
+      "subtitle": "Travel destinations",
+      "intro": "Japan is an island nation in East Asia, renowned for its blend of ancient traditions and cutting-edge technology. With its capital in Tokyo, Japan offers a dynamic mix of historic temples and modern skyscrapers. The country's culture emphasizes harmony, craftsmanship, and innovation. Japanese cuisine, including sushi and ramen, is celebrated globally for its precision and flavor.",
+      "description": "Tokyo, the capital, is a dynamic city that blends tradition with modernity, offering everything from ancient temples to futuristic skyscrapers. Kyoto is known for its beautiful temples, traditional tea houses, and the iconic Fushimi Inari Shrine. Osaka is famous for its lively street food scene, modern shopping districts, and historic Osaka Castle. Hiroshima is home to the Peace Memorial Park, dedicated to the victims of the atomic bombing. Mount Fuji, Japan’s highest peak, is a symbol of the country and offers hiking opportunities and stunning views. The island of Hokkaido is famous for its powder snow, hot springs, and beautiful national parks. Okinawa, a tropical island chain, offers pristine beaches, vibrant coral reefs, and a unique culture. Nara, home to the famous Todai-ji Temple and friendly deer, is a must-visit for history enthusiasts. The city of Kanazawa is known for its well-preserved Edo-period districts, including Kenrokuen Garden. The Ghibli Museum in Mitaka is a magical destination for fans of Studio Ghibli films. Nikko, a UNESCO World Heritage site, is home to ornate shrines, lush forests, and beautiful waterfalls. The Ise Grand Shrine is one of Japan’s most sacred Shinto shrines, located in the Mie Prefecture.",
+      "location": {
+        "latitude": 35.652832,
+        "longitude": 139.839478
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/japan1.jpg",
+          "alt": "City during the night"
+        },
+        {
+          "url": "img/tokyo.jpg",
+          "alt": "Close up on tall buildings"
+        },
+        {
+          "url": "img/tokyo1.jpg",
+          "alt": "Mount Fuji"
+        }
+      ]
+    },
+    {
+      "id": "my",
+      "image": "img/Malaysia.jpg",
+      "title": "Malaysia",
+      "continent": "Asia",
+      "capital": "Kuala Lumpur",
+      "subtitle": "Travel destinations",
+      "intro": "Malaysia is a Southeast Asian country, known for its multicultural society, tropical landscapes, and bustling cities. With its capital in Kuala Lumpur, Malaysia combines modern urban life with rich cultural heritage. The nation is characterized by its diverse population, including Malay, Chinese, and Indian communities. Malaysian cuisine, such as laksa and satay, reflects this cultural fusion.",
+      "description": "Kuala Lumpur, the capital, is known for its iconic Petronas Twin Towers, vibrant shopping malls, and bustling street markets. Penang is famous for its diverse culture, delicious street food, and colonial architecture in Georgetown. Langkawi, an island off the northwest coast, offers pristine beaches, clear waters, and lush jungles perfect for relaxation and adventure. The Cameron Highlands, with its tea plantations and cooler climate, offers a peaceful escape in Malaysia's highlands. The Batu Caves, located near Kuala Lumpur, are home to a massive golden statue of Lord Murugan and provide visitors with a spiritual experience and scenic views. Sabah, on the island of Borneo, offers an incredible diversity of wildlife, including orangutans, and Mount Kinabalu for hiking enthusiasts. The Perhentian Islands are a tropical paradise, offering crystal-clear waters, excellent diving opportunities, and untouched beaches. Malacca, a UNESCO World Heritage city, is rich in history, with colonial architecture and cultural landmarks like the A Famosa fort. The Taman Negara National Park is one of the world’s oldest tropical rainforests and is perfect for jungle trekking. Johor Bahru offers a mix of cultural sites and modern entertainment, while also being close to Singapore.",
+      "location": {
+        "latitude": 3.140853,
+        "longitude": 101.693207
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/malaysia1.jpg",
+          "alt": "Sunset over Malaysia"
+        },
+        {
+          "url": "img/kuala-lumpur.jpg",
+          "alt": "A small car is parked in front of a building"
+        },
+        {
+          "url": "img/kuala-lumpur1.jpg",
+          "alt": "Beach with blue water"
+        }
+      ]
+    },
+    {
+      "id": "ph",
+      "image": "img/Philippines.jpg",
+      "title": "Philippines",
+      "continent": "Asia",
+      "capital": "Manila",
+      "subtitle": "Travel destinations",
+      "intro": "The Philippines is an archipelagic country in Southeast Asia, known for its stunning beaches, vibrant festivals, and hospitable people. With its capital in Manila, the Philippines comprises over 7,000 islands, each with unique traditions. The nation has a rich history influenced by indigenous, Spanish, and American cultures. Filipino cuisine, including adobo and lechon, is a flavorful blend of these diverse influences.",
+      "description": "Manila, the bustling capital, is known for its colonial history, vibrant shopping malls, and beautiful bay views. Palawan, an island paradise, offers crystal-clear waters, dramatic limestone cliffs, and the UNESCO-listed Underground River. Boracay is famous for its white sandy beaches, perfect for sunbathing, water sports, and vibrant nightlife. Cebu is a historical city with beautiful beaches and resorts, as well as the famous Magellan’s Cross. Bohol, with its famous Chocolate Hills and Tarsier Sanctuary, offers a mix of natural beauty and unique wildlife. The Banaue Rice Terraces in Northern Luzon are over 2,000 years old and offer stunning views of terraced mountains. Vigan, a UNESCO World Heritage site, is known for its preserved Spanish colonial architecture and cobblestone streets. The island of Siargao is a surfing haven, with beautiful lagoons, beaches, and a laid-back vibe. The Taal Volcano, located near Manila, offers views of one of the world’s most picturesque volcanic landscapes. Donsol, in Sorsogon, offers the unique opportunity to swim with whale sharks. The Hundred Islands National Park offers stunning beaches and lagoons, perfect for kayaking, snorkeling, and island-hopping. The rice terraces of Ifugao are one of the most incredible UNESCO World Heritage sites to visit in the country.",
+      "location": {
+        "latitude": 14.599512,
+        "longitude": 120.984222
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/philippines1.jpg",
+          "alt": "Houses at the beach"
+        },
+        {
+          "url": "img/manilla.jpg",
+          "alt": "Boat close to shore"
+        },
+        {
+          "url": "img/manilla1.jpg",
+          "alt": "Many boats in the water"
+        }
+      ]
+    },
+    {
+      "id": "su",
+      "image": "img/saudi-arabia.jpg",
+      "title": "Saudi Arabia",
+      "continent": "Asia",
+      "capital": "Riyadh",
+      "subtitle": "Travel destinations",
+      "intro": "Saudi Arabia is a country in the Middle East, known for its vast deserts, Islamic heritage, and significant oil reserves. With its capital in Riyadh, Saudi Arabia is home to Islam's two holiest cities, Mecca and Medina. The nation's culture is deeply rooted in Islamic traditions and Bedouin customs. Saudi Arabia is undergoing rapid modernization while preserving its rich cultural identity.",
+      "description": "Riyadh, the capital, is a modern metropolis offering a mix of luxury shopping malls, cultural centers, and historical sites like the National Museum. Mecca, Islam’s holiest city, attracts millions of Muslims for the annual Hajj pilgrimage. Medina, another holy city, is home to the Al-Masjid an-Nabawi mosque, the burial place of the Prophet Muhammad. The Red Sea coast offers pristine beaches, vibrant coral reefs, and opportunities for water sports like diving and snorkeling. Al-Ula is a UNESCO World Heritage site with dramatic rock formations and ancient tombs carved into cliffs. The Empty Quarter, the world’s largest continuous sand desert, offers vast, sweeping dunes and a unique desert experience. Jeddah, a port city on the Red Sea, is known for its art scene, historic districts, and vibrant waterfront. The archaeological site of Diriyah, near Riyadh, is the birthplace of the first Saudi state and a UNESCO World Heritage site. Abha, located in the Asir mountains, offers lush greenery, cool temperatures, and breathtaking views. Al Khobar, located on the Arabian Gulf, is a popular spot for shopping, dining, and enjoying the coastal scenery. The King Abdulaziz Historical Center in Riyadh is a fascinating museum showcasing Saudi Arabia’s history and culture. ",
+      "location": {
+        "latitude": 24.774265,
+        "longitude": 46.738586
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/saudi-arabia1.jpg",
+          "alt": "Mountain glass"
+        },
+        {
+          "url": "img/riyadh.jpg",
+          "alt": "High building"
+        },
+        {
+          "url": "img/riyadh1.jpg",
+          "alt": "Desert"
+        }
+      ]
+    },
+    {
+      "id": "ko",
+      "image": "img/south-korea.jpg",
+      "title": "South Korea",
+      "continent": "Asia",
+      "capital": "Seoul",
+      "subtitle": "Travel destinations",
+      "intro": "South Korea is a dynamic country in East Asia, known for its technological advancements, pop culture, and rich traditions. With its capital in Seoul, South Korea blends ancient palaces with cutting-edge skyscrapers. The nation has gained global recognition through K-pop, cinema, and cuisine. South Korean society values education, innovation, and cultural heritage.",
+      "description": "Seoul, the capital, is a vibrant city that blends modern skyscrapers with ancient palaces like Gyeongbokgung. The demilitarized zone (DMZ) is an important historical site, offering tours to the border between North and South Korea. Jeju Island, known for its volcanic landscapes, beautiful beaches, and unique cultural heritage, is a popular getaway. Busan, located on the southeastern coast, is famous for its stunning beaches, the Haeundae beach festival, and the vibrant Jagalchi Fish Market. Gyeongju, a UNESCO World Heritage site, is known for its ancient temples, tombs, and the Bulguksa Temple. The Korean Demilitarized Zone offers a rare glimpse into one of the world’s most fortified borders and its surrounding areas. The Bukhansan National Park, just outside Seoul, offers hiking trails and picturesque mountain views. The traditional village of Andong is known for its preserved hanok houses and cultural festivals. The Namsan Seoul Tower offers panoramic views of the city from its observation deck. The city of Incheon is famous for its modern port and the International Airport, one of the world’s busiest. The city of Suwon is known for its beautiful fortress, Hwaseong Fortress, a UNESCO World Heritage site. The palaces of Seoul, including Changdeokgung and Changgyeonggung, showcase the city’s royal history.",
+      "location": {
+        "latitude": 37.5326,
+        "longitude": 127.024612
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/south-korea1.jpg",
+          "alt": "View over the entire city"
+        },
+        {
+          "url": "img/seoul.jpg",
+          "alt": "A busy street in the city"
+        },
+        {
+          "url": "img/seoul1.jpg",
+          "alt": "Signs in the night"
+        }
+      ]
+    },
+    {
+      "id": "th",
+      "image": "img/Thailand.jpg",
+      "title": "Thailand",
+      "continent": "Asia",
+      "capital": "Bangkok",
+      "subtitle": "Travel destinations",
+      "intro": "Thailand is a Southeast Asian country, celebrated for its golden temples, tropical beaches, and flavorful cuisine. With its capital in Bangkok, Thailand offers a vibrant mix of traditional culture and modern life. The nation's festivals, such as Songkran and Loy Krathong, reflect its rich cultural tapestry. Thai cuisine, known for dishes like pad thai and green curry, is beloved worldwide.",
+      "description": "Bangkok, the capital, is a vibrant city known for its temples, bustling markets, and nightlife, including the Grand Palace and Wat Pho. Chiang Mai, in northern Thailand, is famous for its ancient temples, night markets, and the annual Yi Peng Lantern Festival. Phuket, the largest island, offers beautiful beaches, vibrant nightlife, and water activities like snorkeling and diving. Ayutthaya, a UNESCO World Heritage site, offers ancient temples and ruins that showcase the grandeur of the old Siamese Kingdom. Krabi, with its limestone cliffs and emerald waters, is a paradise for nature lovers and adventure seekers. The islands of Koh Samui, Koh Phi Phi, and Koh Tao offer white sand beaches, clear waters, and opportunities for diving and snorkeling. Pattaya is known for its beaches, nightlife, and water parks, including the famous Pattaya Floating Market. Hua Hin, a beach resort town, offers relaxation by the sea, golf courses, and night markets. Sukhothai is home to the Sukhothai Historical Park, a UNESCO World Heritage site filled with ancient ruins and temples. The Golden Triangle, where Thailand meets Laos and Myanmar, offers scenic views of the Mekong River and historical landmarks. The Erawan National Park, located in Kanchanaburi Province, is home to stunning waterfalls and lush jungle trails.",
+      "location": {
+        "latitude": 13.736717,
+        "longitude": 100.523186
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/thailand.jpg",
+          "alt": "Boat in the ocean"
+        },
+        {
+          "url": "img/bangkok.jpg",
+          "alt": "Beach and mountain"
+        },
+        {
+          "url": "img/bangkok1.jpg",
+          "alt": "A tuktuk"
+        }
+      ]
+    },
+    {
+      "id": "vm",
+      "image": "img/Vietnam.jpg",
+      "title": "Vietnam",
+      "continent": "Asia",
+      "capital": "Hanoi",
+      "subtitle": "Travel destinations",
+      "intro": "Vietnam is a Southeast Asian country, known for its lush landscapes, historical sites, and resilient spirit. With its capital in Hanoi, Vietnam showcases a blend of colonial architecture and ancient temples. The nation's diverse regions offer everything from terraced rice fields to bustling cities. Vietnamese cuisine, including pho and banh mi, is renowned for its balance of flavors.",
+      "description": "Hanoi, the capital, is rich in history with its ancient architecture, tranquil lakes, and vibrant street food culture. Ho Chi Minh City (Saigon) offers a mix of French colonial landmarks, modern skyscrapers, and buzzing markets like Ben Thanh Market. Ha Long Bay, a UNESCO World Heritage site, is famous for its emerald waters and thousands of towering limestone islands. Hue, the ancient imperial capital, features the Imperial City, royal tombs, and pagodas that reflect the country's rich history. Hoi An is a beautifully preserved town, known for its ancient streets, lantern-lit evenings, and charming shops. Phong Nha-Kẻ Bàng National Park, a UNESCO-listed site, is famous for its impressive caves, including the largest cave in the world, Son Doong. The Mekong Delta is a network of rivers, swamps, and islands, where visitors can explore floating markets and local villages. Nha Trang is a coastal city with sandy beaches, a vibrant nightlife, and rich cultural sites like the Po Nagar Cham Towers. The terraced rice fields of Sapa offer spectacular views and a chance to experience the ethnic diversity of the highlands. Phu Quoc Island is a tropical paradise with pristine beaches, clear waters, and great diving opportunities. The Cu Chi Tunnels, near Ho Chi Minh City, offer a fascinating look at the tunnels used during the Vietnam War.",
+      "location": {
+        "latitude": 21.028511,
+        "longitude": 105.804817
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/vietnam.jpg",
+          "alt": "Green landscape"
+        },
+        {
+          "url": "img/hanoi.jpg",
+          "alt": "Busy small street"
+        },
+        {
+          "url": "img/hanoi1.jpg",
+          "alt": "Beach view from hotel"
+        }
+      ]
+    },
+    {
+      "id": "kh",
+      "image": "img/cambodia.jpg",
+      "title": "Cambodia",
+      "continent": "Asia",
+      "capital": "Phnom Penh",
+      "subtitle": "Travel destinations",
+      "intro": "Cambodia is a Southeast Asian country known for its ancient temples, vibrant culture, and resilient history. With its capital in Phnom Penh, Cambodia has emerged as a destination of deep historical significance and natural beauty. The country is best known for Angkor Wat, a vast temple complex that stands as a symbol of Khmer heritage and architectural brilliance. Cambodia’s rich traditions, friendly people, and lush landscapes make it a truly captivating place to explore.",
+      "description": "Phnom Penh, the capital, offers a mix of history and modernity, with highlights such as the Royal Palace and the Killing Fields. Siem Reap is the gateway to the awe-inspiring Angkor Wat, the largest religious monument in the world, and other ancient temples in the Angkor Archaeological Park. Sihanoukville, on the coast, is known for its golden beaches, lively nightlife, and proximity to beautiful islands like Koh Rong. Battambang is a charming provincial town with colonial architecture, traditional wooden houses, and peaceful rural landscapes. The Tonle Sap Lake is a UNESCO-listed biosphere, home to floating villages, rich biodiversity, and unique cultural experiences. Kampot is a tranquil riverside town known for its colonial-era buildings, pepper plantations, and laid-back atmosphere. The temples of Angkor, especially Bayon Temple, Ta Prohm, and Banteay Srei, offer incredible insights into the Khmer Empire's architecture and art. The Cardamom Mountains offer ecotourism opportunities with trekking, wildlife viewing, and visiting remote communities. The coastal town of Kep is famous for its crab market and its proximity to national parks with wildlife and hiking trails. The ancient city of Oudong, once the royal capital, is home to impressive stupas and is a significant historical site.",
+      "location": {
+        "latitude": 11.562108,
+        "longitude": 104.888535
+      },
+      "liked_by_user": false,
+      "additional_images": [
+        {
+          "url": "img/cambodia1.jpg",
+          "alt": "Buildings"
+        },
+        {
+          "url": "img/phnom-penh.jpg",
+          "alt": "A small car is parked in front of a building"
+        },
+        {
+          "url": "img/phnom-penh1.jpg",
+          "alt": "A person riding a bike down the street"
+        }
+      ]
+    }
+  ]
+}

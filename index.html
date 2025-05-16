@@ -3,9 +3,200 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/first-page.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/izz5dre.css" />
+
+    <!--STYLE FOR SOCIAL MEDIA ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!--SWIPER CSS-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--SWIPER JS-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <title>JOURNEE</title>
   </head>
-  <body></body>
+
+  <body>
+    <!--HEADER-->
+
+    <header>
+      <a href="index.html">
+        <img id="logo" src="img/journee-logo.svg" alt="Logo Journee"
+      /></a>
+      <nav>
+        <a href="destination-page.html">Destinations</a>
+        <a href="contact-page.html">Contact us</a>
+      </nav>
+      <a id="heart-link" href="favorite-page.html">
+        <img
+          class="heart-icon"
+          src="img/heart-filled.svg"
+          alt="Small heart as like button"
+      /></a>
+    </header>
+
+    <!--MAIN CONTENT-->
+
+    <main>
+      <!--IMAGE FOR HEADER WITH TEXT-->
+
+      <section id="header-container">
+        <h1 id="header-text">Find your next <br />Journee.</h1>
+        <section class="clip-img">
+          <img
+            id="header-first-page-img"
+            src="img/header-img.png"
+            alt="Norway nature"
+          />
+        </section>
+      </section>
+
+      <!--SKETCHED MOUNTAIN AND TEXT-->
+
+      <section id="mountain-container">
+        <img
+          id="mountain"
+          src="img/mountain-background.png"
+          alt="A sketched mountain"
+        />
+        <section id="mountain-text-container">
+          <h3 id="headline-over-mountain">FIND INSPIRATION</h3>
+          <p class="first-text">
+            Are you dreaming of a new adventure but do not know where to travel
+            to? Then Journee is here to help you. We have collected our favorite
+            places for you to discover. Explore new destinations all over the
+            world and find your next adventure.
+          </p>
+        </section>
+      </section>
+
+      <!--EXPLORE BUTTON-->
+
+      <section class="arrow-text">
+        <img
+          class="thick-arrow-img"
+          src="img/thick-arrow.svg"
+          alt="arrow pointing at text"
+        />
+        <a class="explore-button" href="scroll-destinations.html?continent=all">
+          Explore now
+        </a>
+      </section>
+
+      <!--LEAF IMAGE AND TEXT-->
+
+      <section class="img-layout">
+        <hr class="line-2" />
+        <h2>
+          Discover<br />
+          your world.
+        </h2>
+        <p id="img-text-leaf">
+          From tropical beaches to bustling cities, let us help you create
+          unforgettable travel memories. Get insider tips, local insights, and
+          exclusive discounts for your next adventure.
+        </p>
+        <img class="leaf-img" src="img/leaf.png" alt="leaf background" />
+        <img class="eifel-img" src="img/eifel-tower.png" alt="eifel tower" />
+      </section>
+
+      <!--IMAGE AND TEXT, GO TO ARTICLE-->
+
+      <section id="tokyo-container">
+        <img
+          id="tokyo-img"
+          src="img/tokyo1.jpg"
+          alt="a person skating on the ice in japan"
+        />
+        <section id="text-container">
+          <h3 id="tokyo-heading">Solo travelling to find yourself</h3>
+          <p id="tokyo-text">
+            Follow Sophia’s journey as every step outside her comfort zone
+            brought her closer to who she really is. Discover why more and more
+            people are choosing to travel solo — and how being alone can become
+            your greatest freedom.
+          </p>
+          <a id="article-button" href="article.html">Read more</a>
+        </section>
+      </section>
+
+      <!--SOURCE FOR CAROUSEL - https://github.com/devression/card-slider/blob/main/index.html-->
+
+      <!--IMAGE CAROUSEL-->
+
+      <hr class="recently-line" />
+      <h3>Explore our destinations</h3>
+
+      <section class="carousel-section">
+        <div class="swiper trending-slider">
+          <div class="swiper-wrapper" id="carousel-content">
+            <!-- Slides här via JS -->
+          </div>
+        </div>
+
+        <!--ARROWS AND PAGINATION OUTSIDE SWIPER-->
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+    </main>
+
+    <footer>
+      <!--FOOTER-->
+
+      <section id="footer-container1">
+        <a class="footer-link" href="contact-page.html">CONTACT US</a>
+        <a class="footer-link" href="article.html">BLOG</a>
+        <a class="footer-link" href="destination-page.html">DESTINATIONS</a>
+      </section>
+
+      <!--SUBSCRIBE BUTTON IN INPUT FIELD-->
+
+      <section id="footer-container2">
+        <p class="subscribe-text">SUBSCRIBE TO OUR NEWSLETTER!</p>
+        <section class="subscribe">
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your Email Address"
+          />
+          <button class="subscribe-button">SUBSCRIBE</button>
+        </section>
+
+        <!--SOCIAL MEDIA ICONS - https://cdnjs.com/libraries/font-awesome/6.5.0 -->
+
+        <section class="social-icons">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </section>
+      </section>
+
+      <!--COPY RIGHT TEXT-->
+
+      <p class="copy-right">
+        <span class="copy-logo">&#169;</span>Copyright JOURNEE 2025
+      </p>
+    </footer>
+
+    <!--LOAD SWIPER JAVASCRIPT-->
+
+    <script src="js/carousel.js" defer></script>
+  </body>
 </html>
