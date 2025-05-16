@@ -57,7 +57,6 @@ window.addEventListener("DOMContentLoaded", () => {
       titleElement.classList.add("title");
 
       //LIKE A COUNTRY AND STORE WITH LOCAL STORAGE
-
       let likedCountries =
         JSON.parse(localStorage.getItem("likedCountries")) || [];
       let isLiked = likedCountries.includes(country.id);
@@ -86,7 +85,6 @@ window.addEventListener("DOMContentLoaded", () => {
       updateLikeButton();
 
       //IN ORDER TO HOVER IF THE BUTTON HAS BEEN LIKED BEFORE
-
       likeButtonElement.addEventListener("click", () => {
         isLiked = !isLiked;
 
@@ -112,7 +110,6 @@ window.addEventListener("DOMContentLoaded", () => {
       detailcontentElement.appendChild(temperatureElement);
 
       //INTRO TEXT
-
       const introElement = document.createElement("intro");
       introElement.textContent = country.intro;
       detailcontentElement.appendChild(introElement);
@@ -124,11 +121,6 @@ window.addEventListener("DOMContentLoaded", () => {
       firstImage.alt = country.additional_images[0].alt;
       firstImage.classList.add("first-image");
       detailcontentElement.appendChild(firstImage);
-
-      // // Mer text
-      // const moreText = document.createElement("p");
-      // moreText.textContent = country.description.slice(200); // resten av beskrivningen
-      // detailcontentElement.appendChild(moreText);
 
       //INTRO TITLE
       const introTitleElement = document.createElement("intro-title");

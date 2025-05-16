@@ -1,8 +1,12 @@
+//RUNS WHEN THE HTML IS LOADED
 window.addEventListener("DOMContentLoaded", () => {
   const favoriteContentElement = document.getElementById("favorite-content");
+
+  //ARRAY OF COUNTRY IDs THE USER HAS LIKED, LOADED FROM LOCAL STORAGE
   let likedCountries = JSON.parse(localStorage.getItem("likedCountries")) || [];
   let countries = [];
 
+  //FETCH THE DATA FROM JSON COUNTRIES - ONLY INCLUDE COUNTRIES WHOSE ID IS IN likedCountries
   async function loadFavorites() {
     const response = await fetch("data/countries.json");
     const json = await response.json();
@@ -23,6 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  //CREATES A SECTION ELEMENT FOR A COUNTRY
   function createCountryElement(country) {
     const countryElement = document.createElement("section");
     countryElement.classList.add("country");
@@ -36,10 +41,11 @@ window.addEventListener("DOMContentLoaded", () => {
     likeButtonElement.classList.add("like-button");
 
     likeButtonElement.addEventListener("click", () => {
-      // Remove from likedCountries
+      //REMOVE THE COUNTRY FROM likedCountries
       likedCountries = likedCountries.filter((id) => id !== country.id);
+      //UPDATE LOACAL STORAGE
       localStorage.setItem("likedCountries", JSON.stringify(likedCountries));
-      // Remove from UI
+      //ANIMATES REMOVAL OF THE COUNTRY
       countryElement.classList.add("fade-out");
       setTimeout(() => {
         countryElement.remove();
@@ -62,7 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
     return countryElement;
   }
 
-  // FILTERING BY CONTINENT
+  //FILTERS THE COUNTIRES ARRAY - INCLUDE LIKED AND THOSE THAT MATCH THE GIVEN CONTINENT
 
   function filterByContinent(continent) {
     const filtered = countries.filter(
@@ -72,6 +78,7 @@ window.addEventListener("DOMContentLoaded", () => {
     renderContent(filtered);
   }
 
+  //GRABS BUTTONS FOR FILTERING EUROPE, ASIA AND ALL DESTINATIONS
   const favoriteEuropeButton = document.getElementById(
     "favorite-button-europe"
   );
@@ -80,6 +87,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const favoriteButtons = document.querySelectorAll(".filter-button");
 
+  //REMOVE OR ADD IF THE BUTTONS ARE ACTIVE OR NOT
   function setActiveButton(clickedButton) {
     favoriteButtons.forEach((button) => {
       button.classList.remove("active");
@@ -87,6 +95,7 @@ window.addEventListener("DOMContentLoaded", () => {
     clickedButton.classList.add("active");
   }
 
+  //HANDLE FILTER BUTTONS IF CLICKED
   favoriteEuropeButton.addEventListener("click", () => {
     setActiveButton(favoriteEuropeButton);
     filterByContinent("Europe");
