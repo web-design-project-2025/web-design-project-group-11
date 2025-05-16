@@ -525,14 +525,14 @@ input::placeholder {
   #first-name,
   #last-name {
     width: 18rem;
-    height: 1.8rem;
+    height: 2.5rem;
     padding-left: 0.5rem;
   }
 
   #email-form,
   #subject {
     width: 18rem;
-    height: 1.8rem;
+    height: 2.5rem;
     margin-bottom: 1rem;
     padding-left: 0.5rem;
   }
@@ -563,7 +563,7 @@ input::placeholder {
   .send {
     font-size: 0.7rem;
     width: 18rem;
-    height: 1.8rem;
+    height: 2.5rem;
     align-self: center;
   }
 

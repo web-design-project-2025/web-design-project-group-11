@@ -319,4 +319,15 @@ body {
   .tips-tricks {
     font-size: 1.7rem;
   }
+  .recharge {
+    font-size: 1.3rem;
+  }
+
+  .img-big-button {
+    width: 70%;
+  }
+
+  .img-small-buttons {
+    width: calc(73.2% - 0.5rem);
+  }
 }

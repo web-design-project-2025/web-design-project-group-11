@@ -112,7 +112,7 @@ button.like-button {
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
   font-size: 1.2rem;
-  text-align: justify;
+  text-align: left;
   line-height: 1.6rem;
   place-self: center;
   padding-right: 10rem;
@@ -151,7 +151,7 @@ button.like-button {
   font-family: "peridot-pe-variable", sans-serif;
   font-variation-settings: "ital" 0, "wdth" 100, "wght" 400;
   font-size: 1.2rem;
-  text-align: justify;
+  text-align: left;
   margin-top: 4.8rem;
   line-height: 1.6rem;
 }
