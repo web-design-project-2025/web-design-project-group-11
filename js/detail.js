@@ -173,7 +173,7 @@ window.addEventListener("DOMContentLoaded", () => {
 `;
         })
 
-        //ERROR HANDLING - IF SOMETHING IS WRONG IN THE FETCH PROCESS
+        //ERROR HANDLING - IF SOMETHING IS WRONG IN THE FETCH PROCESS, INSPIRATION FROM https://www.geeksforgeeks.org/javascript-error-and-exceptional-handling-with-examples/
         .catch((error) => {
           temperatureElement.textContent = "Could not fetch weather data.";
           console.error("Error when rendering weather data:", error);
