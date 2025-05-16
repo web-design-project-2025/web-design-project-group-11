@@ -11,6 +11,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <title>My favorites</title>
+      <!--SWIPER CSS-->
+      <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--SWIPER JS-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -70,6 +78,27 @@
       <!--LOAD JSON FILES-->
 
       <div id="favorite-content"></div>
+
+      <!--SOURCE FOR CAROUSEL - https://github.com/devression/card-slider/blob/main/index.html-->
+
+      <!--IMAGE CAROUSEL-->
+
+      <hr class="recently-line" />
+      <h3>Explore more destinations</h3>
+
+      <section class="carousel-section">
+        <div class="swiper trending-slider">
+          <div class="swiper-wrapper" id="carousel-content">
+            <!-- Slides här via JS -->
+          </div>
+        </div>
+
+        <!--ARROWS AND PAGINATION OUTSIDE SWIPER-->
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </section>
     </main>
 
     <footer>
@@ -122,5 +151,6 @@
 
     <script src="js/main.js" defer></script>
     <script src="js/favorite.js" defer></script>
+    <script src="js/carousel.js" defer></script>
   </body>
 </html>

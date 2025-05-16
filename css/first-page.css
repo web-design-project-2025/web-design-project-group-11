@@ -639,6 +639,12 @@ h3 {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .recently-line {
+    width: 20rem;
+  }
+}
+
 /*FOOTER*/
 
 footer {
