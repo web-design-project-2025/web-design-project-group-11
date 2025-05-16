@@ -405,6 +405,7 @@ h3 {
 }
 
 /*RESPONSIVE*/
+
 @media screen and (max-width: 1600px) {
   .eifel-img {
     width: 30rem;
@@ -597,6 +598,10 @@ h3 {
 }
 
 @media screen and (max-width: 520px) {
+  h2 {
+    margin-left: 0;
+  }
+
   #header-text {
     font-size: 3rem;
     bottom: 10rem;
@@ -622,7 +627,7 @@ h3 {
 }
 @media screen and (max-width: 470px) {
   h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-left: 0rem;
   }
 

@@ -82,7 +82,7 @@ window.addEventListener("DOMContentLoaded", () => {
     return section;
   }
 
-  //CREATE ELEMENTS
+  //CREATE ELEMENTS, CLASSES AND LINKS TO DETAIL PAGE
   function createCountryElement(country) {
     const countryElement = document.createElement("section");
     countryElement.classList.add("country");
@@ -94,12 +94,15 @@ window.addEventListener("DOMContentLoaded", () => {
     const isLiked = likedCountries.includes(country.id);
     country.liked_by_user = isLiked;
 
+    //CREATING LIKE BUTTON
     const likeButtonElement = document.createElement("button");
+
     likeButtonElement.innerHTML = isLiked
       ? '<img src="img/heart-filled.svg" alt="liked">'
       : '<img src="img/heart-line.svg" alt="not liked">';
     likeButtonElement.classList.add("like-button");
 
+    //LOAD THE HEART IMAGE
     const heartImg = likeButtonElement.querySelector("img");
 
     if (!isLiked) {
@@ -114,6 +117,7 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
 
+    //ADDING EVENT IF CLICKED - FAVORITE ARRAY
     likeButtonElement.addEventListener("click", () => {
       country.liked_by_user = !country.liked_by_user;
 
@@ -150,12 +154,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
     countryElement.appendChild(likeButtonElement);
 
+    //CREATE IMAGES
     const img = document.createElement("img");
     img.src = country.image;
     img.alt = country.title;
     link.appendChild(img);
     countryElement.appendChild(link);
 
+    //CREATE IMAGE TEXT
     const title = document.createElement("h2");
     title.textContent = country.title;
     countryElement.appendChild(title);
@@ -163,6 +169,7 @@ window.addEventListener("DOMContentLoaded", () => {
     return countryElement;
   }
 
+  //RENDER THE RIGHT CONTINENT TITLE AND TEXT
   function filterByContinent(continent) {
     const filtered = countries.filter((item) => item.continent === continent);
     renderContent(filtered);
@@ -170,7 +177,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //FINDS THE MATCHING CONTINENT FROM CONTINENTS
   function renderSingleContinent(continentName) {
-    const selected = continents.find((c) => c.title === continentName);
+    const selected = continents.find(
+      (continent) => continent.title === continentName
+    );
     continentElement.innerHTML = "";
 
     if (selected) {
